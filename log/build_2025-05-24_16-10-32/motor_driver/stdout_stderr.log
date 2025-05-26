@@ -1,0 +1,16 @@
+[35m[1mConsolidate compiler generated dependencies of target ControlMotor[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/ControlMotor.dir/src/ControlMotor.cpp.o[0m
+[100%] [32m[1mLinking CXX executable ControlMotor[0m
+[100%] Built target ControlMotor
+-- Install configuration: ""
+-- Installing: /home/ubuntu/Desktop/AK8064_ws_Jun/install/motor_driver/lib/motor_driver/ControlMotor
+-- Set runtime path of "/home/ubuntu/Desktop/AK8064_ws_Jun/install/motor_driver/lib/motor_driver/ControlMotor" to ""
+-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/motor_driver/share/motor_driver//config
+-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/motor_driver/share/motor_driver//config/exercise1_params.yaml
+-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/motor_driver/share/motor_driver//config/exercise2_params.yaml
+[31mCMake Error at cmake_install.cmake:66 (file):
+  file INSTALL cannot find
+  "/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/launch": No such file
+  or directory.
+
+[0m

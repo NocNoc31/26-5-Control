@@ -1,0 +1,6 @@
+[31mCMake Error at cmake_install.cmake:66 (file):
+  file INSTALL cannot find
+  "/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/launch": No such file
+  or directory.
+
+[0m

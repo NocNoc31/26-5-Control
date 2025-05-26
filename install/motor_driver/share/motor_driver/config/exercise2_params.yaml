@@ -1,0 +1,8 @@
+motor1:
+  target_positions: 45.0
+  speed: 10000
+  accel: 1000
+motor2:
+  target_positions: [0.0, 60.0, 0.0]
+  speed: 12000
+  accel: 1500
