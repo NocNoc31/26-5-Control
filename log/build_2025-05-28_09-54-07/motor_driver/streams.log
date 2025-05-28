@@ -1,0 +1,12 @@
+[0.007s] Invoking command in '/home/ubuntu/Desktop/AK8064_ws_Jun/build/motor_driver': AMENT_PREFIX_PATH=/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface:/opt/ros/humble LD_LIBRARY_PATH=/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/ubuntu/Desktop/AK8064_ws_Jun/build/motor_driver -- -j8 -l8
+[0.038s] [35m[1mConsolidate compiler generated dependencies of target ControlMotor[0m
+[0.053s] [ 50%] [32mBuilding CXX object CMakeFiles/ControlMotor.dir/src/ControlMotor.cpp.o[0m
+[1.767s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kvirtual void MotorController::control(const MotorData&)[m[K’:
+[1.767s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1866:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_repeat[m[K’ was not declared in this scope
+[1.767s]  1866 |                                [01;31m[Kcurrent_repeat[m[K++;
+[1.767s]       |                                [01;31m[K^~~~~~~~~~~~~~[m[K
+[1.767s] 
+[4.103s] gmake[2]: *** [CMakeFiles/ControlMotor.dir/build.make:76: CMakeFiles/ControlMotor.dir/src/ControlMotor.cpp.o] Error 1
+[4.103s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ControlMotor.dir/all] Error 2
+[4.103s] gmake: *** [Makefile:146: all] Error 2
+[4.105s] Invoked command in '/home/ubuntu/Desktop/AK8064_ws_Jun/build/motor_driver' returned '2': AMENT_PREFIX_PATH=/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface:/opt/ros/humble LD_LIBRARY_PATH=/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/ubuntu/Desktop/AK8064_ws_Jun/build/motor_driver -- -j8 -l8

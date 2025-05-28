@@ -1,0 +1,32 @@
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kvirtual void MotorController::setParameters(const std::vector<rcl_interfaces::msg::Parameter_<std::allocator<void> >, std::allocator<rcl_interfaces::msg::Parameter_<std::allocator<void> > > >&)[m[K’:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1920:30:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KMotorController::validateSpeed(float&)[m[K’
+ 1920 |                 [01;31m[KvalidateSpeed(new_speed)[m[K;
+      |                 [01;31m[K~~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:2092:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid MotorController::validateSpeed()[m[K’
+ 2092 |     void [01;36m[KvalidateSpeed[m[K() {
+      |          [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:2092:10:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1924:30:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KMotorController::validateAccel(float&)[m[K’
+ 1924 |                 [01;31m[KvalidateAccel(new_accel)[m[K;
+      |                 [01;31m[K~~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:2100:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid MotorController::validateAccel()[m[K’
+ 2100 |     void [01;36m[KvalidateAccel[m[K() {
+      |          [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:2100:10:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1928:29:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KMotorController::validateStep(int&)[m[K’
+ 1928 |                 [01;31m[KvalidateStep(new_step)[m[K;
+      |                 [01;31m[K~~~~~~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:2108:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid MotorController::validateStep()[m[K’
+ 2108 |     void [01;36m[KvalidateStep[m[K() {
+      |          [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:2108:10:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1932:31:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KMotorController::validateRepeat(int&)[m[K’
+ 1932 |                 [01;31m[KvalidateRepeat(new_repeat)[m[K;
+      |                 [01;31m[K~~~~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:2115:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid MotorController::validateRepeat()[m[K’
+ 2115 |     void [01;36m[KvalidateRepeat[m[K() {
+      |          [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:2115:10:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+gmake[2]: *** [CMakeFiles/ControlMotor.dir/build.make:76: CMakeFiles/ControlMotor.dir/src/ControlMotor.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ControlMotor.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

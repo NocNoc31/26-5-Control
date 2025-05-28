@@ -701,6 +701,11 @@ CMakeFiles/ControlMotor.dir/src/ControlMotor.cpp.o
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__builder.hpp
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__traits.hpp
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__type_support.hpp
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/int8.hpp
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int8__struct.hpp
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int8__builder.hpp
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int8__traits.hpp
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int8__type_support.hpp
  /home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/include/can_interface/caninterface.hpp
  /usr/include/linux/can.h
  /usr/include/linux/types.h

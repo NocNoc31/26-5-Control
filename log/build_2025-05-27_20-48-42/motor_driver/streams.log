@@ -1,0 +1,11 @@
+[0.010s] Invoking command in '/home/ubuntu/Desktop/AK8064_ws_Jun/build/motor_driver': AMENT_PREFIX_PATH=/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface:/opt/ros/humble LD_LIBRARY_PATH=/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/ubuntu/Desktop/AK8064_ws_Jun/build/motor_driver -- -j8 -l8
+[0.102s] [35m[1mConsolidate compiler generated dependencies of target ControlMotor[0m
+[0.129s] [ 50%] [32mBuilding CXX object CMakeFiles/ControlMotor.dir/src/ControlMotor.cpp.o[0m
+[3.083s] [100%] [32m[1mLinking CXX executable ControlMotor[0m
+[3.222s] /usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+[3.223s] (.text+0x1b): undefined reference to `main'
+[3.233s] collect2: error: ld returned 1 exit status
+[3.236s] gmake[2]: *** [CMakeFiles/ControlMotor.dir/build.make:160: ControlMotor] Error 1
+[3.236s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ControlMotor.dir/all] Error 2
+[3.236s] gmake: *** [Makefile:146: all] Error 2
+[3.238s] Invoked command in '/home/ubuntu/Desktop/AK8064_ws_Jun/build/motor_driver' returned '2': AMENT_PREFIX_PATH=/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface:/opt/ros/humble LD_LIBRARY_PATH=/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/ubuntu/Desktop/AK8064_ws_Jun/build/motor_driver -- -j8 -l8

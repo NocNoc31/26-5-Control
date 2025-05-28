@@ -700,6 +700,11 @@ CMakeFiles/ControlMotor.dir/src/ControlMotor.cpp.o: /home/ubuntu/Desktop/AK8064_
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__builder.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__traits.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__type_support.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/int8.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int8__struct.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int8__builder.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int8__traits.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int8__type_support.hpp \
   /home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/include/can_interface/caninterface.hpp \
   /usr/include/linux/can.h \
   /usr/include/linux/types.h \
@@ -772,6 +777,10 @@ CMakeFiles/ControlMotor.dir/src/ControlMotor.cpp.o: /home/ubuntu/Desktop/AK8064_
 /usr/include/linux/can.h:
 
 /home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/include/can_interface/caninterface.hpp:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int8__type_support.hpp:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/int8.hpp:
 
 /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__type_support.hpp:
 
@@ -1083,6 +1092,8 @@ CMakeFiles/ControlMotor.dir/src/ControlMotor.cpp.o: /home/ubuntu/Desktop/AK8064_
 
 /usr/include/c++/11/functional:
 
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int8__traits.hpp:
+
 /usr/include/asm-generic/errno-base.h:
 
 /opt/ros/humble/include/rmw/rmw/subscription_options.h:
@@ -1391,6 +1402,8 @@ CMakeFiles/ControlMotor.dir/src/ControlMotor.cpp.o: /home/ubuntu/Desktop/AK8064_
 
 /opt/ros/humble/include/rmw/rmw/message_sequence.h:
 
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int8__builder.hpp:
+
 /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:
 
 /usr/include/features.h:
@@ -1664,6 +1677,8 @@ CMakeFiles/ControlMotor.dir/src/ControlMotor.cpp.o: /home/ubuntu/Desktop/AK8064_
 /usr/include/c++/11/bits/uniform_int_dist.h:
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__traits.hpp:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int8__struct.hpp:
 
 /usr/include/c++/11/bits/cxxabi_init_exception.h:
 

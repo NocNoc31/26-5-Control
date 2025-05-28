@@ -1,0 +1,58 @@
+[35m[1mConsolidate compiler generated dependencies of target ControlMotor[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/ControlMotor.dir/src/ControlMotor.cpp.o[0m
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In constructor ‘[01m[KStatePublisher::StatePublisher(rclcpp::Node*, const string&)[m[K’:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:885:11:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KStatePublisher[m[K’ does not have any field named ‘[01m[Knode_[m[K’
+  885 |         : [01;31m[Knode_[m[K(node) {
+      |           [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:750[m[K:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kvoid StatePublisher::publish(const MotorData&, bool)[m[K’:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:900:25:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_t[m[K’?
+  900 |             RCLCPP_WARN([01;31m[Knode_[m[K->get_logger(), "Invalid motor data: NaN detected in position, velocity, or current");
+      |                         [01;31m[K^~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:900:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  900 |             [01;31m[KRCLCPP_WARN[m[K(node_->get_logger(), "Invalid motor data: NaN detected in position, velocity, or current");
+      |             [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:900:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  900 |             [01;31m[KRCLCPP_WARN[m[K(node_->get_logger(), "Invalid motor data: NaN detected in position, velocity, or current");
+      |             [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:900:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  900 |             [01;31m[KRCLCPP_WARN[m[K(node_->get_logger(), "Invalid motor data: NaN detected in position, velocity, or current");
+      |             [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:904:25:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_t[m[K’?
+  904 |             RCLCPP_WARN([01;31m[Knode_[m[K->get_logger(), "Motor state is empty");
+      |                         [01;31m[K^~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:904:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  904 |             [01;31m[KRCLCPP_WARN[m[K(node_->get_logger(), "Motor state is empty");
+      |             [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:904:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  904 |             [01;31m[KRCLCPP_WARN[m[K(node_->get_logger(), "Motor state is empty");
+      |             [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:904:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  904 |             [01;31m[KRCLCPP_WARN[m[K(node_->get_logger(), "Motor state is empty");
+      |             [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kvoid StatePublisher::publishResponse(const string&)[m[K’:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:934:25:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_t[m[K’?
+  934 |             RCLCPP_WARN([01;31m[Knode_[m[K->get_logger(), "Empty response message, skipping publish");
+      |                         [01;31m[K^~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:934:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  934 |             [01;31m[KRCLCPP_WARN[m[K(node_->get_logger(), "Empty response message, skipping publish");
+      |             [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:934:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  934 |             [01;31m[KRCLCPP_WARN[m[K(node_->get_logger(), "Empty response message, skipping publish");
+      |             [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:934:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  934 |             [01;31m[KRCLCPP_WARN[m[K(node_->get_logger(), "Empty response message, skipping publish");
+      |             [01;31m[K^~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/ControlMotor.dir/build.make:76: CMakeFiles/ControlMotor.dir/src/ControlMotor.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ControlMotor.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

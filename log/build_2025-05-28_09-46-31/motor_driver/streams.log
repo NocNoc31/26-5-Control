@@ -1,0 +1,31 @@
+[0.006s] Invoking command in '/home/ubuntu/Desktop/AK8064_ws_Jun/build/motor_driver': AMENT_PREFIX_PATH=/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface:/opt/ros/humble LD_LIBRARY_PATH=/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/ubuntu/Desktop/AK8064_ws_Jun/build/motor_driver -- -j8 -l8
+[0.037s] [35m[1mConsolidate compiler generated dependencies of target ControlMotor[0m
+[0.053s] [ 50%] [32mBuilding CXX object CMakeFiles/ControlMotor.dir/src/ControlMotor.cpp.o[0m
+[7.597s] [100%] [32m[1mLinking CXX executable ControlMotor[0m
+[8.030s] [100%] Built target ControlMotor
+[8.049s] Invoked command in '/home/ubuntu/Desktop/AK8064_ws_Jun/build/motor_driver' returned '0': AMENT_PREFIX_PATH=/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface:/opt/ros/humble LD_LIBRARY_PATH=/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/ubuntu/Desktop/AK8064_ws_Jun/build/motor_driver -- -j8 -l8
+[8.050s] Invoking command in '/home/ubuntu/Desktop/AK8064_ws_Jun/build/motor_driver': AMENT_PREFIX_PATH=/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface:/opt/ros/humble LD_LIBRARY_PATH=/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/ubuntu/Desktop/AK8064_ws_Jun/build/motor_driver
+[8.055s] -- Install configuration: ""
+[8.055s] -- Installing: /home/ubuntu/Desktop/AK8064_ws_Jun/install/motor_driver/lib/motor_driver/ControlMotor
+[8.060s] -- Set runtime path of "/home/ubuntu/Desktop/AK8064_ws_Jun/install/motor_driver/lib/motor_driver/ControlMotor" to ""
+[8.060s] -- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/motor_driver/share/motor_driver//config
+[8.060s] -- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/motor_driver/share/motor_driver//config/exercise1_params.yaml
+[8.060s] -- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/motor_driver/share/motor_driver//config/exercise2_params.yaml
+[8.060s] -- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/motor_driver/share/motor_driver/config/exercise1_params.yaml
+[8.061s] -- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/motor_driver/share/motor_driver/config/exercise2_params.yaml
+[8.061s] -- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/motor_driver/share/ament_index/resource_index/package_run_dependencies/motor_driver
+[8.061s] -- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/motor_driver/share/ament_index/resource_index/parent_prefix_path/motor_driver
+[8.061s] -- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/motor_driver/share/motor_driver/environment/ament_prefix_path.sh
+[8.061s] -- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/motor_driver/share/motor_driver/environment/ament_prefix_path.dsv
+[8.061s] -- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/motor_driver/share/motor_driver/environment/path.sh
+[8.061s] -- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/motor_driver/share/motor_driver/environment/path.dsv
+[8.061s] -- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/motor_driver/share/motor_driver/local_setup.bash
+[8.061s] -- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/motor_driver/share/motor_driver/local_setup.sh
+[8.061s] -- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/motor_driver/share/motor_driver/local_setup.zsh
+[8.061s] -- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/motor_driver/share/motor_driver/local_setup.dsv
+[8.061s] -- Installing: /home/ubuntu/Desktop/AK8064_ws_Jun/install/motor_driver/share/motor_driver/package.dsv
+[8.061s] -- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/motor_driver/share/ament_index/resource_index/packages/motor_driver
+[8.061s] -- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/motor_driver/share/motor_driver/cmake/motor_driverConfig.cmake
+[8.061s] -- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/motor_driver/share/motor_driver/cmake/motor_driverConfig-version.cmake
+[8.061s] -- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/motor_driver/share/motor_driver/package.xml
+[8.063s] Invoked command in '/home/ubuntu/Desktop/AK8064_ws_Jun/build/motor_driver' returned '0': AMENT_PREFIX_PATH=/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface:/opt/ros/humble LD_LIBRARY_PATH=/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/ubuntu/Desktop/AK8064_ws_Jun/build/motor_driver

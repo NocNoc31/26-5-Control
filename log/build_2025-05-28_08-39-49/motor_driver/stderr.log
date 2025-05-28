@@ -1,0 +1,56 @@
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:143:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kstate_publisher_[m[K’ does not name a type; did you mean ‘[01m[KStatePublisher[m[K’?
+  143 |           [01;31m[Kstate_publisher_[m[K = node->create_publisher<std_msgs::msg::String>(name + "_state", 5);
+      |           [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |           [32m[KStatePublisher[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:144:11:[m[K [01;31m[Kerror: [m[K‘[01m[Ktemperature_publisher_[m[K’ does not name a type
+  144 |           [01;31m[Ktemperature_publisher_[m[K = node->create_publisher<std_msgs::msg::Int8>(name + "_temperature", 5);
+      |           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:145:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_publisher_[m[K’ does not name a type
+  145 |           [01;31m[Kcurrent_publisher_[m[K = node->create_publisher<std_msgs::msg::Float32>(name + "_current", 5);
+      |           [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:187:38:[m[K [01;31m[Kerror: [m[K‘[01m[KInt8[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’
+  187 | lcpp::Publisher<std_msgs::msg::[01;31m[KInt8[m[K>::SharedPtr temperature_publisher_;
+      |                                [01;31m[K^~~~[m[K
+
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:187:42:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  187 | ::Publisher<std_msgs::msg::Int8[01;31m[K>[m[K::SharedPtr temperature_publisher_;
+      |                                [01;31m[K^[m[K
+
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:187:45:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+  187 | ublisher<std_msgs::msg::Int8>::[01;31m[KSharedPtr[m[K temperature_publisher_;
+      |                                [01;31m[K^~~~~~~~~[m[K
+      |                                         [32m[K;[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:187:55:[m[K [01;31m[Kerror: [m[K‘[01m[Ktemperature_publisher_[m[K’ does not name a type
+  187 | td_msgs::msg::Int8>::SharedPtr [01;31m[Ktemperature_publisher_[m[K;
+      |                                [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:614:24:[m[K [01;31m[Kerror: [m[Kfield ‘[01m[Kstate_publisher_[m[K’ has incomplete type ‘[01m[KStatePublisher[m[K’
+  614 |         StatePublisher [01;31m[Kstate_publisher_[m[K;
+      |                        [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:136:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass StatePublisher[m[K’
+  136 | class [01;36m[KStatePublisher[m[K {
+      |       [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:742:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+  742 | }
+      |  [01;31m[K^[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:136:22:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+  136 | class StatePublisher [01;36m[K{[m[K
+      |                      [01;36m[K^[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kvoid StatePublisher::publish(const MotorData&, bool)[m[K’:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:163:24:[m[K [01;31m[Kerror: [m[K‘[01m[KInt8[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’
+  163 |         std_msgs::msg::[01;31m[KInt8[m[K temp_msg;
+      |                        [01;31m[K^~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:164:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ktemp_msg[m[K’ was not declared in this scope
+  164 |         [01;31m[Ktemp_msg[m[K.data = data.temperature;
+      |         [01;31m[K^~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:165:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ktemperature_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Kresponse_publisher_[m[K’?
+  165 |         [01;31m[Ktemperature_publisher_[m[K->publish(temp_msg);
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+      |         [32m[Kresponse_publisher_[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K At global scope:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:742:2:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id at end of input
+  742 | }
+      |  [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/ControlMotor.dir/build.make:76: CMakeFiles/ControlMotor.dir/src/ControlMotor.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ControlMotor.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

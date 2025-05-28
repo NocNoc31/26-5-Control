@@ -1,0 +1,60 @@
+[0.006s] Invoking command in '/home/ubuntu/Desktop/AK8064_ws_Jun/build/motor_driver': AMENT_PREFIX_PATH=/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface:/opt/ros/humble LD_LIBRARY_PATH=/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/ubuntu/Desktop/AK8064_ws_Jun/build/motor_driver -- -j8 -l8
+[0.038s] [35m[1mConsolidate compiler generated dependencies of target ControlMotor[0m
+[0.053s] [ 50%] [32mBuilding CXX object CMakeFiles/ControlMotor.dir/src/ControlMotor.cpp.o[0m
+[1.834s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:143:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kstate_publisher_[m[K’ does not name a type; did you mean ‘[01m[KStatePublisher[m[K’?
+[1.834s]   143 |           [01;31m[Kstate_publisher_[m[K = node->create_publisher<std_msgs::msg::String>(name + "_state", 5);
+[1.834s]       |           [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[1.834s]       |           [32m[KStatePublisher[m[K
+[1.836s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:144:11:[m[K [01;31m[Kerror: [m[K‘[01m[Ktemperature_publisher_[m[K’ does not name a type
+[1.836s]   144 |           [01;31m[Ktemperature_publisher_[m[K = node->create_publisher<std_msgs::msg::Int8>(name + "_temperature", 5);
+[1.837s]       |           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.838s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:145:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_publisher_[m[K’ does not name a type
+[1.839s]   145 |           [01;31m[Kcurrent_publisher_[m[K = node->create_publisher<std_msgs::msg::Float32>(name + "_current", 5);
+[1.839s]       |           [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[1.848s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:187:38:[m[K [01;31m[Kerror: [m[K‘[01m[KInt8[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’
+[1.848s]   187 | lcpp::Publisher<std_msgs::msg::[01;31m[KInt8[m[K>::SharedPtr temperature_publisher_;
+[1.848s]       |                                [01;31m[K^~~~[m[K
+[1.848s] 
+[1.848s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:187:42:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.848s]   187 | ::Publisher<std_msgs::msg::Int8[01;31m[K>[m[K::SharedPtr temperature_publisher_;
+[1.848s]       |                                [01;31m[K^[m[K
+[1.849s] 
+[1.849s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:187:45:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[1.849s]   187 | ublisher<std_msgs::msg::Int8>::[01;31m[KSharedPtr[m[K temperature_publisher_;
+[1.849s]       |                                [01;31m[K^~~~~~~~~[m[K
+[1.849s]       |                                         [32m[K;[m[K
+[1.852s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:187:55:[m[K [01;31m[Kerror: [m[K‘[01m[Ktemperature_publisher_[m[K’ does not name a type
+[1.852s]   187 | td_msgs::msg::Int8>::SharedPtr [01;31m[Ktemperature_publisher_[m[K;
+[1.852s]       |                                [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.852s] 
+[1.854s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:614:24:[m[K [01;31m[Kerror: [m[Kfield ‘[01m[Kstate_publisher_[m[K’ has incomplete type ‘[01m[KStatePublisher[m[K’
+[1.854s]   614 |         StatePublisher [01;31m[Kstate_publisher_[m[K;
+[1.854s]       |                        [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[1.854s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:136:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass StatePublisher[m[K’
+[1.854s]   136 | class [01;36m[KStatePublisher[m[K {
+[1.854s]       |       [01;36m[K^~~~~~~~~~~~~~[m[K
+[1.891s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:742:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+[1.891s]   742 | }
+[1.891s]       |  [01;31m[K^[m[K
+[1.892s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:136:22:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+[1.892s]   136 | class StatePublisher [01;36m[K{[m[K
+[1.892s]       |                      [01;36m[K^[m[K
+[1.896s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kvoid StatePublisher::publish(const MotorData&, bool)[m[K’:
+[1.896s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:163:24:[m[K [01;31m[Kerror: [m[K‘[01m[KInt8[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’
+[1.896s]   163 |         std_msgs::msg::[01;31m[KInt8[m[K temp_msg;
+[1.896s]       |                        [01;31m[K^~~~[m[K
+[1.901s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:164:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ktemp_msg[m[K’ was not declared in this scope
+[1.901s]   164 |         [01;31m[Ktemp_msg[m[K.data = data.temperature;
+[1.902s]       |         [01;31m[K^~~~~~~~[m[K
+[1.909s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:165:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ktemperature_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Kresponse_publisher_[m[K’?
+[1.909s]   165 |         [01;31m[Ktemperature_publisher_[m[K->publish(temp_msg);
+[1.909s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.909s]       |         [32m[Kresponse_publisher_[m[K
+[1.983s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K At global scope:
+[1.983s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:742:2:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id at end of input
+[1.983s]   742 | }
+[1.983s]       |  [01;31m[K^[m[K
+[4.003s] gmake[2]: *** [CMakeFiles/ControlMotor.dir/build.make:76: CMakeFiles/ControlMotor.dir/src/ControlMotor.cpp.o] Error 1
+[4.003s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ControlMotor.dir/all] Error 2
+[4.003s] gmake: *** [Makefile:146: all] Error 2
+[4.005s] Invoked command in '/home/ubuntu/Desktop/AK8064_ws_Jun/build/motor_driver' returned '2': AMENT_PREFIX_PATH=/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface:/opt/ros/humble LD_LIBRARY_PATH=/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/ubuntu/Desktop/AK8064_ws_Jun/build/motor_driver -- -j8 -l8
