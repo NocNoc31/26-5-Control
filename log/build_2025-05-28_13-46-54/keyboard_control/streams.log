@@ -1,0 +1,33 @@
+[0.656s] Invoking command in '/home/ubuntu/Desktop/AK8064_ws_Jun/src/keyboard_control': PYTHONPATH=/home/ubuntu/Desktop/AK8064_ws_Jun/build/keyboard_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/Desktop/AK8064_ws_Jun/install/keyboard_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/keyboard_control build --build-base /home/ubuntu/Desktop/AK8064_ws_Jun/build/keyboard_control/build install --record /home/ubuntu/Desktop/AK8064_ws_Jun/build/keyboard_control/install.log --single-version-externally-managed install_data
+[0.883s] running egg_info
+[0.896s] creating ../../build/keyboard_control/keyboard_control.egg-info
+[0.896s] writing ../../build/keyboard_control/keyboard_control.egg-info/PKG-INFO
+[0.896s] writing dependency_links to ../../build/keyboard_control/keyboard_control.egg-info/dependency_links.txt
+[0.896s] writing entry points to ../../build/keyboard_control/keyboard_control.egg-info/entry_points.txt
+[0.896s] writing requirements to ../../build/keyboard_control/keyboard_control.egg-info/requires.txt
+[0.896s] writing top-level names to ../../build/keyboard_control/keyboard_control.egg-info/top_level.txt
+[0.896s] writing manifest file '../../build/keyboard_control/keyboard_control.egg-info/SOURCES.txt'
+[0.922s] reading manifest file '../../build/keyboard_control/keyboard_control.egg-info/SOURCES.txt'
+[0.923s] writing manifest file '../../build/keyboard_control/keyboard_control.egg-info/SOURCES.txt'
+[0.923s] running build
+[0.923s] running build_py
+[0.923s] creating /home/ubuntu/Desktop/AK8064_ws_Jun/build/keyboard_control/build/lib/keyboard_control
+[0.923s] copying keyboard_control/keyboard_control_node.py -> /home/ubuntu/Desktop/AK8064_ws_Jun/build/keyboard_control/build/lib/keyboard_control
+[0.923s] copying keyboard_control/__init__.py -> /home/ubuntu/Desktop/AK8064_ws_Jun/build/keyboard_control/build/lib/keyboard_control
+[0.923s] running install
+[0.927s] running install_lib
+[0.940s] creating /home/ubuntu/Desktop/AK8064_ws_Jun/install/keyboard_control/lib/python3.10/site-packages/keyboard_control
+[0.941s] copying /home/ubuntu/Desktop/AK8064_ws_Jun/build/keyboard_control/build/lib/keyboard_control/keyboard_control_node.py -> /home/ubuntu/Desktop/AK8064_ws_Jun/install/keyboard_control/lib/python3.10/site-packages/keyboard_control
+[0.941s] copying /home/ubuntu/Desktop/AK8064_ws_Jun/build/keyboard_control/build/lib/keyboard_control/__init__.py -> /home/ubuntu/Desktop/AK8064_ws_Jun/install/keyboard_control/lib/python3.10/site-packages/keyboard_control
+[0.941s] byte-compiling /home/ubuntu/Desktop/AK8064_ws_Jun/install/keyboard_control/lib/python3.10/site-packages/keyboard_control/keyboard_control_node.py to keyboard_control_node.cpython-310.pyc
+[0.942s] byte-compiling /home/ubuntu/Desktop/AK8064_ws_Jun/install/keyboard_control/lib/python3.10/site-packages/keyboard_control/__init__.py to __init__.cpython-310.pyc
+[0.942s] running install_data
+[0.942s] creating /home/ubuntu/Desktop/AK8064_ws_Jun/install/keyboard_control/share/ament_index/resource_index/packages
+[0.942s] copying resource/keyboard_control -> /home/ubuntu/Desktop/AK8064_ws_Jun/install/keyboard_control/share/ament_index/resource_index/packages
+[0.942s] copying package.xml -> /home/ubuntu/Desktop/AK8064_ws_Jun/install/keyboard_control/share/keyboard_control
+[0.942s] running install_egg_info
+[0.957s] Copying ../../build/keyboard_control/keyboard_control.egg-info to /home/ubuntu/Desktop/AK8064_ws_Jun/install/keyboard_control/lib/python3.10/site-packages/keyboard_control-0.0.0-py3.10.egg-info
+[0.958s] running install_scripts
+[1.071s] Installing keyboard_control_node script to /home/ubuntu/Desktop/AK8064_ws_Jun/install/keyboard_control/lib/keyboard_control
+[1.072s] writing list of installed files to '/home/ubuntu/Desktop/AK8064_ws_Jun/build/keyboard_control/install.log'
+[1.099s] Invoked command in '/home/ubuntu/Desktop/AK8064_ws_Jun/src/keyboard_control' returned '0': PYTHONPATH=/home/ubuntu/Desktop/AK8064_ws_Jun/build/keyboard_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/Desktop/AK8064_ws_Jun/install/keyboard_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/keyboard_control build --build-base /home/ubuntu/Desktop/AK8064_ws_Jun/build/keyboard_control/build install --record /home/ubuntu/Desktop/AK8064_ws_Jun/build/keyboard_control/install.log --single-version-externally-managed install_data

@@ -1,0 +1,8 @@
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kvoid MotorController::initializeParameters()[m[K’:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:2175:38:[m[K [01;31m[Kerror: [m[K‘[01m[Ktemp_positions_cmd[m[K’ was not declared in this scope; did you mean ‘[01m[Ktemp_positions[m[K’?
+ 2175 |   target_positions_cmd_.resize([01;31m[Ktemp_positions_cmd[m[K.size());
+      |                                [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+      |                                [32m[Ktemp_positions[m[K
+gmake[2]: *** [CMakeFiles/ControlMotor.dir/build.make:76: CMakeFiles/ControlMotor.dir/src/ControlMotor.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ControlMotor.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,12 @@
+[0.007s] Invoking command in '/home/ubuntu/Desktop/AK8064_ws_Jun/build/motor_driver': CMAKE_PREFIX_PATH=/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface:/home/ubuntu/Desktop/AK8064_ws_Jun/install/motor_driver:/home/ubuntu/Desktop/AK8064_ws_Jun/install/keyboard_control:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/Desktop/AK8064_ws_Jun/build/motor_driver -- -j8 -l8
+[0.036s] [35m[1mConsolidate compiler generated dependencies of target ControlMotor[0m
+[0.053s] [ 50%] [32mBuilding CXX object CMakeFiles/ControlMotor.dir/src/ControlMotor.cpp.o[0m
+[1.915s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kvoid MotorController::initializeParameters()[m[K’:
+[1.915s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:2154:70:[m[K [01;31m[Kerror: [m[K‘[01m[Ktemp_positions_cmd[m[K’ was not declared in this scope; did you mean ‘[01m[Ktemp_positions[m[K’?
+[1.915s]  2154 | fix_ + "target_positions_cmd", [01;31m[Ktemp_positions_cmd[m[K);
+[1.915s]       |                                [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[1.915s]       |                                [32m[Ktemp_positions[m[K
+[4.442s] gmake[2]: *** [CMakeFiles/ControlMotor.dir/build.make:76: CMakeFiles/ControlMotor.dir/src/ControlMotor.cpp.o] Error 1
+[4.442s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ControlMotor.dir/all] Error 2
+[4.443s] gmake: *** [Makefile:146: all] Error 2
+[4.444s] Invoked command in '/home/ubuntu/Desktop/AK8064_ws_Jun/build/motor_driver' returned '2': CMAKE_PREFIX_PATH=/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface:/home/ubuntu/Desktop/AK8064_ws_Jun/install/motor_driver:/home/ubuntu/Desktop/AK8064_ws_Jun/install/keyboard_control:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/Desktop/AK8064_ws_Jun/build/motor_driver -- -j8 -l8

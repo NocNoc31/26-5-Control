@@ -1,0 +1,52 @@
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kvoid MotorController::validatePositions(const std::vector<double, std::allocator<double> >&)[m[K’:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:2935:34:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Ksize[m[K’ in ‘[01m[K((MotorController*)this)->MotorController::min_angle_[m[K’, which is of non-class type ‘[01m[Kfloat[m[K’
+ 2935 |           if (pos < min_angle_.[01;31m[Ksize[m[K() || pos > max_angle_.size()) {
+      |                                [01;31m[K^~~~[m[K
+
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:2935:61:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Ksize[m[K’ in ‘[01m[K((MotorController*)this)->MotorController::max_angle_[m[K’, which is of non-class type ‘[01m[Kfloat[m[K’
+ 2935 | ngle_.size() || pos > max_angle_.[01;31m[Ksize[m[K()) {
+      |                                  [01;31m[K^~~~[m[K
+
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:2337[m[K:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:2937:57:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Ksize[m[K’ in ‘[01m[K((MotorController*)this)->MotorController::min_angle_[m[K’, which is of non-class type ‘[01m[Kfloat[m[K’
+ 2937 |     motor_id_, pos, min_angle_.[01;31m[Ksize[m[K(), max_angle_.size());
+      |                                [01;31m[K^~~~[m[K
+
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:2937:76:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Ksize[m[K’ in ‘[01m[K((MotorController*)this)->MotorController::max_angle_[m[K’, which is of non-class type ‘[01m[Kfloat[m[K’
+ 2937 | os, min_angle_.size(), max_angle_.[01;31m[Ksize[m[K());
+      |                                   [01;31m[K^~~~[m[K
+
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kvoid MotorControlNode::controlLoop()[m[K’:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:3126:65:[m[K [01;31m[Kerror: [m[K‘[01m[Kdata_[m[K’ was not declared in this scope; did you mean ‘[01m[Kdata[m[K’?
+ 3126 |              data.temperature, [01;31m[Kdata_[m[K.error);
+      |                                [01;31m[K^~~~~[m[K
+      |                                [32m[Kdata[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:3127:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct MotorData[m[K’ has no member named ‘[01m[Kvelocity_[m[K’; did you mean ‘[01m[Kvelocity[m[K’?
+ 3127 |                         data.[01;31m[Kvelocity_[m[K *= Motor aus motorController::VELOCITY_CONVERSION_FACTOR;
+      |                              [01;31m[K^~~~~~~~~[m[K
+      |                              [32m[Kvelocity[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:3127:43:[m[K [01;31m[Kerror: [m[K‘[01m[KMotor[m[K’ was not declared in this scope
+ 3127 |              data.velocity_ *= [01;31m[KMotor[m[K aus motorController::VELOCITY_CONVERSION_FACTOR;
+      |                                [01;31m[K^~~~~[m[K
+
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:3136:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass IMotorController[m[K’ has no member named ‘[01m[Kpublish[m[K’
+ 3136 |                     controller->[01;31m[Kpublish[m[K();
+      |                                 [01;31m[K^~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kvoid MotorControlNode::safeShutdown()[m[K’:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:3167:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass IMotorController[m[K’ has no member named ‘[01m[Kpublish[m[K’
+ 3167 |             controller->[01;31m[Kpublish[m[K();
+      |                         [01;31m[K^~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/ControlMotor.dir/build.make:76: CMakeFiles/ControlMotor.dir/src/ControlMotor.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ControlMotor.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

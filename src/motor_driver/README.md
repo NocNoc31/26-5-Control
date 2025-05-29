@@ -96,7 +96,7 @@ ros2 topic pub /Motor2ControlCMD std_msgs/msg/String "{data: 'UP'}"
 ros2 topic pub /Motor2ControlCMD std_msgs/msg/String "{data: 'CLEAR'}"
 ros2 topic pub /Motor2ControlCMD std_msgs/msg/String "{data: 'PLAY'}"
 
-ros2 topic pub /Motor2ControlCMD std_msgs/msg/String "{data: 'PAUSE'}"
+ros2 topic pub --once /Motor2ControlCMD std_msgs/msg/String "{data: 'PAUSE'}"
 
 ros2 topic pub /Motor2ControlCMD std_msgs/msg/String "{data: 'HOME'}"
 

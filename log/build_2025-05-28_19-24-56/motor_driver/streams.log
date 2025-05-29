@@ -1,0 +1,327 @@
+[0.008s] Invoking command in '/home/ubuntu/Desktop/AK8064_ws_Jun/build/motor_driver': AMENT_PREFIX_PATH=/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface:/opt/ros/humble LD_LIBRARY_PATH=/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/ubuntu/Desktop/AK8064_ws_Jun/build/motor_driver -- -j8 -l8
+[0.041s] [35m[1mConsolidate compiler generated dependencies of target ControlMotor[0m
+[0.054s] [ 50%] [32mBuilding CXX object CMakeFiles/ControlMotor.dir/src/ControlMotor.cpp.o[0m
+[1.873s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1602:53:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[Ktemp[m[K’
+[1.873s]  1602 |                          uint8_t cur, float& int8_t [01;31m[Ktemp[m[K, int8_t& err) override {
+[1.873s]       |                                                     [01;31m[K^~~~[m[K
+[1.873s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1574:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kbool CANInterfaceWrapper::setCurrent(uint8_t)[m[K’ marked ‘[01m[Koverride[m[K’, but does not override
+[1.873s]  1574 |     bool [01;31m[KsetCurrent[m[K(uint8_t data) override {
+[1.873s]       |          [01;31m[K^~~~~~~~~~[m[K
+[1.873s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1595:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kbool CANInterfaceWrapper::receive(uint32_t)[m[K’ marked ‘[01m[Koverride[m[K’, but does not override
+[1.873s]  1595 |     bool [01;31m[Kreceive[m[K(uint32_t data) override {
+[1.873s]       |          [01;31m[K^~~~~~~[m[K
+[1.873s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1601:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid CANInterfaceWrapper::decodeMotorData(const std::vector<unsigned char, std::allocator<unsigned char> >&, uint64_t, float&, uint8_t, float&)[m[K’ marked ‘[01m[Koverride[m[K’, but does not override
+[1.873s]  1601 |     void [01;31m[KdecodeMotorData[m[K(const std::vector<uint8_t>& data, uint64_t pos, float& vel,
+[1.873s]       |          [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.873s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kbool CANInterfaceWrapper::setCurrent(uint8_t)[m[K’:
+[1.873s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1575:21:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kfloat[m[K’
+[1.873s]  1575 |         uint8_t id, [01;31m[Kfloat[m[K current;
+[1.873s]       |                     [01;31m[K^~~~~[m[K
+[1.879s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1577:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent[m[K’ was not declared in this scope; did you mean ‘[01m[KsetCurrent[m[K’?
+[1.879s]  1577 |             can_.setCurrent(id, [01;31m[Kcurrent[m[K);
+[1.879s]       |                                 [01;31m[K^~~~~~~[m[K
+[1.879s]       |                                 [32m[KsetCurrent[m[K
+[1.880s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kbool CANInterfaceWrapper::receive(uint32_t)[m[K’:
+[1.880s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1597:30:[m[K [01;31m[Kerror: [m[Kdeclaration of ‘[01m[Kstd::vector<unsigned char, std::allocator<unsigned char> > data[m[K’ shadows a parameter
+[1.880s]  1597 |         std::vector<uint8_t> [01;31m[Kdata[m[K;
+[1.880s]       |                              [01;31m[K^~~~[m[K
+[1.880s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1595:27:[m[K [01;36m[Knote: [m[K‘[01m[Kuint32_t data[m[K’ previously declared here
+[1.880s]  1595 |     bool receive([01;36m[Kuint32_t data[m[K) override {
+[1.880s]       |                  [01;36m[K~~~~~~~~~^~~~[m[K
+[1.880s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1598:28:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KCANInterface::receive(uint32_t&)[m[K’
+[1.880s]  1598 |         return [01;31m[Kcan_.receive(id)[m[K;
+[1.880s]       |                [01;31m[K~~~~~~~~~~~~^~~~[m[K
+[1.880s] In file included from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1534[m[K:
+[1.881s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/include/can_interface/caninterface.hpp:21:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool CANInterface::receive(uint32_t&, std::vector<unsigned char, std::allocator<unsigned char> >&)[m[K’
+[1.881s]    21 |     bool [01;36m[Kreceive[m[K(uint32_t& id, std::vector<uint8_t>& data);
+[1.881s]       |          [01;36m[K^~~~~~~[m[K
+[1.881s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/include/can_interface/caninterface.hpp:21:10:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[1.885s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kvoid CANInterfaceWrapper::decodeMotorData(const std::vector<unsigned char, std::allocator<unsigned char> >&, uint64_t, float&, uint8_t, float&)[m[K’:
+[1.885s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1603:70:[m[K [01;31m[Kerror: [m[K‘[01m[Ktemp[m[K’ was not declared in this scope; did you mean ‘[01m[Ktm[m[K’?
+[1.885s]  1603 |                   can_.decodeMotorData(data, pos, vel, cur, [01;31m[Ktemp[m[K, err);
+[1.886s]       |                                                             [01;31m[K^~~~[m[K
+[1.886s]       |                                                             [32m[Ktm[m[K
+[1.889s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1603:76:[m[K [01;31m[Kerror: [m[K‘[01m[Kerr[m[K’ was not declared in this scope; did you mean ‘[01m[Kerf[m[K’?
+[1.889s]  1603 |                   can_.decodeMotorData(data, pos, vel, cur, temp, [01;31m[Kerr[m[K);
+[1.889s]       |                                                                   [01;31m[K^~~[m[K
+[1.889s]       |                                                                   [32m[Kerf[m[K
+[1.889s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K At global scope:
+[1.889s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1613:11:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kfloat MotorData::position[m[K’
+[1.889s]  1613 |     float [01;31m[Kposition[m[K;
+[1.889s]       |           [01;31m[K^~~~~~~~[m[K
+[1.889s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1612:11:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kfloat MotorData::position[m[K’
+[1.889s]  1612 |     float [01;36m[Kposition[m[K = 0.0;  // degrees
+[1.889s]       |           [01;36m[K^~~~~~~~[m[K
+[1.890s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1615:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kvelocity[m[K’ does not name a type
+[1.890s]  1615 |     [01;31m[Kvelocity[m[K = 0.0;  // rpm
+[1.890s]       |     [01;31m[K^~~~~~~~[m[K
+[1.890s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1626:90:[m[K [01;31m[Kerror: [m[K‘[01m[KParameter[m[K’ is not a member of ‘[01m[Krcl_interfaces[m[K’
+[1.890s]  1626 | const std::string& event, const std::vector<rcl_interfaces::[01;31m[KParameter[m[K>& parameters = {}) = 0;
+[1.890s]       |                                                             [01;31m[K^~~~~~~~~[m[K
+[1.890s] 
+[1.890s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1626:90:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+[1.891s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface.hpp:28[m[K,
+[1.891s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:54[m[K,
+[1.891s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[1.891s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[1.891s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[1.891s]                  from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1520[m[K:
+[1.891s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:52:7:[m[K [01;36m[Knote: [m[K  ‘[01m[Krclcpp::Parameter[m[K’
+[1.891s]    52 | class [01;36m[KParameter[m[K
+[1.891s]       |       [01;36m[K^~~~~~~~~[m[K
+[1.891s] In file included from [01m[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__struct.hpp:24[m[K,
+[1.891s]                  from [01m[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_event.hpp:7[m[K,
+[1.891s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:37[m[K,
+[1.891s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[1.891s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[1.891s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[1.891s]                  from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1520[m[K:
+[1.891s] [01m[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__struct.hpp:140:7:[m[K [01;36m[Knote: [m[K  ‘[01m[Krcl_interfaces::msg::Parameter[m[K’
+[1.891s]   140 | using [01;36m[KParameter[m[K =
+[1.891s]       |       [01;36m[K^~~~~~~~~[m[K
+[1.891s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1626:99:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.891s]  1626 | ::string& event, const std::vector<rcl_interfaces::Parameter[01;31m[K>[m[K& parameters = {}) = 0;
+[1.891s]       |                                                             [01;31m[K^[m[K
+[1.891s] 
+[1.891s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1626:99:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[1.892s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1628:52:[m[K [01;31m[Kerror: [m[Kinvalid pure specifier (only ‘[01m[K= 0[m[K’ is allowed) before ‘[01m[K;[m[K’ token
+[1.892s]  1628 |     virtual bool isTargetReached() const = override[01;31m[K;[m[K
+[1.892s]       |                                                    [01;31m[K^[m[K
+[1.892s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1629:50:[m[K [01;31m[Kerror: [m[Kinvalid pure specifier (only ‘[01m[K= 0[m[K’ is allowed) before ‘[01m[K;[m[K’ token
+[1.892s]  1629 |     virtual uint8_t getMotorId() const = override[01;31m[K;[m[K
+[1.892s]       |                                                  [01;31m[K^[m[K
+[1.892s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1631:2:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K=[m[K’ token
+[1.892s]  1631 |  [01;31m[K=[m[K default;
+[1.892s]       |  [01;31m[K^[m[K
+[1.892s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1630:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kvirtual IMotorController::~IMotorController()[m[K’ marked ‘[01m[Koverride[m[K’, but does not override
+[1.892s]  1630 |     virtual [01;31m[K~[m[KIMotorController() override;
+[1.892s]       |             [01;31m[K^[m[K
+[1.895s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[1.895s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[1.895s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[1.895s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[1.895s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[1.895s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[1.895s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[1.896s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[1.896s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[1.896s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[1.896s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[1.896s]                  from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1520[m[K:
+[1.896s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kbool SafetyChecker::check(const MotorData&, const rclcpp::Logger&) const[m[K’:
+[1.896s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1642:96:[m[K [01;31m[Kerror: [m[K‘[01m[Kmotor[m[K’ was not declared in this scope
+[1.896s]  1642 | otor issue! Motor Temp: %d°C, Error: %d", data.temperature, [01;31m[Kmotor[m[K error);
+[1.896s]       |                                                             [01;31m[K^~~~~[m[K
+[1.896s] 
+[1.909s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K At global scope:
+[1.909s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1744:24:[m[K [01;31m[Kerror: [m[K‘[01m[KMotorController[m[K’ has not been declared
+[1.909s]  1744 |     virtual void enter([01;31m[KMotorController[m[K& controller, MotorContext& context) = 0;
+[1.910s]       |                        [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.910s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1745:25:[m[K [01;31m[Kerror: [m[K‘[01m[KMotorController[m[K’ has not been declared
+[1.910s]  1745 |     virtual void update([01;31m[KMotorController[m[K& controller, MotorContext& context, const MotorData& data) = 0;
+[1.910s]       |                         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.910s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1746:23:[m[K [01;31m[Kerror: [m[K‘[01m[KMotorController[m[K’ has not been declared
+[1.910s]  1746 |     virtual void exit([01;31m[KMotorController[m[K& controller, MotorContext& context) = 0;
+[1.910s]       |                       [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.910s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1753:16:[m[K [01;31m[Kerror: [m[K‘[01m[KMotorController[m[K’ has not been declared
+[1.910s]  1753 |     void enter([01;31m[KMotorController[m[K& controller, MotorContext& context) override {
+[1.910s]       |                [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.910s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1757:17:[m[K [01;31m[Kerror: [m[K‘[01m[KMotorController[m[K’ has not been declared
+[1.910s]  1757 |     void update([01;31m[KMotorController[m[K& controller, MotorContext& context, const MotorData& data) override {
+[1.910s]       |                 [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.910s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1764:15:[m[K [01;31m[Kerror: [m[K‘[01m[KMotorController[m[K’ has not been declared
+[1.910s]  1764 |     void exit([01;31m[KMotorController[m[K& controller, MotorContext& context) override {}
+[1.910s]       |               [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.910s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kvirtual void InitializingState::update(int&, MotorContext&, const MotorData&)[m[K’:
+[1.911s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1760:24:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KhandleEvent[m[K’ in ‘[01m[Kcontroller[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[1.911s]  1760 |             controller.[01;31m[KhandleEvent[m[K("ORIGIN_SET");
+[1.911s]       |                        [01;31m[K^~~~~~~~~~~[m[K
+[1.911s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K At global scope:
+[1.911s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1774:16:[m[K [01;31m[Kerror: [m[K‘[01m[KMotorController[m[K’ has not been declared
+[1.911s]  1774 |     void enter([01;31m[KMotorController[m[K& controller, MotorContext& context) override {
+[1.911s]       |                [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.911s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1779:17:[m[K [01;31m[Kerror: [m[K‘[01m[KMotorController[m[K’ has not been declared
+[1.911s]  1779 |     void update([01;31m[KMotorController[m[K& controller, MotorContext& context, const MotorData& data) override {
+[1.911s]       |                 [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.911s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1786:15:[m[K [01;31m[Kerror: [m[K‘[01m[KMotorController[m[K’ has not been declared
+[1.911s]  1786 |     void exit([01;31m[KMotorController[m[K& controller, MotorContext& context) override {}
+[1.911s]       |               [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.911s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kvirtual void HomingState::enter(int&, MotorContext&)[m[K’:
+[1.911s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1776:20:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KsendPositionSpeed[m[K’ in ‘[01m[Kcontroller[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[1.911s]  1776 |         controller.[01;31m[KsendPositionSpeed[m[K(context, 0.0);
+[1.912s]       |                    [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[1.912s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kvirtual void HomingState::update(int&, MotorContext&, const MotorData&)[m[K’:
+[1.912s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1782:24:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KhandleEvent[m[K’ in ‘[01m[Kcontroller[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[1.912s]  1782 |             controller.[01;31m[KhandleEvent[m[K("TARGET_REACHED");
+[1.912s]       |                        [01;31m[K^~~~~~~~~~~[m[K
+[1.912s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K At global scope:
+[1.912s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1796:16:[m[K [01;31m[Kerror: [m[K‘[01m[KMotorController[m[K’ has not been declared
+[1.912s]  1796 |     void enter([01;31m[KMotorController[m[K& controller, MotorContext& context) override {
+[1.912s]       |                [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.912s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1801:17:[m[K [01;31m[Kerror: [m[K‘[01m[KMotorController[m[K’ has not been declared
+[1.912s]  1801 |     void update([01;31m[KMotorController[m[K& controller, MotorContext& context, const MotorData& data) override {
+[1.912s]       |                 [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.912s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1814:15:[m[K [01;31m[Kerror: [m[K‘[01m[KMotorController[m[K’ has not been declared
+[1.912s]  1814 |     void exit([01;31m[KMotorController[m[K& controller, MotorContext& context) override {}
+[1.912s]       |               [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.912s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1818:29:[m[K [01;31m[Kerror: [m[K‘[01m[KMotorController[m[K’ has not been declared
+[1.912s]  1818 |     void checkTargetReached([01;31m[KMotorController[m[K& controller, MotorContext& context,
+[1.912s]       |                             [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.913s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kvirtual void MovingState::update(int&, MotorContext&, const MotorData&)[m[K’:
+[1.913s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1803:24:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KsendPositionSpeed[m[K’ in ‘[01m[Kcontroller[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[1.913s]  1803 |             controller.[01;31m[KsendPositionSpeed[m[K(context, context.target_position);
+[1.913s]       |                        [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[1.913s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1807:24:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KsendPositionSpeed[m[K’ in ‘[01m[Kcontroller[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[1.913s]  1807 |             controller.[01;31m[KsendPositionSpeed[m[K(context, target);
+[1.913s]       |                        [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[1.913s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1810:24:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KhandleEvent[m[K’ in ‘[01m[Kcontroller[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[1.913s]  1810 |             controller.[01;31m[KhandleEvent[m[K("NO_PARAM");
+[1.913s]       |                        [01;31m[K^~~~~~~~~~~[m[K
+[1.913s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kvoid MovingState::checkTargetReached(int&, MotorContext&, const MotorData&, float)[m[K’:
+[1.913s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1829:36:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KlogInfo[m[K’ in ‘[01m[Kcontroller[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[1.913s]  1829 |                         controller.[01;31m[KlogInfo[m[K("All targets reached.");
+[1.913s]       |                                    [01;31m[K^~~~~~~[m[K
+[1.913s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1832:28:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KlogInfo[m[K’ in ‘[01m[Kcontroller[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[1.913s]  1832 |                 controller.[01;31m[KlogInfo[m[K("Reached target position %.2f", target);
+[1.913s]       |                            [01;31m[K^~~~~~~[m[K
+[1.913s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K At global scope:
+[1.913s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1845:16:[m[K [01;31m[Kerror: [m[K‘[01m[KMotorController[m[K’ has not been declared
+[1.913s]  1845 |     void enter([01;31m[KMotorController[m[K& controller, MotorContext& context) override {
+[1.913s]       |                [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.913s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1851:17:[m[K [01;31m[Kerror: [m[K‘[01m[KMotorController[m[K’ has not been declared
+[1.913s]  1851 |     void update([01;31m[KMotorController[m[K& controller, MotorContext& context, const MotorData& data) override {
+[1.913s]       |                 [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.913s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1857:15:[m[K [01;31m[Kerror: [m[K‘[01m[KMotorController[m[K’ has not been declared
+[1.914s]  1857 |     void exit([01;31m[KMotorController[m[K& controller, MotorContext& context) override {}
+[1.914s]       |               [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.914s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kvirtual void PausedState::enter(int&, MotorContext&)[m[K’:
+[1.914s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1848:20:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KsendPositionSpeed[m[K’ in ‘[01m[Kcontroller[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[1.914s]  1848 |         controller.[01;31m[KsendPositionSpeed[m[K(context, context.pause_position);
+[1.914s]       |                    [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[1.914s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K At global scope:
+[1.914s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1866:16:[m[K [01;31m[Kerror: [m[K‘[01m[KMotorController[m[K’ has not been declared
+[1.914s]  1866 |     void enter([01;31m[KMotorController[m[K& controller, MotorContext& context) override {
+[1.914s]       |                [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.914s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1871:17:[m[K [01;31m[Kerror: [m[K‘[01m[KMotorController[m[K’ has not been declared
+[1.914s]  1871 |     void update([01;31m[KMotorController[m[K& controller, MotorContext& context, const MotorData& data) override {
+[1.914s]       |                 [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.914s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1875:15:[m[K [01;31m[Kerror: [m[K‘[01m[KMotorController[m[K’ has not been declared
+[1.914s]  1875 |     void exit([01;31m[KMotorController[m[K& controller, MotorContext& context) override {}
+[1.914s]       |               [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.914s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kvirtual void StoppedState::enter(int&, MotorContext&)[m[K’:
+[1.914s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1868:20:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KsendPositionSpeed[m[K’ in ‘[01m[Kcontroller[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[1.914s]  1868 |         controller.[01;31m[KsendPositionSpeed[m[K(context, context.last_data.position);
+[1.914s]       |                    [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[1.914s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kvirtual void StoppedState::update(int&, MotorContext&, const MotorData&)[m[K’:
+[1.914s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1872:20:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KsendPositionSpeed[m[K’ in ‘[01m[Kcontroller[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[1.914s]  1872 |         controller.[01;31m[KsendPositionSpeed[m[K(context, data.position);
+[1.914s]       |                    [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[1.914s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K At global scope:
+[1.914s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1881:16:[m[K [01;31m[Kerror: [m[K‘[01m[KMotorController[m[K’ has not been declared
+[1.915s]  1881 |     void enter([01;31m[KMotorController[m[K& controller, MotorContext& context) override {
+[1.915s]       |                [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.915s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1886:17:[m[K [01;31m[Kerror: [m[K‘[01m[KMotorController[m[K’ has not been declared
+[1.915s]  1886 |     void update([01;31m[KMotorController[m[K& controller, MotorContext& context, const MotorData& data) override {
+[1.915s]       |                 [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.915s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1892:15:[m[K [01;31m[Kerror: [m[K‘[01m[KMotorController[m[K’ has not been declared
+[1.915s]  1892 |     void exit([01;31m[KMotorController[m[K& controller, MotorContext& context) override {}
+[1.915s]       |               [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.915s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kvirtual void ErrorState::enter(int&, MotorContext&)[m[K’:
+[1.915s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1883:20:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KsendPositionSpeed[m[K’ in ‘[01m[Kcontroller[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[1.915s]  1883 |         controller.[01;31m[KsendPositionSpeed[m[K(context, context.last_data.position);
+[1.915s]       |                    [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[1.915s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kvirtual void ErrorState::update(int&, MotorContext&, const MotorData&)[m[K’:
+[1.915s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1887:24:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KisSafe[m[K’ in ‘[01m[Kcontroller[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[1.915s]  1887 |         if (controller.[01;31m[KisSafe[m[K(data)) {
+[1.915s]       |                        [01;31m[K^~~~~~[m[K
+[1.915s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1888:24:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KhandleEvent[m[K’ in ‘[01m[Kcontroller[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[1.915s]  1888 |             controller.[01;31m[KhandleEvent[m[K("ORIGIN_SET");
+[1.915s]       |                        [01;31m[K^~~~~~~~~~~[m[K
+[1.925s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K At global scope:
+[1.925s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1921:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid MotorController::handleEvent(const string&, const std::vector<rcl_interfaces::msg::Parameter_<std::allocator<void> >, std::allocator<rcl_interfaces::msg::Parameter_<std::allocator<void> > > >&)[m[K’ marked ‘[01m[Koverride[m[K’, but does not override
+[1.925s]  1921 |     void [01;31m[KhandleEvent[m[K(const std::string& event, const std::vector<rcl_interfaces::msg::Parameter>& parameters = {}) override {
+[1.925s]       |          [01;31m[K^~~~~~~~~~~[m[K
+[1.935s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kvirtual void MotorController::update(const MotorData&)[m[K’:
+[1.936s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1917:32:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[KMotorController[m[K’ to ‘[01m[Kint&[m[K’
+[1.936s]  1917 |         current_state_->update([01;31m[K*this[m[K, context_, data);
+[1.936s]       |                                [01;31m[K^~~~~[m[K
+[1.936s]       |                                [01;31m[K|[m[K
+[1.936s]       |                                [01;31m[KMotorController[m[K
+[1.936s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1745:42:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvirtual void MotorState::update(int&, MotorContext&, const MotorData&)[m[K’
+[1.936s]  1745 |     virtual void update([01;36m[KMotorController& controller[m[K, MotorContext& context, const MotorData& data) = 0;
+[1.936s]       |                         [01;36m[K~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[1.941s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kvoid MotorController::setState(std::unique_ptr<MotorState>)[m[K’:
+[1.941s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1990:34:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[KMotorController[m[K’ to ‘[01m[Kint&[m[K’
+[1.941s]  1990 |             current_state_->exit([01;31m[K*this[m[K, context_);
+[1.941s]       |                                  [01;31m[K^~~~~[m[K
+[1.941s]       |                                  [01;31m[K|[m[K
+[1.941s]       |                                  [01;31m[KMotorController[m[K
+[1.941s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1746:40:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvirtual void MotorState::exit(int&, MotorContext&)[m[K’
+[1.941s]  1746 |     virtual void exit([01;36m[KMotorController& controller[m[K, MotorContext& context) = 0;
+[1.941s]       |                       [01;36m[K~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[1.941s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1994:31:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[KMotorController[m[K’ to ‘[01m[Kint&[m[K’
+[1.942s]  1994 |         current_state_->enter([01;31m[K*this[m[K, context_);
+[1.942s]       |                               [01;31m[K^~~~~[m[K
+[1.942s]       |                               [01;31m[K|[m[K
+[1.942s]       |                               [01;31m[KMotorController[m[K
+[1.942s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1744:41:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvirtual void MotorState::enter(int&, MotorContext&)[m[K’
+[1.942s]  1744 |     virtual void enter([01;36m[KMotorController& controller[m[K, MotorContext& context) = 0;
+[1.942s]       |                        [01;36m[K~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[2.152s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kvoid MotorControlNode::setParametersCallback(std::shared_ptr<rcl_interfaces::srv::SetParameters_Request_<std::allocator<void> > >, std::shared_ptr<rcl_interfaces::srv::SetParameters_Response_<std::allocator<void> > >, size_t)[m[K’:
+[2.152s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:2443:84:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Krcl_interfaces::srv::SetParameters_Request_<std::allocator<void> >::_parameters_type[m[K’ {aka ‘[01m[Kstd::vector<rcl_interfaces::msg::Parameter_<std::allocator<void> >, std::allocator<rcl_interfaces::msg::Parameter_<std::allocator<void> > > >[m[K’} to ‘[01m[Kconst int&[m[K’
+[2.153s]  2443 | ntroller_index]->handleEvent("PARAMETERS_UPDATED", [01;31m[Krequest->parameters[m[K);
+[2.153s]       |                                                    [01;31m[K~~~~~~~~~^~~~~~~~~~[m[K
+[2.153s]       |                                                             [01;31m[K|[m[K
+[2.153s]       |                                                             [01;31m[Krcl_interfaces::srv::SetParameters_Request_<std::allocator<void> >::_parameters_type {aka std::vector<rcl_interfaces::msg::Parameter_<std::allocator<void> >, std::allocator<rcl_interfaces::msg::Parameter_<std::allocator<void> > > >}[m[K
+[2.153s] 
+[2.153s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1626:102:[m[K [01;36m[Knote: [m[K  initializing argument 2 of ‘[01m[Kvirtual void IMotorController::handleEvent(const string&, const int&)[m[K’
+[2.153s]  1626 | tring& event, [01;36m[Kconst std::vector<rcl_interfaces::Parameter>& parameters = {}[m[K) = 0;
+[2.153s]       |               [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~[m[K
+[2.153s] 
+[2.269s] In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+[2.269s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[2.269s]                  from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1520[m[K:
+[2.269s] /usr/include/c++/11/bits/unique_ptr.h: In instantiation of ‘[01m[Ktypename std::_MakeUniq<_Tp>::__single_object std::make_unique(_Args&& ...) [with _Tp = MotorController; _Args = {int, std::shared_ptr<ICANInterface>&, MotorControlNode*, const char (&)[21]}; typename std::_MakeUniq<_Tp>::__single_object = std::unique_ptr<MotorController, std::default_delete<MotorController> >][m[K’:
+[2.269s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:2369:65:[m[K   required from here
+[2.269s] [01m[K/usr/include/c++/11/bits/unique_ptr.h:962:30:[m[K [01;31m[Kerror: [m[Kinvalid new-expression of abstract class type ‘[01m[KMotorController[m[K’
+[2.270s]   962 |     { return unique_ptr<_Tp>([01;31m[Knew _Tp(std::forward<_Args>(__args)...)[m[K); }
+[2.270s]       |                              [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.270s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1897:7:[m[K [01;36m[Knote: [m[K  because the following virtual functions are pure within ‘[01m[KMotorController[m[K’:
+[2.270s]  1897 | class [01;36m[KMotorController[m[K : public IMotorController {
+[2.270s]       |       [01;36m[K^~~~~~~~~~~~~~~[m[K
+[2.270s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1626:18:[m[K [01;36m[Knote: [m[K    ‘[01m[Kvirtual void IMotorController::handleEvent(const string&, const int&)[m[K’
+[2.270s]  1626 |     virtual void [01;36m[KhandleEvent[m[K(const std::string& event, const std::vector<rcl_interfaces::Parameter>& parameters = {}) = 0;
+[2.270s]       |                  [01;36m[K^~~~~~~~~~~[m[K
+[3.362s] In file included from [01m[K/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:33[m[K,
+[3.362s]                  from [01m[K/usr/include/c++/11/bits/allocator.h:46[m[K,
+[3.362s]                  from [01m[K/usr/include/c++/11/memory:64[m[K,
+[3.363s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[3.363s]                  from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1520[m[K:
+[3.363s] /usr/include/c++/11/ext/new_allocator.h: In instantiation of ‘[01m[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = CANInterfaceWrapper; _Args = {const char (&)[5]}; _Tp = CANInterfaceWrapper][m[K’:
+[3.363s] [01m[K/usr/include/c++/11/bits/alloc_traits.h:516:17:[m[K   required from ‘[01m[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = CANInterfaceWrapper; _Args = {const char (&)[5]}; _Tp = CANInterfaceWrapper; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<CANInterfaceWrapper>][m[K’
+[3.363s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:519:39:[m[K   required from ‘[01m[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {const char (&)[5]}; _Tp = CANInterfaceWrapper; _Alloc = std::allocator<CANInterfaceWrapper>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[3.363s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:650:16:[m[K   required from ‘[01m[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = CANInterfaceWrapper; _Alloc = std::allocator<CANInterfaceWrapper>; _Args = {const char (&)[5]}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[3.363s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1342:14:[m[K   required from ‘[01m[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<CANInterfaceWrapper>; _Args = {const char (&)[5]}; _Tp = CANInterfaceWrapper; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[3.363s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:409:59:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<CANInterfaceWrapper>; _Args = {const char (&)[5]}; _Tp = CANInterfaceWrapper][m[K’
+[3.363s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:862:14:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = CANInterfaceWrapper; _Alloc = std::allocator<CANInterfaceWrapper>; _Args = {const char (&)[5]}][m[K’
+[3.363s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:878:39:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = CANInterfaceWrapper; _Args = {const char (&)[5]}][m[K’
+[3.363s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:2365:53:[m[K   required from here
+[3.363s] [01m[K/usr/include/c++/11/ext/new_allocator.h:162:11:[m[K [01;31m[Kerror: [m[Kinvalid new-expression of abstract class type ‘[01m[KCANInterfaceWrapper[m[K’
+[3.363s]   162 |         { [01;31m[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)[m[K; }
+[3.363s]       |           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.364s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1550:7:[m[K [01;36m[Knote: [m[K  because the following virtual functions are pure within ‘[01m[KCANInterfaceWrapper[m[K’:
+[3.364s]  1550 | class [01;36m[KCANInterfaceWrapper[m[K : public ICANInterface {
+[3.364s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[3.364s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1541:18:[m[K [01;36m[Knote: [m[K    ‘[01m[Kvirtual bool ICANInterface::setCurrent(uint8_t, float)[m[K’
+[3.364s]  1541 |     virtual bool [01;36m[KsetCurrent[m[K(uint8_t id, float current) = 0;
+[3.364s]       |                  [01;36m[K^~~~~~~~~~[m[K
+[3.364s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1543:18:[m[K [01;36m[Knote: [m[K    ‘[01m[Kvirtual bool ICANInterface::receive(uint32_t&, std::vector<unsigned char, std::allocator<unsigned char> >&)[m[K’
+[3.364s]  1543 |     virtual bool [01;36m[Kreceive[m[K(uint32_t& id, std::vector<uint8_t>& data) = 0;
+[3.364s]       |                  [01;36m[K^~~~~~~[m[K
+[3.364s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1544:18:[m[K [01;36m[Knote: [m[K    ‘[01m[Kvirtual void ICANInterface::decodeMotorData(const std::vector<unsigned char, std::allocator<unsigned char> >&, float&, float&, float&, int8_t, int8_t&)[m[K’
+[3.364s]  1544 |     virtual void [01;36m[KdecodeMotorData[m[K(const std::vector<uint8_t>& data, float& pos, float& vel,
+[3.364s]       |                  [01;36m[K^~~~~~~~~~~~~~~[m[K
+[4.650s] gmake[2]: *** [CMakeFiles/ControlMotor.dir/build.make:76: CMakeFiles/ControlMotor.dir/src/ControlMotor.cpp.o] Error 1
+[4.650s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ControlMotor.dir/all] Error 2
+[4.651s] gmake: *** [Makefile:146: all] Error 2
+[4.652s] Invoked command in '/home/ubuntu/Desktop/AK8064_ws_Jun/build/motor_driver' returned '2': AMENT_PREFIX_PATH=/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface:/opt/ros/humble LD_LIBRARY_PATH=/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/ubuntu/Desktop/AK8064_ws_Jun/build/motor_driver -- -j8 -l8
