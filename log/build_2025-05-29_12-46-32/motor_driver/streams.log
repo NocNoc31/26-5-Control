@@ -1,0 +1,46 @@
+[0.006s] Invoking command in '/home/ubuntu/Desktop/AK8064_ws_Jun/build/motor_driver': AMENT_PREFIX_PATH=/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface:/opt/ros/humble LD_LIBRARY_PATH=/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/ubuntu/Desktop/AK8064_ws_Jun/build/motor_driver -- -j8 -l8
+[0.039s] [35m[1mConsolidate compiler generated dependencies of target ControlMotor[0m
+[0.057s] [ 50%] [32mBuilding CXX object CMakeFiles/ControlMotor.dir/src/ControlMotor.cpp.o[0m
+[1.923s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kvoid MotorController::handlePaused(const MotorData&)[m[K’:
+[1.923s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1980:17:[m[K [01;31m[Kerror: [m[Kcapture of non-variable ‘[01m[KMotorController::can_[m[K’
+[1.923s]  1980 |                 [01;31m[Kcan_[m[K->setPositionSpeed(motor_id_, data.position, static_cast<int>(speed_/2), static_cast<int>(accel_/2));
+[1.923s]       |                 [01;31m[K^~~~[m[K
+[1.923s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:2226:36:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::shared_ptr<ICANInterface> MotorController::can_[m[K’ declared here
+[1.923s]  2226 |     std::shared_ptr<ICANInterface> [01;36m[Kcan_[m[K;
+[1.923s]       |                                    [01;36m[K^~~~[m[K
+[1.923s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1980:21:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ before ‘[01m[K->[m[K’ token
+[1.923s]  1980 |                 can_[01;31m[K->[m[KsetPositionSpeed(motor_id_, data.position, static_cast<int>(speed_/2), static_cast<int>(accel_/2));
+[1.923s]       |                     [01;31m[K^~[m[K
+[1.923s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1980:21:[m[K [01;31m[Kerror: [m[Kexpected identifier before ‘[01m[K->[m[K’ token
+[1.924s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1980:121:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K][m[K’ before ‘[01m[K;[m[K’ token
+[1.924s]  1980 | (speed_/2), static_cast<int>(accel_/2))[01;31m[K;[m[K
+[1.924s]       |                                        [01;31m[K^[m[K
+[1.924s] 
+[1.924s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In lambda function:
+[1.924s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1980:121:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[K;[m[K’ token
+[1.924s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kvoid MotorController::handlePaused(const MotorData&)[m[K’:
+[1.924s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1982:13:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K][m[K’ token
+[1.924s]  1982 |             [01;31m[K][m[K
+[1.924s]       |             [01;31m[K^[m[K
+[1.924s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1993:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kfmt[m[K’ has not been declared
+[1.924s]  1993 |             auto response = [01;31m[Kfmt[m[K::format("Motor 0x{:02X}: Failed to maintain pause position: {}", motor_id_, e.what());
+[1.924s]       |                             [01;31m[K^~~[m[K
+[1.924s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kvoid MotorController::handleError(const MotorData&)[m[K’:
+[1.924s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:2006:22:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KMotorController::handleStopped()[m[K’
+[1.924s]  2006 |         [01;31m[KhandleStopped()[m[K;
+[1.924s]       |         [01;31m[K~~~~~~~~~~~~~^~[m[K
+[1.924s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:2001:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid MotorController::handleStopped(const MotorData&)[m[K’
+[1.925s]  2001 |     void [01;36m[KhandleStopped[m[K(const MotorData& data) {
+[1.925s]       |          [01;36m[K^~~~~~~~~~~~~[m[K
+[1.925s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:2001:10:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[1.925s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:2013:25:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KMotorController::handleHoming()[m[K’
+[1.925s]  2013 |             [01;31m[KhandleHoming()[m[K;
+[1.925s]       |             [01;31m[K~~~~~~~~~~~~^~[m[K
+[1.925s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1923:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid MotorController::handleHoming(const MotorData&)[m[K’
+[1.925s]  1923 |     void [01;36m[KhandleHoming[m[K(const MotorData& data) {
+[1.925s]       |          [01;36m[K^~~~~~~~~~~~[m[K
+[1.925s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1923:10:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[4.423s] gmake[2]: *** [CMakeFiles/ControlMotor.dir/build.make:76: CMakeFiles/ControlMotor.dir/src/ControlMotor.cpp.o] Error 1
+[4.424s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ControlMotor.dir/all] Error 2
+[4.424s] gmake: *** [Makefile:146: all] Error 2
+[4.425s] Invoked command in '/home/ubuntu/Desktop/AK8064_ws_Jun/build/motor_driver' returned '2': AMENT_PREFIX_PATH=/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface:/opt/ros/humble LD_LIBRARY_PATH=/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/ubuntu/Desktop/AK8064_ws_Jun/build/motor_driver -- -j8 -l8

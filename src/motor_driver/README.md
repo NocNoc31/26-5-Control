@@ -80,13 +80,14 @@ Ví dụ 3: Chỉ target_positions:
 motor1_control_node:ros2 service call /motor1_control_node/set_parameters rcl_interfaces/srv/SetParameters "parameters: [{name: 'target_positions', value: {type: 9, double_array_value: [10.0, 20.0, 30.0]}}]"
 
 
-motor2_control_node:ros2 service call /motor2_control_node/set_parameters rcl_interfaces/srv/SetParameters "parameters: [{name: 'target_positions', value: {type: 9, double_array_value: [15.0, 45.0, 75.0, 0.0]}}]"
+motor2_control_node:ros2 service call /motor1_control_node/set_parameters rcl_interfaces/srv/SetParameters "parameters: [{name: 'target_positions', value: {type: 9, double_array_value: [0.0]}}]"
 
 ros2 service call /motor2_control_node/set_parameters rcl_interfaces/srv/SetParameters "parameters: [{name: 'repeat', value: {type: 2, integer_value: 2}}]"
 
 ros2 service call /motor2_control_node/set_parameters rcl_interfaces/srv/SetParameters "{parameters: [
     {name: 'target_positions', value: {type: 9, double_array_value: [0.0, 45.0, 90.0]}},
-    {name: 'repeat', value: {type: 2, integer_value: 2}}
+    {name: 'repeat', value: {type: 2, integer_value: 2}},
+    {name: 'accel', value: {type: 3, double_value: 2000}}
 ]}"
 
 
