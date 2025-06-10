@@ -1,2 +1,0 @@
-[console_scripts]
-keyboard_control_node = keyboard_control.keyboard_control_node:main

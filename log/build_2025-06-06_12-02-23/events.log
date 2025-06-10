@@ -1,0 +1,263 @@
+[0.000000] (-) TimerEvent: {}
+[0.001289] (-) JobUnselected: {'identifier': 'can_interface'}
+[0.001808] (motor_driver) JobQueued: {'identifier': 'motor_driver', 'dependencies': OrderedDict([('can_interface', '/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface')])}
+[0.002061] (motor_driver) JobStarted: {'identifier': 'motor_driver'}
+[0.021055] (motor_driver) JobProgress: {'identifier': 'motor_driver', 'progress': 'cmake'}
+[0.022157] (motor_driver) JobProgress: {'identifier': 'motor_driver', 'progress': 'build'}
+[0.023437] (motor_driver) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/Desktop/AK8064_ws_Jun/build/motor_driver', '--', '-j8', '-l8'], 'cwd': '/home/ubuntu/Desktop/AK8064_ws_Jun/build/motor_driver', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'ubuntu'), ('LC_TIME', 'vi_VN'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'vi_VN'), ('MANAGERPID', '1748'), ('SYSTEMD_EXEC_PID', '1875'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4676'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ubuntu/Desktop/AK8064_ws_Jun/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu'), ('JOURNAL_STREAM', '8:16697'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ubuntu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ubuntu/.local/share/pnpm:/opt/ros/humble/bin:/home/ubuntu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu-Aspire-A315-58:@/tmp/.ICE-unix/1852,unix/ubuntu-Aspire-A315-58:/tmp/.ICE-unix/1852'), ('INVOCATION_ID', '7d7060cd16124e7ba66d1e18a2ebcb65'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'vi_VN'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'vi_VN'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.30QN72'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ubuntu/Desktop/AK8064_ws_Jun/install/motor_driver:/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'vi_VN'), ('TERMINATOR_UUID', 'urn:uuid:72820f0c-10f6-4258-9008-919d91d49f03'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'vi_VN'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'vi_VN'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ubuntu/Desktop/AK8064_ws_Jun/build/motor_driver'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'vi_VN'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('PNPM_HOME', '/home/ubuntu/.local/share/pnpm'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface:/home/ubuntu/Desktop/AK8064_ws_Jun/install/motor_driver:/opt/ros/humble')]), 'shell': False}
+[0.099248] (-) TimerEvent: {}
+[0.137137] (motor_driver) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/ControlMotor.dir/src/ControlMotor.cpp.o\x1b[0m\n'}
+[0.199388] (-) TimerEvent: {}
+[0.300175] (-) TimerEvent: {}
+[0.401002] (-) TimerEvent: {}
+[0.501425] (-) TimerEvent: {}
+[0.601836] (-) TimerEvent: {}
+[0.702355] (-) TimerEvent: {}
+[0.802762] (-) TimerEvent: {}
+[0.903212] (-) TimerEvent: {}
+[1.003626] (-) TimerEvent: {}
+[1.104086] (-) TimerEvent: {}
+[1.204528] (-) TimerEvent: {}
+[1.305009] (-) TimerEvent: {}
+[1.405513] (-) TimerEvent: {}
+[1.508006] (-) TimerEvent: {}
+[1.608539] (-) TimerEvent: {}
+[1.709034] (-) TimerEvent: {}
+[1.809528] (-) TimerEvent: {}
+[1.910015] (-) TimerEvent: {}
+[2.010539] (-) TimerEvent: {}
+[2.111187] (-) TimerEvent: {}
+[2.211722] (-) TimerEvent: {}
+[2.312198] (-) TimerEvent: {}
+[2.412647] (-) TimerEvent: {}
+[2.513093] (-) TimerEvent: {}
+[2.613550] (-) TimerEvent: {}
+[2.713978] (-) TimerEvent: {}
+[2.814452] (-) TimerEvent: {}
+[2.914988] (-) TimerEvent: {}
+[3.015432] (-) TimerEvent: {}
+[3.115968] (-) TimerEvent: {}
+[3.216468] (-) TimerEvent: {}
+[3.316874] (-) TimerEvent: {}
+[3.417399] (-) TimerEvent: {}
+[3.517981] (-) TimerEvent: {}
+[3.618485] (-) TimerEvent: {}
+[3.719026] (-) TimerEvent: {}
+[3.819512] (-) TimerEvent: {}
+[3.920142] (-) TimerEvent: {}
+[4.020704] (-) TimerEvent: {}
+[4.121216] (-) TimerEvent: {}
+[4.221802] (-) TimerEvent: {}
+[4.322405] (-) TimerEvent: {}
+[4.422960] (-) TimerEvent: {}
+[4.523503] (-) TimerEvent: {}
+[4.624036] (-) TimerEvent: {}
+[4.724552] (-) TimerEvent: {}
+[4.825072] (-) TimerEvent: {}
+[4.925592] (-) TimerEvent: {}
+[5.026139] (-) TimerEvent: {}
+[5.126753] (-) TimerEvent: {}
+[5.227513] (-) TimerEvent: {}
+[5.328027] (-) TimerEvent: {}
+[5.428594] (-) TimerEvent: {}
+[5.529068] (-) TimerEvent: {}
+[5.629560] (-) TimerEvent: {}
+[5.730084] (-) TimerEvent: {}
+[5.830654] (-) TimerEvent: {}
+[5.931220] (-) TimerEvent: {}
+[6.031785] (-) TimerEvent: {}
+[6.132304] (-) TimerEvent: {}
+[6.232818] (-) TimerEvent: {}
+[6.333263] (-) TimerEvent: {}
+[6.433768] (-) TimerEvent: {}
+[6.534283] (-) TimerEvent: {}
+[6.634823] (-) TimerEvent: {}
+[6.735279] (-) TimerEvent: {}
+[6.835890] (-) TimerEvent: {}
+[6.936441] (-) TimerEvent: {}
+[7.036990] (-) TimerEvent: {}
+[7.137571] (-) TimerEvent: {}
+[7.238261] (-) TimerEvent: {}
+[7.338939] (-) TimerEvent: {}
+[7.439480] (-) TimerEvent: {}
+[7.540011] (-) TimerEvent: {}
+[7.640441] (-) TimerEvent: {}
+[7.740981] (-) TimerEvent: {}
+[7.841541] (-) TimerEvent: {}
+[7.942220] (-) TimerEvent: {}
+[8.042853] (-) TimerEvent: {}
+[8.143326] (-) TimerEvent: {}
+[8.243926] (-) TimerEvent: {}
+[8.344557] (-) TimerEvent: {}
+[8.445227] (-) TimerEvent: {}
+[8.545716] (-) TimerEvent: {}
+[8.646207] (-) TimerEvent: {}
+[8.746639] (-) TimerEvent: {}
+[8.847227] (-) TimerEvent: {}
+[8.947828] (-) TimerEvent: {}
+[9.048428] (-) TimerEvent: {}
+[9.149023] (-) TimerEvent: {}
+[9.249536] (-) TimerEvent: {}
+[9.350051] (-) TimerEvent: {}
+[9.450573] (-) TimerEvent: {}
+[9.550999] (-) TimerEvent: {}
+[9.651576] (-) TimerEvent: {}
+[9.752189] (-) TimerEvent: {}
+[9.852630] (-) TimerEvent: {}
+[9.953098] (-) TimerEvent: {}
+[10.053703] (-) TimerEvent: {}
+[10.154323] (-) TimerEvent: {}
+[10.254973] (-) TimerEvent: {}
+[10.355565] (-) TimerEvent: {}
+[10.456224] (-) TimerEvent: {}
+[10.556822] (-) TimerEvent: {}
+[10.657286] (-) TimerEvent: {}
+[10.757843] (-) TimerEvent: {}
+[10.858500] (-) TimerEvent: {}
+[10.959245] (-) TimerEvent: {}
+[11.059975] (-) TimerEvent: {}
+[11.160480] (-) TimerEvent: {}
+[11.261090] (-) TimerEvent: {}
+[11.361788] (-) TimerEvent: {}
+[11.462444] (-) TimerEvent: {}
+[11.563090] (-) TimerEvent: {}
+[11.663690] (-) TimerEvent: {}
+[11.764234] (-) TimerEvent: {}
+[11.864820] (-) TimerEvent: {}
+[11.965471] (-) TimerEvent: {}
+[12.066007] (-) TimerEvent: {}
+[12.166529] (-) TimerEvent: {}
+[12.267135] (-) TimerEvent: {}
+[12.367741] (-) TimerEvent: {}
+[12.468248] (-) TimerEvent: {}
+[12.568798] (-) TimerEvent: {}
+[12.669302] (-) TimerEvent: {}
+[12.769887] (-) TimerEvent: {}
+[12.870298] (-) TimerEvent: {}
+[12.970812] (-) TimerEvent: {}
+[13.071393] (-) TimerEvent: {}
+[13.171972] (-) TimerEvent: {}
+[13.272438] (-) TimerEvent: {}
+[13.372911] (-) TimerEvent: {}
+[13.473361] (-) TimerEvent: {}
+[13.573820] (-) TimerEvent: {}
+[13.674312] (-) TimerEvent: {}
+[13.774781] (-) TimerEvent: {}
+[13.875300] (-) TimerEvent: {}
+[13.975821] (-) TimerEvent: {}
+[14.076259] (-) TimerEvent: {}
+[14.176742] (-) TimerEvent: {}
+[14.277267] (-) TimerEvent: {}
+[14.377774] (-) TimerEvent: {}
+[14.478295] (-) TimerEvent: {}
+[14.578743] (-) TimerEvent: {}
+[14.679318] (-) TimerEvent: {}
+[14.779835] (-) TimerEvent: {}
+[14.880391] (-) TimerEvent: {}
+[14.982007] (-) TimerEvent: {}
+[15.082596] (-) TimerEvent: {}
+[15.183090] (-) TimerEvent: {}
+[15.283573] (-) TimerEvent: {}
+[15.384095] (-) TimerEvent: {}
+[15.484599] (-) TimerEvent: {}
+[15.585128] (-) TimerEvent: {}
+[15.685623] (-) TimerEvent: {}
+[15.786099] (-) TimerEvent: {}
+[15.886620] (-) TimerEvent: {}
+[15.987113] (-) TimerEvent: {}
+[16.087559] (-) TimerEvent: {}
+[16.188047] (-) TimerEvent: {}
+[16.288547] (-) TimerEvent: {}
+[16.389093] (-) TimerEvent: {}
+[16.489628] (-) TimerEvent: {}
+[16.590106] (-) TimerEvent: {}
+[16.690612] (-) TimerEvent: {}
+[16.791117] (-) TimerEvent: {}
+[16.891547] (-) TimerEvent: {}
+[16.992034] (-) TimerEvent: {}
+[17.092538] (-) TimerEvent: {}
+[17.193044] (-) TimerEvent: {}
+[17.293548] (-) TimerEvent: {}
+[17.394123] (-) TimerEvent: {}
+[17.494648] (-) TimerEvent: {}
+[17.595166] (-) TimerEvent: {}
+[17.695712] (-) TimerEvent: {}
+[17.796239] (-) TimerEvent: {}
+[17.896710] (-) TimerEvent: {}
+[17.997230] (-) TimerEvent: {}
+[18.097770] (-) TimerEvent: {}
+[18.198323] (-) TimerEvent: {}
+[18.298816] (-) TimerEvent: {}
+[18.399328] (-) TimerEvent: {}
+[18.499846] (-) TimerEvent: {}
+[18.600359] (-) TimerEvent: {}
+[18.700889] (-) TimerEvent: {}
+[18.801382] (-) TimerEvent: {}
+[18.901860] (-) TimerEvent: {}
+[19.002240] (-) TimerEvent: {}
+[19.102737] (-) TimerEvent: {}
+[19.203269] (-) TimerEvent: {}
+[19.303774] (-) TimerEvent: {}
+[19.404196] (-) TimerEvent: {}
+[19.504658] (-) TimerEvent: {}
+[19.605152] (-) TimerEvent: {}
+[19.705639] (-) TimerEvent: {}
+[19.806163] (-) TimerEvent: {}
+[19.906569] (-) TimerEvent: {}
+[20.007037] (-) TimerEvent: {}
+[20.107643] (-) TimerEvent: {}
+[20.208151] (-) TimerEvent: {}
+[20.308705] (-) TimerEvent: {}
+[20.409301] (-) TimerEvent: {}
+[20.509774] (-) TimerEvent: {}
+[20.610231] (-) TimerEvent: {}
+[20.710783] (-) TimerEvent: {}
+[20.811416] (-) TimerEvent: {}
+[20.912018] (-) TimerEvent: {}
+[21.012523] (-) TimerEvent: {}
+[21.113084] (-) TimerEvent: {}
+[21.213593] (-) TimerEvent: {}
+[21.258883] (motor_driver) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable ControlMotor\x1b[0m\n'}
+[21.313825] (-) TimerEvent: {}
+[21.414357] (-) TimerEvent: {}
+[21.514885] (-) TimerEvent: {}
+[21.615319] (-) TimerEvent: {}
+[21.715736] (-) TimerEvent: {}
+[21.816287] (-) TimerEvent: {}
+[21.916944] (-) TimerEvent: {}
+[22.017482] (-) TimerEvent: {}
+[22.118101] (-) TimerEvent: {}
+[22.218759] (-) TimerEvent: {}
+[22.319320] (-) TimerEvent: {}
+[22.408795] (motor_driver) StdoutLine: {'line': b'[100%] Built target ControlMotor\n'}
+[22.419445] (-) TimerEvent: {}
+[22.451523] (motor_driver) CommandEnded: {'returncode': 0}
+[22.452828] (motor_driver) JobProgress: {'identifier': 'motor_driver', 'progress': 'install'}
+[22.467985] (motor_driver) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/Desktop/AK8064_ws_Jun/build/motor_driver'], 'cwd': '/home/ubuntu/Desktop/AK8064_ws_Jun/build/motor_driver', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'ubuntu'), ('LC_TIME', 'vi_VN'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'vi_VN'), ('MANAGERPID', '1748'), ('SYSTEMD_EXEC_PID', '1875'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4676'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ubuntu/Desktop/AK8064_ws_Jun/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu'), ('JOURNAL_STREAM', '8:16697'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ubuntu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ubuntu/.local/share/pnpm:/opt/ros/humble/bin:/home/ubuntu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu-Aspire-A315-58:@/tmp/.ICE-unix/1852,unix/ubuntu-Aspire-A315-58:/tmp/.ICE-unix/1852'), ('INVOCATION_ID', '7d7060cd16124e7ba66d1e18a2ebcb65'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'vi_VN'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'vi_VN'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.30QN72'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ubuntu/Desktop/AK8064_ws_Jun/install/motor_driver:/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'vi_VN'), ('TERMINATOR_UUID', 'urn:uuid:72820f0c-10f6-4258-9008-919d91d49f03'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'vi_VN'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'vi_VN'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ubuntu/Desktop/AK8064_ws_Jun/build/motor_driver'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'vi_VN'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('PNPM_HOME', '/home/ubuntu/.local/share/pnpm'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface:/home/ubuntu/Desktop/AK8064_ws_Jun/install/motor_driver:/opt/ros/humble')]), 'shell': False}
+[22.482073] (motor_driver) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[22.482525] (motor_driver) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/AK8064_ws_Jun/install/motor_driver/lib/motor_driver/ControlMotor\n'}
+[22.493233] (motor_driver) StdoutLine: {'line': b'-- Set runtime path of "/home/ubuntu/Desktop/AK8064_ws_Jun/install/motor_driver/lib/motor_driver/ControlMotor" to ""\n'}
+[22.493594] (motor_driver) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/motor_driver/share/motor_driver//config\n'}
+[22.493743] (motor_driver) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/motor_driver/share/motor_driver//config/exercise1_params.yaml\n'}
+[22.493870] (motor_driver) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/motor_driver/share/motor_driver//config/exercise2_params.yaml\n'}
+[22.494131] (motor_driver) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/motor_driver/share/motor_driver/config/exercise1_params.yaml\n'}
+[22.494292] (motor_driver) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/motor_driver/share/motor_driver/config/exercise2_params.yaml\n'}
+[22.494408] (motor_driver) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/motor_driver/share/ament_index/resource_index/package_run_dependencies/motor_driver\n'}
+[22.494530] (motor_driver) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/motor_driver/share/ament_index/resource_index/parent_prefix_path/motor_driver\n'}
+[22.494652] (motor_driver) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/motor_driver/share/motor_driver/environment/ament_prefix_path.sh\n'}
+[22.494774] (motor_driver) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/motor_driver/share/motor_driver/environment/ament_prefix_path.dsv\n'}
+[22.494906] (motor_driver) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/motor_driver/share/motor_driver/environment/path.sh\n'}
+[22.495098] (motor_driver) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/motor_driver/share/motor_driver/environment/path.dsv\n'}
+[22.495212] (motor_driver) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/motor_driver/share/motor_driver/local_setup.bash\n'}
+[22.495324] (motor_driver) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/motor_driver/share/motor_driver/local_setup.sh\n'}
+[22.495437] (motor_driver) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/motor_driver/share/motor_driver/local_setup.zsh\n'}
+[22.495547] (motor_driver) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/motor_driver/share/motor_driver/local_setup.dsv\n'}
+[22.495661] (motor_driver) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/AK8064_ws_Jun/install/motor_driver/share/motor_driver/package.dsv\n'}
+[22.495775] (motor_driver) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/motor_driver/share/ament_index/resource_index/packages/motor_driver\n'}
+[22.495884] (motor_driver) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/motor_driver/share/motor_driver/cmake/motor_driverConfig.cmake\n'}
+[22.496034] (motor_driver) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/motor_driver/share/motor_driver/cmake/motor_driverConfig-version.cmake\n'}
+[22.496149] (motor_driver) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/motor_driver/share/motor_driver/package.xml\n'}
+[22.497567] (motor_driver) CommandEnded: {'returncode': 0}
+[22.520042] (-) TimerEvent: {}
+[22.528146] (motor_driver) JobEnded: {'identifier': 'motor_driver', 'rc': 0}
+[22.529218] (-) EventReactorShutdown: {}

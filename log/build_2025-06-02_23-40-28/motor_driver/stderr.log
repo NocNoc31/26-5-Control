@@ -1,0 +1,676 @@
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1388:39:[m[K [01;31m[Kerror: [m[K‘[01m[KMotorState[m[K’ was not declared in this scope; did you mean ‘[01m[KMotorData[m[K’?
+ 1388 |     void transitionTo(std::unique_ptr<[01;31m[KMotorState[m[K> new_state) {
+      |                                       [01;31m[K^~~~~~~~~~[m[K
+      |                                       [32m[KMotorData[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1388:49:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1388 |     void transitionTo(std::unique_ptr<MotorState[01;31m[K>[m[K new_state) {
+      |                                                 [01;31m[K^[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1388:49:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1503:21:[m[K [01;31m[Kerror: [m[K‘[01m[KMotorState[m[K’ was not declared in this scope; did you mean ‘[01m[KMotorData[m[K’?
+ 1503 |     std::unique_ptr<[01;31m[KMotorState[m[K> state_;
+      |                     [01;31m[K^~~~~~~~~~[m[K
+      |                     [32m[KMotorData[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1503:31:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1503 |     std::unique_ptr<MotorState[01;31m[K>[m[K state_;
+      |                               [01;31m[K^[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1503:31:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1528:53:[m[K [01;31m[Kerror: [m[K‘[01m[KMotorCommand[m[K’ was not declared in this scope
+ 1528 |     std::unordered_map<std::string, std::unique_ptr<[01;31m[KMotorCommand[m[K>> command_map_;
+      |                                                     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1528:53:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1528:53:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1528:65:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+ 1528 | std::unordered_map<std::string, std::unique_ptr<MotorCommand[01;31m[K>>[m[K command_map_;
+      |                                                             [01;31m[K^~[m[K
+
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1528:65:[m[K [01;31m[Kerror: [m[Ktemplate argument 5 is invalid
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In constructor ‘[01m[KMotorController::MotorController(uint8_t, std::shared_ptr<ICANInterface>, rclcpp::Node*, const string&)[m[K’:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1177:18:[m[K [01;31m[Kerror: [m[K‘[01m[KState[m[K’ has not been declared
+ 1177 |           state_([01;31m[KState[m[K::INITIALIZING), mode_(Mode::MANUAL), is_origin_set_(false),
+      |                  [01;31m[K^~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kvirtual void MotorController::handleCommand(const string&)[m[K’:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1214:30:[m[K [01;31m[Kerror: [m[K‘[01m[KState[m[K’ has not been declared
+ 1214 |                 transitionTo([01;31m[KState[m[K::STOPPED);
+      |                              [01;31m[K^~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1222:32:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kfind[m[K’ in ‘[01m[K((MotorController*)this)->MotorController::command_map_[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+ 1222 |         auto it = command_map_.[01;31m[Kfind[m[K(command);
+      |                                [01;31m[K^~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1223:32:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kend[m[K’ in ‘[01m[K((MotorController*)this)->MotorController::command_map_[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+ 1223 |         if (it != command_map_.[01;31m[Kend[m[K()) {
+      |                                [01;31m[K^~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kvirtual void MotorController::control(const MotorData&)[m[K’:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1234:28:[m[K [01;31m[Kerror: [m[K‘[01m[KstateToString[m[K’ was not declared in this scope
+ 1234 |         last_data_.state = [01;31m[KstateToString[m[K(state_);
+      |                            [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1238:26:[m[K [01;31m[Kerror: [m[K‘[01m[KState[m[K’ has not been declared
+ 1238 |             transitionTo([01;31m[KState[m[K::ERROR);
+      |                          [01;31m[K^~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1245:18:[m[K [01;31m[Kerror: [m[K‘[01m[KState[m[K’ has not been declared
+ 1245 |             case [01;31m[KState[m[K::INITIALIZING:
+      |                  [01;31m[K^~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1246:17:[m[K [01;31m[Kerror: [m[K‘[01m[KhandleInitializing[m[K’ was not declared in this scope
+ 1246 |                 [01;31m[KhandleInitializing[m[K(data);
+      |                 [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1248:18:[m[K [01;31m[Kerror: [m[K‘[01m[KState[m[K’ has not been declared
+ 1248 |             case [01;31m[KState[m[K::HOMING:
+      |                  [01;31m[K^~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1249:17:[m[K [01;31m[Kerror: [m[K‘[01m[KhandleHoming[m[K’ was not declared in this scope; did you mean ‘[01m[KhandleCommand[m[K’?
+ 1249 |                 [01;31m[KhandleHoming[m[K(data);
+      |                 [01;31m[K^~~~~~~~~~~~[m[K
+      |                 [32m[KhandleCommand[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1251:18:[m[K [01;31m[Kerror: [m[K‘[01m[KState[m[K’ has not been declared
+ 1251 |             case [01;31m[KState[m[K::MOVING:
+      |                  [01;31m[K^~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1252:17:[m[K [01;31m[Kerror: [m[K‘[01m[KhandleMoving[m[K’ was not declared in this scope
+ 1252 |                 [01;31m[KhandleMoving[m[K(data);
+      |                 [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1254:18:[m[K [01;31m[Kerror: [m[K‘[01m[KState[m[K’ has not been declared
+ 1254 |             case [01;31m[KState[m[K::PAUSED:
+      |                  [01;31m[K^~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1255:17:[m[K [01;31m[Kerror: [m[K‘[01m[KhandlePaused[m[K’ was not declared in this scope
+ 1255 |                 [01;31m[KhandlePaused[m[K(data);
+      |                 [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1257:18:[m[K [01;31m[Kerror: [m[K‘[01m[KState[m[K’ has not been declared
+ 1257 |             case [01;31m[KState[m[K::STOPPED:
+      |                  [01;31m[K^~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1258:17:[m[K [01;31m[Kerror: [m[K‘[01m[KhandleStopped[m[K’ was not declared in this scope
+ 1258 |                 [01;31m[KhandleStopped[m[K(data);
+      |                 [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1260:18:[m[K [01;31m[Kerror: [m[K‘[01m[KState[m[K’ has not been declared
+ 1260 |             case [01;31m[KState[m[K::ERROR:
+      |                  [01;31m[K^~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1261:17:[m[K [01;31m[Kerror: [m[K‘[01m[KhandleError[m[K’ was not declared in this scope
+ 1261 |                 [01;31m[KhandleError[m[K(data);
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kvirtual void MotorController::setParameters(const std::vector<rcl_interfaces::msg::Parameter_<std::allocator<void> >, std::allocator<rcl_interfaces::msg::Parameter_<std::allocator<void> > > >&)[m[K’:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1332:27:[m[K [01;31m[Kerror: [m[K‘[01m[KState[m[K’ has not been declared
+ 1332 |             if (state_ == [01;31m[KState[m[K::PAUSED || last_command_.empty()) {
+      |                           [01;31m[K^~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1333:30:[m[K [01;31m[Kerror: [m[K‘[01m[KState[m[K’ has not been declared
+ 1333 |                 transitionTo([01;31m[KState[m[K::MOVING);
+      |                              [01;31m[K^~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kvirtual void MotorController::stop()[m[K’:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1368:26:[m[K [01;31m[Kerror: [m[K‘[01m[KState[m[K’ has not been declared
+ 1368 |             transitionTo([01;31m[KState[m[K::STOPPED);
+      |                          [01;31m[K^~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1371:26:[m[K [01;31m[Kerror: [m[K‘[01m[KState[m[K’ has not been declared
+ 1371 |             transitionTo([01;31m[KState[m[K::ERROR);
+      |                          [01;31m[K^~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kvoid MotorController::initializeCommandMap()[m[K’:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1379:37:[m[K [01;31m[Kerror: [m[K‘[01m[KUpCommand[m[K’ was not declared in this scope
+ 1379 |             {"UP", std::make_unique<[01;31m[KUpCommand[m[K>()},
+      |                                     [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1379:47:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_unique<<expression error> >()[m[K’
+ 1379 |             {"UP", [01;31m[Kstd::make_unique<UpCommand>()[m[K},
+      |                    [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:972[m[K:
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:961:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> typename std::_MakeUniq<_Tp>::__single_object std::make_unique(_Args&& ...)[m[K’
+  961 |     [01;36m[Kmake_unique[m[K(_Args&&... __args)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:961:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1379:47:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1379 |             {"UP", [01;31m[Kstd::make_unique<UpCommand>()[m[K},
+      |                    [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:972[m[K:
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:967:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> typename std::_MakeUniq<_Tp>::__array std::make_unique(std::size_t)[m[K’
+  967 |     [01;36m[Kmake_unique[m[K(size_t __num)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:967:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1379:47:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1379 |             {"UP", [01;31m[Kstd::make_unique<UpCommand>()[m[K},
+      |                    [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:972[m[K:
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:973:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> typename std::_MakeUniq<_Tp>::__invalid_type std::make_unique(_Args&& ...)[m[K’ (deleted)
+  973 |     [01;36m[Kmake_unique[m[K(_Args&&...) = delete;
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:973:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1379:47:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1379 |             {"UP", [01;31m[Kstd::make_unique<UpCommand>()[m[K},
+      |                    [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1380:39:[m[K [01;31m[Kerror: [m[K‘[01m[KDownCommand[m[K’ was not declared in this scope
+ 1380 |             {"DOWN", std::make_unique<[01;31m[KDownCommand[m[K>()},
+      |                                       [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1380:51:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_unique<<expression error> >()[m[K’
+ 1380 |             {"DOWN", [01;31m[Kstd::make_unique<DownCommand>()[m[K},
+      |                      [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:972[m[K:
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:961:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> typename std::_MakeUniq<_Tp>::__single_object std::make_unique(_Args&& ...)[m[K’
+  961 |     [01;36m[Kmake_unique[m[K(_Args&&... __args)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:961:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1380:51:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1380 |             {"DOWN", [01;31m[Kstd::make_unique<DownCommand>()[m[K},
+      |                      [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:972[m[K:
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:967:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> typename std::_MakeUniq<_Tp>::__array std::make_unique(std::size_t)[m[K’
+  967 |     [01;36m[Kmake_unique[m[K(size_t __num)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:967:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1380:51:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1380 |             {"DOWN", [01;31m[Kstd::make_unique<DownCommand>()[m[K},
+      |                      [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:972[m[K:
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:973:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> typename std::_MakeUniq<_Tp>::__invalid_type std::make_unique(_Args&& ...)[m[K’ (deleted)
+  973 |     [01;36m[Kmake_unique[m[K(_Args&&...) = delete;
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:973:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1380:51:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1380 |             {"DOWN", [01;31m[Kstd::make_unique<DownCommand>()[m[K},
+      |                      [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1381:40:[m[K [01;31m[Kerror: [m[K‘[01m[KPauseCommand[m[K’ was not declared in this scope; did you mean ‘[01m[KhandleCommand[m[K’?
+ 1381 |             {"PAUSE", std::make_unique<[01;31m[KPauseCommand[m[K>()},
+      |                                        [01;31m[K^~~~~~~~~~~~[m[K
+      |                                        [32m[KhandleCommand[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1381:53:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_unique<<expression error> >()[m[K’
+ 1381 |             {"PAUSE", [01;31m[Kstd::make_unique<PauseCommand>()[m[K},
+      |                       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:972[m[K:
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:961:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> typename std::_MakeUniq<_Tp>::__single_object std::make_unique(_Args&& ...)[m[K’
+  961 |     [01;36m[Kmake_unique[m[K(_Args&&... __args)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:961:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1381:53:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1381 |             {"PAUSE", [01;31m[Kstd::make_unique<PauseCommand>()[m[K},
+      |                       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:972[m[K:
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:967:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> typename std::_MakeUniq<_Tp>::__array std::make_unique(std::size_t)[m[K’
+  967 |     [01;36m[Kmake_unique[m[K(size_t __num)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:967:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1381:53:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1381 |             {"PAUSE", [01;31m[Kstd::make_unique<PauseCommand>()[m[K},
+      |                       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:972[m[K:
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:973:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> typename std::_MakeUniq<_Tp>::__invalid_type std::make_unique(_Args&& ...)[m[K’ (deleted)
+  973 |     [01;36m[Kmake_unique[m[K(_Args&&...) = delete;
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:973:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1381:53:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1381 |             {"PAUSE", [01;31m[Kstd::make_unique<PauseCommand>()[m[K},
+      |                       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1382:38:[m[K [01;31m[Kerror: [m[K‘[01m[KRunCommand[m[K’ was not declared in this scope; did you mean ‘[01m[KhandleCommand[m[K’?
+ 1382 |             {"RUN", std::make_unique<[01;31m[KRunCommand[m[K>()},
+      |                                      [01;31m[K^~~~~~~~~~[m[K
+      |                                      [32m[KhandleCommand[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1382:49:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_unique<<expression error> >()[m[K’
+ 1382 |             {"RUN", [01;31m[Kstd::make_unique<RunCommand>()[m[K},
+      |                     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:972[m[K:
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:961:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> typename std::_MakeUniq<_Tp>::__single_object std::make_unique(_Args&& ...)[m[K’
+  961 |     [01;36m[Kmake_unique[m[K(_Args&&... __args)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:961:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1382:49:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1382 |             {"RUN", [01;31m[Kstd::make_unique<RunCommand>()[m[K},
+      |                     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:972[m[K:
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:967:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> typename std::_MakeUniq<_Tp>::__array std::make_unique(std::size_t)[m[K’
+  967 |     [01;36m[Kmake_unique[m[K(size_t __num)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:967:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1382:49:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1382 |             {"RUN", [01;31m[Kstd::make_unique<RunCommand>()[m[K},
+      |                     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:972[m[K:
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:973:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> typename std::_MakeUniq<_Tp>::__invalid_type std::make_unique(_Args&& ...)[m[K’ (deleted)
+  973 |     [01;36m[Kmake_unique[m[K(_Args&&...) = delete;
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:973:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1382:49:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1382 |             {"RUN", [01;31m[Kstd::make_unique<RunCommand>()[m[K},
+      |                     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1383:39:[m[K [01;31m[Kerror: [m[K‘[01m[KHomeCommand[m[K’ was not declared in this scope; did you mean ‘[01m[KhandleCommand[m[K’?
+ 1383 |             {"HOME", std::make_unique<[01;31m[KHomeCommand[m[K>()},
+      |                                       [01;31m[K^~~~~~~~~~~[m[K
+      |                                       [32m[KhandleCommand[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1383:51:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_unique<<expression error> >()[m[K’
+ 1383 |             {"HOME", [01;31m[Kstd::make_unique<HomeCommand>()[m[K},
+      |                      [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:972[m[K:
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:961:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> typename std::_MakeUniq<_Tp>::__single_object std::make_unique(_Args&& ...)[m[K’
+  961 |     [01;36m[Kmake_unique[m[K(_Args&&... __args)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:961:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1383:51:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1383 |             {"HOME", [01;31m[Kstd::make_unique<HomeCommand>()[m[K},
+      |                      [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:972[m[K:
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:967:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> typename std::_MakeUniq<_Tp>::__array std::make_unique(std::size_t)[m[K’
+  967 |     [01;36m[Kmake_unique[m[K(size_t __num)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:967:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1383:51:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1383 |             {"HOME", [01;31m[Kstd::make_unique<HomeCommand>()[m[K},
+      |                      [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:972[m[K:
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:973:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> typename std::_MakeUniq<_Tp>::__invalid_type std::make_unique(_Args&& ...)[m[K’ (deleted)
+  973 |     [01;36m[Kmake_unique[m[K(_Args&&...) = delete;
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:973:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1383:51:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1383 |             {"HOME", [01;31m[Kstd::make_unique<HomeCommand>()[m[K},
+      |                      [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1384:40:[m[K [01;31m[Kerror: [m[K‘[01m[KErrorCommand[m[K’ was not declared in this scope
+ 1384 |             {"ERROR", std::make_unique<[01;31m[KErrorCommand[m[K>()}
+      |                                        [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1384:53:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_unique<<expression error> >()[m[K’
+ 1384 |             {"ERROR", [01;31m[Kstd::make_unique<ErrorCommand>()[m[K}
+      |                       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:972[m[K:
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:961:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> typename std::_MakeUniq<_Tp>::__single_object std::make_unique(_Args&& ...)[m[K’
+  961 |     [01;36m[Kmake_unique[m[K(_Args&&... __args)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:961:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1384:53:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1384 |             {"ERROR", [01;31m[Kstd::make_unique<ErrorCommand>()[m[K}
+      |                       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:972[m[K:
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:967:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> typename std::_MakeUniq<_Tp>::__array std::make_unique(std::size_t)[m[K’
+  967 |     [01;36m[Kmake_unique[m[K(size_t __num)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:967:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1384:53:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1384 |             {"ERROR", [01;31m[Kstd::make_unique<ErrorCommand>()[m[K}
+      |                       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:972[m[K:
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:973:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> typename std::_MakeUniq<_Tp>::__invalid_type std::make_unique(_Args&& ...)[m[K’ (deleted)
+  973 |     [01;36m[Kmake_unique[m[K(_Args&&...) = delete;
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:973:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1384:53:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1384 |             {"ERROR", [01;31m[Kstd::make_unique<ErrorCommand>()[m[K}
+      |                       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1385:9:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kint[m[K’ in assignment
+ 1385 |         [01;31m[K}[m[K;
+      |         [01;31m[K^[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kvoid MotorController::transitionTo(int)[m[K’:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1389:42:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+ 1389 |         if (state_ && new_state && state_[01;31m[K->[m[KgetStateName() != new_state->getStateName()) {
+      |                                          [01;31m[K^~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1389:71:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+ 1389 |  (state_ && new_state && state_->getStateName() != new_state[01;31m[K->[m[KgetStateName()) {
+      |                                                             [01;31m[K^~[m[K
+
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:972[m[K:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1391:42:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+ 1391 |                         motor_id_, state_[01;31m[K->[m[KgetStateName().c_str(), new_state->getStateName().c_str());
+      |                                          [01;31m[K^~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1391:77:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+ 1391 |         motor_id_, state_->getStateName().c_str(), new_state[01;31m[K->[m[KgetStateName().c_str());
+      |                                                             [01;31m[K^~[m[K
+
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kvirtual void InitializingState::handleState(MotorController&, const MotorData&)[m[K’:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1558:58:[m[K [01;31m[Kerror: [m[K‘[01m[KHomingState[m[K’ was not declared in this scope
+ 1558 |                 controller.transitionTo(std::make_unique<[01;31m[KHomingState[m[K>());
+      |                                                          [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1558:70:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_unique<<expression error> >()[m[K’
+ 1558 |               controller.transitionTo([01;31m[Kstd::make_unique<HomingState>()[m[K);
+      |                                       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+
+In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:972[m[K:
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:961:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> typename std::_MakeUniq<_Tp>::__single_object std::make_unique(_Args&& ...)[m[K’
+  961 |     [01;36m[Kmake_unique[m[K(_Args&&... __args)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:961:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1558:70:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1558 |               controller.transitionTo([01;31m[Kstd::make_unique<HomingState>()[m[K);
+      |                                       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+
+In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:972[m[K:
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:967:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> typename std::_MakeUniq<_Tp>::__array std::make_unique(std::size_t)[m[K’
+  967 |     [01;36m[Kmake_unique[m[K(size_t __num)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:967:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1558:70:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1558 |               controller.transitionTo([01;31m[Kstd::make_unique<HomingState>()[m[K);
+      |                                       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+
+In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:972[m[K:
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:973:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> typename std::_MakeUniq<_Tp>::__invalid_type std::make_unique(_Args&& ...)[m[K’ (deleted)
+  973 |     [01;36m[Kmake_unique[m[K(_Args&&...) = delete;
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:973:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1558:70:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1558 |               controller.transitionTo([01;31m[Kstd::make_unique<HomingState>()[m[K);
+      |                                       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kvirtual void HomingState::handleState(MotorController&, const MotorData&)[m[K’:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1575:58:[m[K [01;31m[Kerror: [m[K‘[01m[KMovingState[m[K’ was not declared in this scope; did you mean ‘[01m[KHomingState[m[K’?
+ 1575 |                 controller.transitionTo(std::make_unique<[01;31m[KMovingState[m[K>());
+      |                                                          [01;31m[K^~~~~~~~~~~[m[K
+      |                                                          [32m[KHomingState[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1575:70:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_unique<<expression error> >()[m[K’
+ 1575 |               controller.transitionTo([01;31m[Kstd::make_unique<MovingState>()[m[K);
+      |                                       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+
+In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:972[m[K:
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:961:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> typename std::_MakeUniq<_Tp>::__single_object std::make_unique(_Args&& ...)[m[K’
+  961 |     [01;36m[Kmake_unique[m[K(_Args&&... __args)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:961:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1575:70:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1575 |               controller.transitionTo([01;31m[Kstd::make_unique<MovingState>()[m[K);
+      |                                       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+
+In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:972[m[K:
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:967:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> typename std::_MakeUniq<_Tp>::__array std::make_unique(std::size_t)[m[K’
+  967 |     [01;36m[Kmake_unique[m[K(size_t __num)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:967:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1575:70:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1575 |               controller.transitionTo([01;31m[Kstd::make_unique<MovingState>()[m[K);
+      |                                       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+
+In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:972[m[K:
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:973:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> typename std::_MakeUniq<_Tp>::__invalid_type std::make_unique(_Args&& ...)[m[K’ (deleted)
+  973 |     [01;36m[Kmake_unique[m[K(_Args&&...) = delete;
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:973:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1575:70:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1575 |               controller.transitionTo([01;31m[Kstd::make_unique<MovingState>()[m[K);
+      |                                       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kvirtual void MovingState::handleState(MotorController&, const MotorData&)[m[K’:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1623:58:[m[K [01;31m[Kerror: [m[K‘[01m[KStoppedState[m[K’ was not declared in this scope
+ 1623 |                 controller.transitionTo(std::make_unique<[01;31m[KStoppedState[m[K>());
+      |                                                          [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1623:71:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_unique<<expression error> >()[m[K’
+ 1623 |              controller.transitionTo([01;31m[Kstd::make_unique<StoppedState>()[m[K);
+      |                                      [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+
+In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:972[m[K:
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:961:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> typename std::_MakeUniq<_Tp>::__single_object std::make_unique(_Args&& ...)[m[K’
+  961 |     [01;36m[Kmake_unique[m[K(_Args&&... __args)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:961:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1623:71:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1623 |              controller.transitionTo([01;31m[Kstd::make_unique<StoppedState>()[m[K);
+      |                                      [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+
+In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:972[m[K:
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:967:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> typename std::_MakeUniq<_Tp>::__array std::make_unique(std::size_t)[m[K’
+  967 |     [01;36m[Kmake_unique[m[K(size_t __num)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:967:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1623:71:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1623 |              controller.transitionTo([01;31m[Kstd::make_unique<StoppedState>()[m[K);
+      |                                      [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+
+In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:972[m[K:
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:973:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> typename std::_MakeUniq<_Tp>::__invalid_type std::make_unique(_Args&& ...)[m[K’ (deleted)
+  973 |     [01;36m[Kmake_unique[m[K(_Args&&...) = delete;
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:973:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1623:71:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1623 |              controller.transitionTo([01;31m[Kstd::make_unique<StoppedState>()[m[K);
+      |                                      [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kvirtual void PausedState::handleState(MotorController&, const MotorData&)[m[K’:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1647:66:[m[K [01;31m[Kerror: [m[K‘[01m[KErrorState[m[K’ was not declared in this scope; did you mean ‘[01m[KMotorState[m[K’?
+ 1647 |                    controller.transitionTo(std::make_unique<[01;31m[KErrorState[m[K>());
+      |                                                             [01;31m[K^~~~~~~~~~[m[K
+      |                                                             [32m[KMotorState[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1647:77:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_unique<<expression error> >()[m[K’
+ 1647 |                controller.transitionTo([01;31m[Kstd::make_unique<ErrorState>()[m[K);
+      |                                        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+
+In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:972[m[K:
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:961:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> typename std::_MakeUniq<_Tp>::__single_object std::make_unique(_Args&& ...)[m[K’
+  961 |     [01;36m[Kmake_unique[m[K(_Args&&... __args)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:961:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1647:77:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1647 |                controller.transitionTo([01;31m[Kstd::make_unique<ErrorState>()[m[K);
+      |                                        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+
+In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:972[m[K:
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:967:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> typename std::_MakeUniq<_Tp>::__array std::make_unique(std::size_t)[m[K’
+  967 |     [01;36m[Kmake_unique[m[K(size_t __num)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:967:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1647:77:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1647 |                controller.transitionTo([01;31m[Kstd::make_unique<ErrorState>()[m[K);
+      |                                        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+
+In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:972[m[K:
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:973:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> typename std::_MakeUniq<_Tp>::__invalid_type std::make_unique(_Args&& ...)[m[K’ (deleted)
+  973 |     [01;36m[Kmake_unique[m[K(_Args&&...) = delete;
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:973:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1647:77:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1647 |                controller.transitionTo([01;31m[Kstd::make_unique<ErrorState>()[m[K);
+      |                                        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1656:66:[m[K [01;31m[Kerror: [m[K‘[01m[KErrorState[m[K’ was not declared in this scope; did you mean ‘[01m[KMotorState[m[K’?
+ 1656 |                    controller.transitionTo(std::make_unique<[01;31m[KErrorState[m[K>());
+      |                                                             [01;31m[K^~~~~~~~~~[m[K
+      |                                                             [32m[KMotorState[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1656:77:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_unique<<expression error> >()[m[K’
+ 1656 |                controller.transitionTo([01;31m[Kstd::make_unique<ErrorState>()[m[K);
+      |                                        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+
+In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:972[m[K:
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:961:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> typename std::_MakeUniq<_Tp>::__single_object std::make_unique(_Args&& ...)[m[K’
+  961 |     [01;36m[Kmake_unique[m[K(_Args&&... __args)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:961:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1656:77:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1656 |                controller.transitionTo([01;31m[Kstd::make_unique<ErrorState>()[m[K);
+      |                                        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+
+In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:972[m[K:
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:967:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> typename std::_MakeUniq<_Tp>::__array std::make_unique(std::size_t)[m[K’
+  967 |     [01;36m[Kmake_unique[m[K(size_t __num)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:967:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1656:77:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1656 |                controller.transitionTo([01;31m[Kstd::make_unique<ErrorState>()[m[K);
+      |                                        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+
+In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:972[m[K:
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:973:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> typename std::_MakeUniq<_Tp>::__invalid_type std::make_unique(_Args&& ...)[m[K’ (deleted)
+  973 |     [01;36m[Kmake_unique[m[K(_Args&&...) = delete;
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:973:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1656:77:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1656 |                controller.transitionTo([01;31m[Kstd::make_unique<ErrorState>()[m[K);
+      |                                        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1661:58:[m[K [01;31m[Kerror: [m[K‘[01m[KErrorState[m[K’ was not declared in this scope; did you mean ‘[01m[KMotorState[m[K’?
+ 1661 |                 controller.transitionTo(std::make_unique<[01;31m[KErrorState[m[K>());
+      |                                                          [01;31m[K^~~~~~~~~~[m[K
+      |                                                          [32m[KMotorState[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1661:69:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_unique<<expression error> >()[m[K’
+ 1661 |                controller.transitionTo([01;31m[Kstd::make_unique<ErrorState>()[m[K);
+      |                                        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+
+In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:972[m[K:
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:961:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> typename std::_MakeUniq<_Tp>::__single_object std::make_unique(_Args&& ...)[m[K’
+  961 |     [01;36m[Kmake_unique[m[K(_Args&&... __args)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:961:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1661:69:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1661 |                controller.transitionTo([01;31m[Kstd::make_unique<ErrorState>()[m[K);
+      |                                        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+
+In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:972[m[K:
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:967:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> typename std::_MakeUniq<_Tp>::__array std::make_unique(std::size_t)[m[K’
+  967 |     [01;36m[Kmake_unique[m[K(size_t __num)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:967:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1661:69:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1661 |                controller.transitionTo([01;31m[Kstd::make_unique<ErrorState>()[m[K);
+      |                                        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+
+In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:972[m[K:
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:973:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> typename std::_MakeUniq<_Tp>::__invalid_type std::make_unique(_Args&& ...)[m[K’ (deleted)
+  973 |     [01;36m[Kmake_unique[m[K(_Args&&...) = delete;
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:973:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1661:69:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1661 |                controller.transitionTo([01;31m[Kstd::make_unique<ErrorState>()[m[K);
+      |                                        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kvirtual void UpCommand::execute(MotorController&)[m[K’:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1734:70:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::_MakeUniq<MovingState>::__single_object[m[K’ {aka ‘[01m[Kstd::unique_ptr<MovingState, std::default_delete<MovingState> >[m[K’} to ‘[01m[Kint[m[K’
+ 1734 |               controller.transitionTo([01;31m[Kstd::make_unique<MovingState>()[m[K);
+      |                                       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+      |                                                                    [01;31m[K|[m[K
+      |                                                                    [01;31m[Kstd::_MakeUniq<MovingState>::__single_object {aka std::unique_ptr<MovingState, std::default_delete<MovingState> >}[m[K
+
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1388:51:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid MotorController::transitionTo(int)[m[K’
+ 1388 |     void transitionTo([01;36m[Kstd::unique_ptr<MotorState> new_state[m[K) {
+      |                       [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kvirtual void DownCommand::execute(MotorController&)[m[K’:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1762:70:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::_MakeUniq<MovingState>::__single_object[m[K’ {aka ‘[01m[Kstd::unique_ptr<MovingState, std::default_delete<MovingState> >[m[K’} to ‘[01m[Kint[m[K’
+ 1762 |               controller.transitionTo([01;31m[Kstd::make_unique<MovingState>()[m[K);
+      |                                       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+      |                                                                    [01;31m[K|[m[K
+      |                                                                    [01;31m[Kstd::_MakeUniq<MovingState>::__single_object {aka std::unique_ptr<MovingState, std::default_delete<MovingState> >}[m[K
+
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1388:51:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid MotorController::transitionTo(int)[m[K’
+ 1388 |     void transitionTo([01;36m[Kstd::unique_ptr<MotorState> new_state[m[K) {
+      |                       [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kvirtual void PauseCommand::execute(MotorController&)[m[K’:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1792:74:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::_MakeUniq<PausedState>::__single_object[m[K’ {aka ‘[01m[Kstd::unique_ptr<PausedState, std::default_delete<PausedState> >[m[K’} to ‘[01m[Kint[m[K’
+ 1792 |               controller.transitionTo([01;31m[Kstd::make_unique<PausedState>()[m[K);
+      |                                       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+      |                                                                    [01;31m[K|[m[K
+      |                                                                    [01;31m[Kstd::_MakeUniq<PausedState>::__single_object {aka std::unique_ptr<PausedState, std::default_delete<PausedState> >}[m[K
+
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1388:51:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid MotorController::transitionTo(int)[m[K’
+ 1388 |     void transitionTo([01;36m[Kstd::unique_ptr<MotorState> new_state[m[K) {
+      |                       [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1797:73:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::_MakeUniq<ErrorState>::__single_object[m[K’ {aka ‘[01m[Kstd::unique_ptr<ErrorState, std::default_delete<ErrorState> >[m[K’} to ‘[01m[Kint[m[K’
+ 1797 |                controller.transitionTo([01;31m[Kstd::make_unique<ErrorState>()[m[K);
+      |                                        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+      |                                                                    [01;31m[K|[m[K
+      |                                                                    [01;31m[Kstd::_MakeUniq<ErrorState>::__single_object {aka std::unique_ptr<ErrorState, std::default_delete<ErrorState> >}[m[K
+
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1388:51:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid MotorController::transitionTo(int)[m[K’
+ 1388 |     void transitionTo([01;36m[Kstd::unique_ptr<MotorState> new_state[m[K) {
+      |                       [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1803:69:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::_MakeUniq<ErrorState>::__single_object[m[K’ {aka ‘[01m[Kstd::unique_ptr<ErrorState, std::default_delete<ErrorState> >[m[K’} to ‘[01m[Kint[m[K’
+ 1803 |                controller.transitionTo([01;31m[Kstd::make_unique<ErrorState>()[m[K);
+      |                                        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+      |                                                                    [01;31m[K|[m[K
+      |                                                                    [01;31m[Kstd::_MakeUniq<ErrorState>::__single_object {aka std::unique_ptr<ErrorState, std::default_delete<ErrorState> >}[m[K
+
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1388:51:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid MotorController::transitionTo(int)[m[K’
+ 1388 |     void transitionTo([01;36m[Kstd::unique_ptr<MotorState> new_state[m[K) {
+      |                       [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kvirtual void RunCommand::execute(MotorController&)[m[K’:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1819:70:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::_MakeUniq<MovingState>::__single_object[m[K’ {aka ‘[01m[Kstd::unique_ptr<MovingState, std::default_delete<MovingState> >[m[K’} to ‘[01m[Kint[m[K’
+ 1819 |               controller.transitionTo([01;31m[Kstd::make_unique<MovingState>()[m[K);
+      |                                       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+      |                                                                    [01;31m[K|[m[K
+      |                                                                    [01;31m[Kstd::_MakeUniq<MovingState>::__single_object {aka std::unique_ptr<MovingState, std::default_delete<MovingState> >}[m[K
+
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1388:51:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid MotorController::transitionTo(int)[m[K’
+ 1388 |     void transitionTo([01;36m[Kstd::unique_ptr<MotorState> new_state[m[K) {
+      |                       [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kvirtual void HomeCommand::execute(MotorController&)[m[K’:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1847:66:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::_MakeUniq<HomingState>::__single_object[m[K’ {aka ‘[01m[Kstd::unique_ptr<HomingState, std::default_delete<HomingState> >[m[K’} to ‘[01m[Kint[m[K’
+ 1847 |             controller.transitionTo([01;31m[Kstd::make_unique<HomingState>()[m[K);
+      |                                     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+      |                                                                  [01;31m[K|[m[K
+      |                                                                  [01;31m[Kstd::_MakeUniq<HomingState>::__single_object {aka std::unique_ptr<HomingState, std::default_delete<HomingState> >}[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1388:51:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid MotorController::transitionTo(int)[m[K’
+ 1388 |     void transitionTo([01;36m[Kstd::unique_ptr<MotorState> new_state[m[K) {
+      |                       [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kvirtual void ErrorCommand::execute(MotorController&)[m[K’:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1862:69:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::_MakeUniq<ErrorState>::__single_object[m[K’ {aka ‘[01m[Kstd::unique_ptr<ErrorState, std::default_delete<ErrorState> >[m[K’} to ‘[01m[Kint[m[K’
+ 1862 |                controller.transitionTo([01;31m[Kstd::make_unique<ErrorState>()[m[K);
+      |                                        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+      |                                                                    [01;31m[K|[m[K
+      |                                                                    [01;31m[Kstd::_MakeUniq<ErrorState>::__single_object {aka std::unique_ptr<ErrorState, std::default_delete<ErrorState> >}[m[K
+
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1388:51:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid MotorController::transitionTo(int)[m[K’
+ 1388 |     void transitionTo([01;36m[Kstd::unique_ptr<MotorState> new_state[m[K) {
+      |                       [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/ControlMotor.dir/build.make:76: CMakeFiles/ControlMotor.dir/src/ControlMotor.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ControlMotor.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
