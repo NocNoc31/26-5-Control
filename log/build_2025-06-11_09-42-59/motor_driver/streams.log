@@ -1,0 +1,3 @@
+[0.019s] Invoking command in '/home/ubuntu/Desktop/AK8064_ws_Jun/build/motor_driver': CMAKE_PREFIX_PATH=/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface:/home/ubuntu/Desktop/AK8064_ws_Jun/install/motor_driver:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/Desktop/AK8064_ws_Jun/build/motor_driver -- -j8 -l8
+[0.100s] [35m[1mConsolidate compiler generated dependencies of target ControlMotor[0m
+[0.139s] [ 50%] [32mBuilding CXX object CMakeFiles/ControlMotor.dir/src/ControlMotor.cpp.o[0m

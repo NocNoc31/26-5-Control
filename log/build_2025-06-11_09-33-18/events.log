@@ -1,0 +1,266 @@
+[0.000000] (-) TimerEvent: {}
+[0.000785] (can_interface) JobQueued: {'identifier': 'can_interface', 'dependencies': OrderedDict()}
+[0.000875] (motor_driver) JobQueued: {'identifier': 'motor_driver', 'dependencies': OrderedDict([('can_interface', '/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface')])}
+[0.001352] (can_interface) JobStarted: {'identifier': 'can_interface'}
+[0.021984] (can_interface) JobProgress: {'identifier': 'can_interface', 'progress': 'cmake'}
+[0.022929] (can_interface) JobProgress: {'identifier': 'can_interface', 'progress': 'build'}
+[0.024392] (can_interface) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/Desktop/AK8064_ws_Jun/build/can_interface', '--', '-j8', '-l8'], 'cwd': '/home/ubuntu/Desktop/AK8064_ws_Jun/build/can_interface', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'ubuntu'), ('LC_TIME', 'vi_VN'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ubuntu'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'vi_VN'), ('MANAGERPID', '1733'), ('SYSTEMD_EXEC_PID', '1864'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3447'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ubuntu/Desktop/AK8064_ws_Jun/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu'), ('JOURNAL_STREAM', '8:16556'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ubuntu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ubuntu/.local/share/pnpm:/opt/ros/humble/bin:/home/ubuntu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu-Aspire-A315-58:@/tmp/.ICE-unix/1840,unix/ubuntu-Aspire-A315-58:/tmp/.ICE-unix/1840'), ('INVOCATION_ID', 'afbf066e4aae48878a26a752b95ad03c'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'vi_VN'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'vi_VN'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.SJQR72'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ubuntu/Desktop/AK8064_ws_Jun/install/motor_driver:/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'vi_VN'), ('TERMINATOR_UUID', 'urn:uuid:1a469e97-4e81-4661-a545-4690749804cd'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'vi_VN'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'vi_VN'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ubuntu/Desktop/AK8064_ws_Jun/build/can_interface'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'vi_VN'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('PNPM_HOME', '/home/ubuntu/.local/share/pnpm'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/Desktop/AK8064_ws_Jun/install/motor_driver:/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface:/opt/ros/humble')]), 'shell': False}
+[0.099031] (-) TimerEvent: {}
+[0.125712] (can_interface) StdoutLine: {'line': b'[100%] Built target can_interface\n'}
+[0.148553] (can_interface) CommandEnded: {'returncode': 0}
+[0.150152] (can_interface) JobProgress: {'identifier': 'can_interface', 'progress': 'install'}
+[0.168067] (can_interface) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/Desktop/AK8064_ws_Jun/build/can_interface'], 'cwd': '/home/ubuntu/Desktop/AK8064_ws_Jun/build/can_interface', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'ubuntu'), ('LC_TIME', 'vi_VN'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ubuntu'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'vi_VN'), ('MANAGERPID', '1733'), ('SYSTEMD_EXEC_PID', '1864'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3447'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ubuntu/Desktop/AK8064_ws_Jun/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu'), ('JOURNAL_STREAM', '8:16556'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ubuntu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ubuntu/.local/share/pnpm:/opt/ros/humble/bin:/home/ubuntu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu-Aspire-A315-58:@/tmp/.ICE-unix/1840,unix/ubuntu-Aspire-A315-58:/tmp/.ICE-unix/1840'), ('INVOCATION_ID', 'afbf066e4aae48878a26a752b95ad03c'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'vi_VN'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'vi_VN'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.SJQR72'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ubuntu/Desktop/AK8064_ws_Jun/install/motor_driver:/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'vi_VN'), ('TERMINATOR_UUID', 'urn:uuid:1a469e97-4e81-4661-a545-4690749804cd'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'vi_VN'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'vi_VN'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ubuntu/Desktop/AK8064_ws_Jun/build/can_interface'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'vi_VN'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('PNPM_HOME', '/home/ubuntu/.local/share/pnpm'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/Desktop/AK8064_ws_Jun/install/motor_driver:/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface:/opt/ros/humble')]), 'shell': False}
+[0.185768] (can_interface) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.186254] (can_interface) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/lib/libcan_interface.so\n'}
+[0.186606] (can_interface) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/include\n'}
+[0.186860] (can_interface) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/include/can_interface\n'}
+[0.187128] (can_interface) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/include/can_interface/caninterface.hpp\n'}
+[0.187488] (can_interface) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/share/can_interface/environment/library_path.sh\n'}
+[0.188023] (can_interface) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/share/can_interface/environment/library_path.dsv\n'}
+[0.188438] (can_interface) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/share/ament_index/resource_index/package_run_dependencies/can_interface\n'}
+[0.188595] (can_interface) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/share/ament_index/resource_index/parent_prefix_path/can_interface\n'}
+[0.188743] (can_interface) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/share/can_interface/environment/ament_prefix_path.sh\n'}
+[0.188939] (can_interface) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/share/can_interface/environment/ament_prefix_path.dsv\n'}
+[0.189189] (can_interface) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/share/can_interface/environment/path.sh\n'}
+[0.189420] (can_interface) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/share/can_interface/environment/path.dsv\n'}
+[0.189606] (can_interface) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/share/can_interface/local_setup.bash\n'}
+[0.189830] (can_interface) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/share/can_interface/local_setup.sh\n'}
+[0.190132] (can_interface) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/share/can_interface/local_setup.zsh\n'}
+[0.190268] (can_interface) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/share/can_interface/local_setup.dsv\n'}
+[0.190401] (can_interface) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/share/can_interface/package.dsv\n'}
+[0.190534] (can_interface) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/share/ament_index/resource_index/packages/can_interface\n'}
+[0.190670] (can_interface) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/share/can_interface/cmake/export_can_interfaceExport.cmake\n'}
+[0.190807] (can_interface) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/share/can_interface/cmake/export_can_interfaceExport-noconfig.cmake\n'}
+[0.190965] (can_interface) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/share/can_interface/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.191106] (can_interface) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/share/can_interface/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.191234] (can_interface) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/share/can_interface/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.191365] (can_interface) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/share/can_interface/cmake/can_interfaceConfig.cmake\n'}
+[0.191491] (can_interface) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/share/can_interface/cmake/can_interfaceConfig-version.cmake\n'}
+[0.191612] (can_interface) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/share/can_interface/package.xml\n'}
+[0.194149] (can_interface) CommandEnded: {'returncode': 0}
+[0.199222] (-) TimerEvent: {}
+[0.241077] (can_interface) JobEnded: {'identifier': 'can_interface', 'rc': 0}
+[0.243099] (motor_driver) JobStarted: {'identifier': 'motor_driver'}
+[0.257403] (motor_driver) JobProgress: {'identifier': 'motor_driver', 'progress': 'cmake'}
+[0.258446] (motor_driver) JobProgress: {'identifier': 'motor_driver', 'progress': 'build'}
+[0.259879] (motor_driver) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/Desktop/AK8064_ws_Jun/build/motor_driver', '--', '-j8', '-l8'], 'cwd': '/home/ubuntu/Desktop/AK8064_ws_Jun/build/motor_driver', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'ubuntu'), ('LC_TIME', 'vi_VN'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ubuntu'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'vi_VN'), ('MANAGERPID', '1733'), ('SYSTEMD_EXEC_PID', '1864'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3447'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ubuntu/Desktop/AK8064_ws_Jun/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu'), ('JOURNAL_STREAM', '8:16556'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ubuntu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ubuntu/.local/share/pnpm:/opt/ros/humble/bin:/home/ubuntu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu-Aspire-A315-58:@/tmp/.ICE-unix/1840,unix/ubuntu-Aspire-A315-58:/tmp/.ICE-unix/1840'), ('INVOCATION_ID', 'afbf066e4aae48878a26a752b95ad03c'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'vi_VN'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'vi_VN'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.SJQR72'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ubuntu/Desktop/AK8064_ws_Jun/install/motor_driver:/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'vi_VN'), ('TERMINATOR_UUID', 'urn:uuid:1a469e97-4e81-4661-a545-4690749804cd'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'vi_VN'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'vi_VN'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ubuntu/Desktop/AK8064_ws_Jun/build/motor_driver'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'vi_VN'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('PNPM_HOME', '/home/ubuntu/.local/share/pnpm'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface:/home/ubuntu/Desktop/AK8064_ws_Jun/install/motor_driver:/opt/ros/humble')]), 'shell': False}
+[0.299389] (-) TimerEvent: {}
+[0.341852] (motor_driver) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target ControlMotor\x1b[0m\n'}
+[0.375407] (motor_driver) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/ControlMotor.dir/src/ControlMotor.cpp.o\x1b[0m\n'}
+[0.399555] (-) TimerEvent: {}
+[0.500103] (-) TimerEvent: {}
+[0.600546] (-) TimerEvent: {}
+[0.700962] (-) TimerEvent: {}
+[0.801423] (-) TimerEvent: {}
+[0.901870] (-) TimerEvent: {}
+[1.002434] (-) TimerEvent: {}
+[1.102865] (-) TimerEvent: {}
+[1.204232] (-) TimerEvent: {}
+[1.305518] (-) TimerEvent: {}
+[1.405950] (-) TimerEvent: {}
+[1.506444] (-) TimerEvent: {}
+[1.607071] (-) TimerEvent: {}
+[1.707574] (-) TimerEvent: {}
+[1.808066] (-) TimerEvent: {}
+[1.908557] (-) TimerEvent: {}
+[2.009061] (-) TimerEvent: {}
+[2.109549] (-) TimerEvent: {}
+[2.210093] (-) TimerEvent: {}
+[2.310523] (-) TimerEvent: {}
+[2.411011] (-) TimerEvent: {}
+[2.511727] (-) TimerEvent: {}
+[2.612372] (-) TimerEvent: {}
+[2.713018] (-) TimerEvent: {}
+[2.813532] (-) TimerEvent: {}
+[2.913968] (-) TimerEvent: {}
+[3.014470] (-) TimerEvent: {}
+[3.114880] (-) TimerEvent: {}
+[3.215299] (-) TimerEvent: {}
+[3.315711] (-) TimerEvent: {}
+[3.416132] (-) TimerEvent: {}
+[3.516597] (-) TimerEvent: {}
+[3.617079] (-) TimerEvent: {}
+[3.717515] (-) TimerEvent: {}
+[3.817984] (-) TimerEvent: {}
+[3.918412] (-) TimerEvent: {}
+[4.018950] (-) TimerEvent: {}
+[4.119506] (-) TimerEvent: {}
+[4.219942] (-) TimerEvent: {}
+[4.320348] (-) TimerEvent: {}
+[4.420863] (-) TimerEvent: {}
+[4.521318] (-) TimerEvent: {}
+[4.621861] (-) TimerEvent: {}
+[4.722694] (-) TimerEvent: {}
+[4.823502] (-) TimerEvent: {}
+[4.924108] (-) TimerEvent: {}
+[5.024866] (-) TimerEvent: {}
+[5.125433] (-) TimerEvent: {}
+[5.225966] (-) TimerEvent: {}
+[5.326496] (-) TimerEvent: {}
+[5.334749] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid MotorController::handlePaused(const MotorData&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.335221] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:544:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kmax(float, double)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.335366] (motor_driver) StderrLine: {'line': b'  544 |                 float current_speed = \x1b[01;31m\x1b[Kstd::max(10.0f, speed_ * (1.0f - (node_->now() - last_command_time_).seconds() / 0.5f))\x1b[m\x1b[K;\n'}
+[5.335514] (motor_driver) StderrLine: {'line': b'      |                                       \x1b[01;31m\x1b[K~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.335656] (motor_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:63\x1b[m\x1b[K,\n'}
+[5.335807] (motor_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[5.336504] (motor_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:5\x1b[m\x1b[K:\n'}
+[5.336636] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:254:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> constexpr const _Tp& std::max(const _Tp&, const _Tp&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.336754] (motor_driver) StderrLine: {'line': b'  254 |     \x1b[01;36m\x1b[Kmax\x1b[m\x1b[K(const _Tp& __a, const _Tp& __b)\n'}
+[5.336866] (motor_driver) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.336998] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:254:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.337112] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:544:47:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  deduced conflicting types for parameter \xe2\x80\x98\x1b[01m\x1b[Kconst _Tp\x1b[m\x1b[K\xe2\x80\x99 (\xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[5.337230] (motor_driver) StderrLine: {'line': b'  544 |                 float current_speed = \x1b[01;36m\x1b[Kstd::max(10.0f, speed_ * (1.0f - (node_->now() - last_command_time_).seconds() / 0.5f))\x1b[m\x1b[K;\n'}
+[5.337342] (motor_driver) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.337451] (motor_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:63\x1b[m\x1b[K,\n'}
+[5.337559] (motor_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[5.337669] (motor_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:5\x1b[m\x1b[K:\n'}
+[5.337776] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:300:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Compare> constexpr const _Tp& std::max(const _Tp&, const _Tp&, _Compare)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.337886] (motor_driver) StderrLine: {'line': b'  300 |     \x1b[01;36m\x1b[Kmax\x1b[m\x1b[K(const _Tp& __a, const _Tp& __b, _Compare __comp)\n'}
+[5.338011] (motor_driver) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.338119] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:300:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.338225] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:544:47:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  deduced conflicting types for parameter \xe2\x80\x98\x1b[01m\x1b[Kconst _Tp\x1b[m\x1b[K\xe2\x80\x99 (\xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[5.338335] (motor_driver) StderrLine: {'line': b'  544 |                 float current_speed = \x1b[01;36m\x1b[Kstd::max(10.0f, speed_ * (1.0f - (node_->now() - last_command_time_).seconds() / 0.5f))\x1b[m\x1b[K;\n'}
+[5.338442] (motor_driver) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.338548] (motor_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:62\x1b[m\x1b[K,\n'}
+[5.338655] (motor_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18\x1b[m\x1b[K,\n'}
+[5.338774] (motor_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[5.338876] (motor_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[5.338989] (motor_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[5.339087] (motor_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:5\x1b[m\x1b[K:\n'}
+[5.339186] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algo.h:3461:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> constexpr _Tp std::max(std::initializer_list<_Tp>)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.339296] (motor_driver) StderrLine: {'line': b' 3461 |     \x1b[01;36m\x1b[Kmax\x1b[m\x1b[K(initializer_list<_Tp> __l)\n'}
+[5.339392] (motor_driver) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.339487] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algo.h:3461:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.339591] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:544:47:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kstd::initializer_list<_Tp>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.339690] (motor_driver) StderrLine: {'line': b'  544 |                 float current_speed = \x1b[01;36m\x1b[Kstd::max(10.0f, speed_ * (1.0f - (node_->now() - last_command_time_).seconds() / 0.5f))\x1b[m\x1b[K;\n'}
+[5.339793] (motor_driver) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.339898] (motor_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:62\x1b[m\x1b[K,\n'}
+[5.340004] (motor_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18\x1b[m\x1b[K,\n'}
+[5.340099] (motor_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[5.340196] (motor_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[5.340291] (motor_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[5.340385] (motor_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:5\x1b[m\x1b[K:\n'}
+[5.340479] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algo.h:3467:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Compare> constexpr _Tp std::max(std::initializer_list<_Tp>, _Compare)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.340577] (motor_driver) StderrLine: {'line': b' 3467 |     \x1b[01;36m\x1b[Kmax\x1b[m\x1b[K(initializer_list<_Tp> __l, _Compare __comp)\n'}
+[5.340672] (motor_driver) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.340766] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algo.h:3467:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.340863] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:544:47:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kstd::initializer_list<_Tp>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.340983] (motor_driver) StderrLine: {'line': b'  544 |                 float current_speed = \x1b[01;36m\x1b[Kstd::max(10.0f, speed_ * (1.0f - (node_->now() - last_command_time_).seconds() / 0.5f))\x1b[m\x1b[K;\n'}
+[5.341082] (motor_driver) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.341177] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:545:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kmax(float, double)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.341274] (motor_driver) StderrLine: {'line': b'  545 |                 float current_acc = \x1b[01;31m\x1b[Kstd::max(10.0f, accel_ * (1.0f - (node_->now() - last_command_time_).seconds() / 0.5f))\x1b[m\x1b[K;\n'}
+[5.341372] (motor_driver) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.341469] (motor_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:63\x1b[m\x1b[K,\n'}
+[5.341562] (motor_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[5.341657] (motor_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:5\x1b[m\x1b[K:\n'}
+[5.341753] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:254:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> constexpr const _Tp& std::max(const _Tp&, const _Tp&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.341867] (motor_driver) StderrLine: {'line': b'  254 |     \x1b[01;36m\x1b[Kmax\x1b[m\x1b[K(const _Tp& __a, const _Tp& __b)\n'}
+[5.341980] (motor_driver) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.342079] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:254:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.342176] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:545:45:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  deduced conflicting types for parameter \xe2\x80\x98\x1b[01m\x1b[Kconst _Tp\x1b[m\x1b[K\xe2\x80\x99 (\xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[5.342275] (motor_driver) StderrLine: {'line': b'  545 |                 float current_acc = \x1b[01;36m\x1b[Kstd::max(10.0f, accel_ * (1.0f - (node_->now() - last_command_time_).seconds() / 0.5f))\x1b[m\x1b[K;\n'}
+[5.342372] (motor_driver) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.342467] (motor_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:63\x1b[m\x1b[K,\n'}
+[5.342571] (motor_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[5.342668] (motor_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:5\x1b[m\x1b[K:\n'}
+[5.342771] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:300:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Compare> constexpr const _Tp& std::max(const _Tp&, const _Tp&, _Compare)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.342874] (motor_driver) StderrLine: {'line': b'  300 |     \x1b[01;36m\x1b[Kmax\x1b[m\x1b[K(const _Tp& __a, const _Tp& __b, _Compare __comp)\n'}
+[5.342985] (motor_driver) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.343080] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:300:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.343175] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:545:45:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  deduced conflicting types for parameter \xe2\x80\x98\x1b[01m\x1b[Kconst _Tp\x1b[m\x1b[K\xe2\x80\x99 (\xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[5.343274] (motor_driver) StderrLine: {'line': b'  545 |                 float current_acc = \x1b[01;36m\x1b[Kstd::max(10.0f, accel_ * (1.0f - (node_->now() - last_command_time_).seconds() / 0.5f))\x1b[m\x1b[K;\n'}
+[5.343370] (motor_driver) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.343465] (motor_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:62\x1b[m\x1b[K,\n'}
+[5.343591] (motor_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18\x1b[m\x1b[K,\n'}
+[5.343702] (motor_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[5.343801] (motor_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[5.343906] (motor_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[5.344011] (motor_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:5\x1b[m\x1b[K:\n'}
+[5.344108] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algo.h:3461:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> constexpr _Tp std::max(std::initializer_list<_Tp>)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.344204] (motor_driver) StderrLine: {'line': b' 3461 |     \x1b[01;36m\x1b[Kmax\x1b[m\x1b[K(initializer_list<_Tp> __l)\n'}
+[5.344302] (motor_driver) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.344397] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algo.h:3461:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.344494] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:545:45:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kstd::initializer_list<_Tp>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.344598] (motor_driver) StderrLine: {'line': b'  545 |                 float current_acc = \x1b[01;36m\x1b[Kstd::max(10.0f, accel_ * (1.0f - (node_->now() - last_command_time_).seconds() / 0.5f))\x1b[m\x1b[K;\n'}
+[5.344697] (motor_driver) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.344793] (motor_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:62\x1b[m\x1b[K,\n'}
+[5.344896] (motor_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18\x1b[m\x1b[K,\n'}
+[5.345015] (motor_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[5.345120] (motor_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[5.345218] (motor_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[5.345314] (motor_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:5\x1b[m\x1b[K:\n'}
+[5.345411] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algo.h:3467:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Compare> constexpr _Tp std::max(std::initializer_list<_Tp>, _Compare)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.345510] (motor_driver) StderrLine: {'line': b' 3467 |     \x1b[01;36m\x1b[Kmax\x1b[m\x1b[K(initializer_list<_Tp> __l, _Compare __comp)\n'}
+[5.345607] (motor_driver) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.345704] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algo.h:3467:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.345801] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:545:45:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kstd::initializer_list<_Tp>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.345905] (motor_driver) StderrLine: {'line': b'  545 |                 float current_acc = \x1b[01;36m\x1b[Kstd::max(10.0f, accel_ * (1.0f - (node_->now() - last_command_time_).seconds() / 0.5f))\x1b[m\x1b[K;\n'}
+[5.346018] (motor_driver) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.426686] (-) TimerEvent: {}
+[5.527104] (-) TimerEvent: {}
+[5.627581] (-) TimerEvent: {}
+[5.728122] (-) TimerEvent: {}
+[5.828714] (-) TimerEvent: {}
+[5.929313] (-) TimerEvent: {}
+[6.029848] (-) TimerEvent: {}
+[6.130323] (-) TimerEvent: {}
+[6.230791] (-) TimerEvent: {}
+[6.331319] (-) TimerEvent: {}
+[6.431774] (-) TimerEvent: {}
+[6.532350] (-) TimerEvent: {}
+[6.632953] (-) TimerEvent: {}
+[6.733500] (-) TimerEvent: {}
+[6.834108] (-) TimerEvent: {}
+[6.934719] (-) TimerEvent: {}
+[7.035380] (-) TimerEvent: {}
+[7.135985] (-) TimerEvent: {}
+[7.236386] (-) TimerEvent: {}
+[7.336784] (-) TimerEvent: {}
+[7.437226] (-) TimerEvent: {}
+[7.537731] (-) TimerEvent: {}
+[7.638177] (-) TimerEvent: {}
+[7.738581] (-) TimerEvent: {}
+[7.839067] (-) TimerEvent: {}
+[7.939484] (-) TimerEvent: {}
+[8.039970] (-) TimerEvent: {}
+[8.140472] (-) TimerEvent: {}
+[8.240955] (-) TimerEvent: {}
+[8.341406] (-) TimerEvent: {}
+[8.441874] (-) TimerEvent: {}
+[8.542383] (-) TimerEvent: {}
+[8.642931] (-) TimerEvent: {}
+[8.743424] (-) TimerEvent: {}
+[8.843840] (-) TimerEvent: {}
+[8.944269] (-) TimerEvent: {}
+[9.044698] (-) TimerEvent: {}
+[9.145248] (-) TimerEvent: {}
+[9.245803] (-) TimerEvent: {}
+[9.346386] (-) TimerEvent: {}
+[9.447003] (-) TimerEvent: {}
+[9.547434] (-) TimerEvent: {}
+[9.647865] (-) TimerEvent: {}
+[9.748292] (-) TimerEvent: {}
+[9.848724] (-) TimerEvent: {}
+[9.949140] (-) TimerEvent: {}
+[10.049560] (-) TimerEvent: {}
+[10.149999] (-) TimerEvent: {}
+[10.250424] (-) TimerEvent: {}
+[10.350936] (-) TimerEvent: {}
+[10.451454] (-) TimerEvent: {}
+[10.552216] (-) TimerEvent: {}
+[10.652750] (-) TimerEvent: {}
+[10.753306] (-) TimerEvent: {}
+[10.853982] (-) TimerEvent: {}
+[10.954439] (-) TimerEvent: {}
+[11.054981] (-) TimerEvent: {}
+[11.155483] (-) TimerEvent: {}
+[11.255960] (-) TimerEvent: {}
+[11.356456] (-) TimerEvent: {}
+[11.456947] (-) TimerEvent: {}
+[11.557393] (-) TimerEvent: {}
+[11.607585] (motor_driver) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/ControlMotor.dir/build.make:76: CMakeFiles/ControlMotor.dir/src/ControlMotor.cpp.o] Error 1\n'}
+[11.608114] (motor_driver) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ControlMotor.dir/all] Error 2\n'}
+[11.608390] (motor_driver) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[11.611662] (motor_driver) CommandEnded: {'returncode': 2}
+[11.625083] (motor_driver) JobEnded: {'identifier': 'motor_driver', 'rc': 2}
+[11.635951] (-) EventReactorShutdown: {}

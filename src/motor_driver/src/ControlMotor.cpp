@@ -487,72 +487,12 @@ private:
     }
 
     void handlePaused(const MotorData& data) {
-        // try {
-        //     // Giai đoạn 1: Áp dụng phanh trong 0.3 giây đầu
-        //     if (last_command_ == "PAUSE" && 
-        //         (node_->now() - last_command_time_) < rclcpp::Duration::from_seconds(0.3)) {
-        //         if (can_->setCurrentBrake(motor_id_, 10)) {
-
-        //             target_reached_ = (std::abs(data.velocity) < VELOCITY_TOLERANCE);
-        //             RCLCPP_INFO(logger_, "Motor 0x%02X: Brake applied, velocity: %.2f", 
-        //                         motor_id_, data.velocity);
-        //         } else {
-        //             RCLCPP_ERROR(logger_, "Motor 0x%02X: Failed to apply brake", motor_id_);
-        //             transitionTo(State::ERROR);
-        //         }
-        //     } 
-        //     // Giai đoạn 2: Bù offset và giữ vị trí
-        //     else {
-        //         const float offset = 2.0;
-        //         float target_pos = pause_position_;
     
-        //         // // Áp dụng offset dựa trên hướng di chuyển
-                // if (last_command_ == "UP" || (mode_ == Mode::AUTO && !target_positions_.empty() && 
-                //       data.position < target_positions_[current_target_index_])) {
-                //     target_pos += offset;
-                // } else if (last_command_ == "DOWN" || (mode_ == Mode::AUTO && !target_positions_.empty() && 
-                //            data.position > target_positions_[current_target_index_])) {
-                //     target_pos -= offset;
-                // }
-                
-        //         target_pos -= offset;
-
-
-        //         // Giới hạn target_pos trong khoảng min_angle_ và max_angle_
-        //         target_pos = std::clamp(target_pos, min_angle_, max_angle_);
-    
-        //         if (can_->setPositionSpeed(motor_id_, target_pos, 500, 500)) {
-        //             target_reached_ = true;
-        //             RCLCPP_INFO(logger_, "Motor 0x%02X: Holding at %.2f with offset, velocity: %.2f", 
-        //                         motor_id_, target_pos, data.velocity);
-        //         } else {
-        //             RCLCPP_ERROR(logger_, "Motor 0x%02X: Failed to hold position", motor_id_);
-        //             transitionTo(State::ERROR);
-        //         }
-        //     }
-
-        //     // else {
-
-        //     //     if (can_->setPositionSpeed(motor_id_, pause_position_, 500, 500)) {
-        //     //         target_reached_ = true;
-        //     //         RCLCPP_INFO(logger_, "Motor 0x%02X: Holding at %.2f with offset, velocity: %.2f", 
-        //     //                     motor_id_, pause_position_, data.velocity);
-        //     //     } else {
-        //     //         RCLCPP_ERROR(logger_, "Motor 0x%02X: Failed to hold position", motor_id_);
-        //     //         transitionTo(State::ERROR);
-        //     //     }
-        //     // }
-        // } catch (const std::exception& e) {
-        //     RCLCPP_ERROR(logger_, "Motor 0x%02X: PAUSED failed: %s", motor_id_, e.what());
-        //     transitionTo(State::ERROR);
-        // }
-
-
         try {
             // Giai đoạn 1: Giảm tốc độ trong 0.3 giây đầu
             if (last_command_ == "PAUSE" && 
-                (node_->now() - last_command_time_) < rclcpp::Duration::from_seconds(1.0)) {
-                if (can_->setPositionSpeed(motor_id_, pause_position_, 100, 100)) {
+                (node_->now() - last_command_time_) < rclcpp::Duration::from_seconds(0.5)) {
+                if (can_->setPositionSpeed(motor_id_, pause_position_, 10, 10)) {
                     target_reached_ = (std::abs(data.velocity) < VELOCITY_TOLERANCE);
                     RCLCPP_INFO(logger_, "Motor 0x%02X: Decelerating, velocity: %.2f", 
                                 motor_id_, data.velocity);
@@ -592,9 +532,58 @@ private:
             RCLCPP_ERROR(logger_, "Motor 0x%02X: PAUSED failed: %s", motor_id_, e.what());
             transitionTo(State::ERROR);
         }
-
      
     }
+
+
+    // void handlePaused(const MotorData& data) {
+    //     try {
+    //         // Stage 1: Smooth deceleration for 0.5 seconds
+    //         if (last_command_ == "PAUSE" && 
+    //             (node_->now() - last_command_time_) < rclcpp::Duration::from_seconds(0.5)) {
+    //             float time_fraction = static_cast<float>((node_->now() - last_command_time_).seconds()) / 0.5f;
+    //             float current_speed = std::max(10.0f, speed_ * (1.0f - time_fraction));
+    //             float current_acc = std::max(10.0f, accel_ * (1.0f - time_fraction));
+    //             if (can_->setPositionSpeed(motor_id_, pause_position_, static_cast<int>(current_speed), static_cast<int>(current_acc))) {
+    //                 RCLCPP_INFO(logger_, "Motor 0x%02X: Decelerating, speed: %.2f, accel: %.2f, velocity: %.2f", 
+    //                             motor_id_, current_speed, current_acc, data.velocity);
+    //             } else {
+    //                 RCLCPP_ERROR(logger_, "Motor 0x%02X: Failed to decelerate", motor_id_);
+    //                 transitionTo(State::ERROR);
+    //                 return;
+    //             }
+    //         }
+    //         // Stage 2: Hold position with feedback
+    //         else {
+    //             float target_pos = pause_position_;
+    //             if (std::abs(data.velocity) > VELOCITY_TOLERANCE) {
+    //                 // Adjust speed and accel to stabilize if still moving
+    //                 if (can_->setPositionSpeed(motor_id_, target_pos, 500, static_cast<int>(accel_ / 2))) {
+    //                     RCLCPP_INFO(logger_, "Motor 0x%02X: Stabilizing at %.2f, velocity: %.2f", 
+    //                                 motor_id_, target_pos, data.velocity);
+    //                 } else {
+    //                     RCLCPP_ERROR(logger_, "Motor 0x%02X: Failed to stabilize", motor_id_);
+    //                     transitionTo(State::ERROR);
+    //                     return;
+    //                 }
+    //             } else {
+    //                 // Hold position with higher torque
+    //                 if (can_->setPositionSpeed(motor_id_, target_pos, 2000, static_cast<int>(accel_))) {
+    //                     target_reached_ = true;
+    //                     RCLCPP_INFO(logger_, "Motor 0x%02X: Holding at %.2f, velocity: %.2f", 
+    //                                 motor_id_, target_pos, data.velocity);
+    //                 } else {
+    //                     RCLCPP_ERROR(logger_, "Motor 0x%02X: Failed to hold position", motor_id_);
+    //                     transitionTo(State::ERROR);
+    //                 }
+    //             }
+    //         }
+    //     } catch (const std::exception& e) {
+    //         RCLCPP_ERROR(logger_, "Motor 0x%02X: PAUSED failed: %s", motor_id_, e.what());
+    //         transitionTo(State::ERROR);
+    //     }
+    // }
+
     void handleStopped(const MotorData& data) {
         can_->setPositionSpeed(motor_id_, data.position, static_cast<float>(speed_/2), static_cast<float>(accel_/2));
     }
@@ -636,7 +625,7 @@ private:
                 if (target_position_ >= max_angle_) target_position_ = max_angle_;
                 last_command_ = "UP";
                 mode_ = Mode::MANUAL;
-                if (can_->setPositionSpeed(motor_id_, target_position_, static_cast<int>(speed_/3), static_cast<int>(accel_/3))) {
+                if (can_->setPositionSpeed(motor_id_, target_position_, static_cast<int>(speed_), static_cast<int>(accel_))) {
                     response << "Moving UP to position " << target_position_;
                     target_positions_cmd_.clear();
                     target_positions_cmd_.push_back(target_position_);
@@ -658,7 +647,7 @@ private:
                 if (target_position_ < min_angle_) target_position_ = min_angle_;
                 last_command_ = "DOWN";
                 mode_ = Mode::MANUAL;
-                if (can_->setPositionSpeed(motor_id_, target_position_, static_cast<int>(speed_/2), static_cast<int>(accel_/2))) {
+                if (can_->setPositionSpeed(motor_id_, target_position_, static_cast<int>(speed_), static_cast<int>(accel_))) {
                     response << "Moving DOWN to position " << target_position_;
                     target_positions_cmd_.clear();
                     target_positions_cmd_.push_back(target_position_);
