@@ -1,0 +1,59 @@
+[0.016s] Invoking command in '/home/ubuntu/Desktop/AK8064_ws_Jun/build/motor_control': AMENT_PREFIX_PATH=/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface:/opt/ros/humble LD_LIBRARY_PATH=/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_control -DCMAKE_INSTALL_PREFIX=/home/ubuntu/Desktop/AK8064_ws_Jun/install/motor_control
+[0.120s] -- The C compiler identification is GNU 11.4.0
+[0.235s] -- The CXX compiler identification is GNU 11.4.0
+[0.254s] -- Detecting C compiler ABI info
+[0.380s] -- Detecting C compiler ABI info - done
+[0.396s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.396s] -- Detecting C compile features
+[0.397s] -- Detecting C compile features - done
+[0.403s] -- Detecting CXX compiler ABI info
+[0.556s] -- Detecting CXX compiler ABI info - done
+[0.572s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.573s] -- Detecting CXX compile features
+[0.574s] -- Detecting CXX compile features - done
+[0.579s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.462s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.662s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[1.760s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.770s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.786s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.812s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.846s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.945s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.951s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[1.991s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[2.007s] -- Looking for pthread.h
+[2.134s] -- Looking for pthread.h - found
+[2.135s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.266s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.269s] -- Found Threads: TRUE  
+[2.399s] -- Found can_interface: 0.0.1 (/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/share/can_interface/cmake)
+[2.409s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.597s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.598s] -- Configured cppcheck include dirs: /home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_control/include
+[2.599s] -- Configured cppcheck exclude dirs and/or files: 
+[2.600s] -- Added test 'lint_cmake' to check CMake code style
+[2.603s] -- Added test 'uncrustify' to check C / C++ code style
+[2.603s] -- Configured uncrustify additional arguments: 
+[2.604s] -- Added test 'xmllint' to check XML markup files
+[2.607s] -- Configuring done
+[2.625s] -- Generating done
+[2.633s] -- Build files have been written to: /home/ubuntu/Desktop/AK8064_ws_Jun/build/motor_control
+[2.647s] Invoked command in '/home/ubuntu/Desktop/AK8064_ws_Jun/build/motor_control' returned '0': AMENT_PREFIX_PATH=/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface:/opt/ros/humble LD_LIBRARY_PATH=/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_control -DCMAKE_INSTALL_PREFIX=/home/ubuntu/Desktop/AK8064_ws_Jun/install/motor_control
+[2.650s] Invoking command in '/home/ubuntu/Desktop/AK8064_ws_Jun/build/motor_control': AMENT_PREFIX_PATH=/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface:/opt/ros/humble LD_LIBRARY_PATH=/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/ubuntu/Desktop/AK8064_ws_Jun/build/motor_control -- -j8 -l8
+[2.748s] [ 33%] [32mBuilding CXX object CMakeFiles/motor_control.dir/src/motor_control_node.cpp.o[0m
+[2.748s] [ 66%] [32mBuilding CXX object CMakeFiles/motor_control.dir/src/motor_controller.cpp.o[0m
+[2.766s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_control/src/motor_controller.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Kmotor_controller.hpp: No such file or directory
+[2.766s]     1 | #include [01;31m[K"motor_controller.hpp"[m[K
+[2.766s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.767s] compilation terminated.
+[2.767s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_control/src/motor_control_node.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Kmotor_control_node.hpp: No such file or directory
+[2.767s]     1 | #include [01;31m[K"motor_control_node.hpp"[m[K
+[2.768s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.768s] compilation terminated.
+[2.777s] gmake[2]: *** [CMakeFiles/motor_control.dir/build.make:90: CMakeFiles/motor_control.dir/src/motor_controller.cpp.o] Error 1
+[2.778s] gmake[2]: *** Waiting for unfinished jobs....
+[2.778s] gmake[2]: *** [CMakeFiles/motor_control.dir/build.make:76: CMakeFiles/motor_control.dir/src/motor_control_node.cpp.o] Error 1
+[2.778s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/motor_control.dir/all] Error 2
+[2.779s] gmake: *** [Makefile:146: all] Error 2
+[2.783s] Invoked command in '/home/ubuntu/Desktop/AK8064_ws_Jun/build/motor_control' returned '2': AMENT_PREFIX_PATH=/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface:/opt/ros/humble LD_LIBRARY_PATH=/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/ubuntu/Desktop/AK8064_ws_Jun/build/motor_control -- -j8 -l8
