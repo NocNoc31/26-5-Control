@@ -1,5 +1,4 @@
-
-// // // CODE TEST NGÀY 29/5 WILL TEST
+// // -----------------------------------------------19/6--------------------------------------------------------
 
 
 // #include "rclcpp/rclcpp.hpp"
@@ -17,7 +16,7 @@
 // #include <sstream>
 // #include "can_interface/caninterface.hpp"
 
-// // Giao diện trừu tượng cho CAN
+// // Abstract interface for CAN communication
 // class ICANInterface {
 // public:
 //     virtual bool setOrigin(uint8_t id, uint8_t mode) = 0;
@@ -31,10 +30,10 @@
 //     virtual ~ICANInterface() = default;
 // };
 
-// // Triển khai CANInterface kế thừa ICANInterface
+// // Wrapper for CANInterface
 // class CANInterfaceWrapper : public ICANInterface {
 // public:
-//     CANInterfaceWrapper(const std::string& interface_name) : can_(interface_name) {}
+//     explicit CANInterfaceWrapper(const std::string& interface_name) : can_(interface_name) {}
 
 //     bool setOrigin(uint8_t id, uint8_t mode) override {
 //         try {
@@ -99,17 +98,17 @@
 //     CANInterface can_;
 // };
 
-// // Cấu trúc dữ liệu động cơ
+// // Structure to hold motor data
 // struct MotorData {
 //     float position = 0.0;  // degrees
 //     float velocity = 0.0;  // rpm
 //     float current = 0.0;   // mA
 //     int8_t temperature = 0; // °C
 //     int8_t error = 0;      // error code
-//     std::string state;     // trạng thái động cơ
+//     std::string state;     // motor state
 // };
 
-// // Giao diện điều khiển động cơ
+// // Abstract interface for motor controller
 // class IMotorController {
 // public:
 //     virtual void control(const MotorData& data) = 0;
@@ -122,7 +121,7 @@
 //     virtual ~IMotorController() = default;
 // };
 
-// // Lớp kiểm tra an toàn
+// // Safety checker for motor parameters
 // class SafetyChecker {
 // public:
 //     SafetyChecker(float min_angle, float max_angle, int max_temperature)
@@ -147,7 +146,7 @@
 //     int max_temperature_;
 // };
 
-// // Lớp xuất bản trạng thái
+// // Publishes motor state to ROS topics
 // class StatePublisher {
 // public:
 //     StatePublisher(rclcpp::Node* node, const std::string& name)
@@ -156,7 +155,7 @@
 //           reached_publisher_(node->create_publisher<std_msgs::msg::Bool>(name + "_target_reached", 10)),
 //           response_publisher_(node->create_publisher<std_msgs::msg::String>(name + "_response", 10)),
 //           current_publisher_(node->create_publisher<std_msgs::msg::Float32>(name + "_current", 10)),
-//           temperature_publisher_(node->create_publisher<std_msgs::msg::Int8>(name + "_temperature", 10)),
+//           temperature_publisher_(node->create_publisher<std_msgs::msg::Float32>(name + "_temperature", 10)),
 //           state_publisher_(node->create_publisher<std_msgs::msg::String>(name + "_state", 10)) {}
 
 //     void publish(const MotorData& data, bool target_reached) {
@@ -176,7 +175,7 @@
 //         cur_msg.data = data.current;
 //         current_publisher_->publish(cur_msg);
 
-//         std_msgs::msg::Int8 temp_msg;
+//         std_msgs::msg::Float32 temp_msg;
 //         temp_msg.data = data.temperature;
 //         temperature_publisher_->publish(temp_msg);
 
@@ -197,23 +196,27 @@
 //     rclcpp::Publisher<std_msgs::msg::Bool>::SharedPtr reached_publisher_;
 //     rclcpp::Publisher<std_msgs::msg::String>::SharedPtr response_publisher_;
 //     rclcpp::Publisher<std_msgs::msg::Float32>::SharedPtr current_publisher_;
-//     rclcpp::Publisher<std_msgs::msg::Int8>::SharedPtr temperature_publisher_;
+//     rclcpp::Publisher<std_msgs::msg::Float32>::SharedPtr temperature_publisher_;
 //     rclcpp::Publisher<std_msgs::msg::String>::SharedPtr state_publisher_;
 // };
 
-// // Lớp điều khiển động cơ
+// // Motor controller implementation
 // class MotorController : public IMotorController {
+// private:
+//     enum class State { INITIALIZING, HOMING, MOVING, STOPPED, PAUSED, ERROR }; // Motor states
+//     enum class Mode { AUTO, MANUAL }; // Control modes
+
 // public:
 //     MotorController(uint8_t motor_id, std::shared_ptr<ICANInterface> can, 
 //                     rclcpp::Node* node, const std::string& name)
 //         : motor_id_(motor_id), can_(can), node_(node), logger_(node->get_logger()),
 //           state_(State::INITIALIZING), mode_(Mode::MANUAL), is_origin_set_(false), 
 //           is_home_(false), current_target_index_(0), reach_counter_(0), 
-//           target_reached_(true), speed_(10000.0), accel_(1000.0), min_angle_(0.0), 
+//           target_reached_(true), speed_(10000.0), accel_(1000.0), min_angle_(-20.0), 
 //           max_angle_(90.0), step_(5), target_position_(0.0), pause_position_(0.0),
 //           reach_count_max_(100), safety_checker_(min_angle_, max_angle_, MAX_MOTOR_TEMPERATURE),
 //           state_publisher_(node, name), param_prefix_(name + "."), 
-//           last_command_(""), pre_pause_command_(""), last_command_time_(node_->now()), 
+//           last_command_(), pre_pause_command_(), last_command_time_(node_->now()), 
 //           repeat_(1) {
 //         initializeParameters();
 //         setOrigin();
@@ -247,7 +250,7 @@
 //                 transitionTo(State::STOPPED);
 //                 return;
 //             }
-//             mode_ = Mode::MANUAL; // Chuyển sang chế độ MANUAL khi nhận UP/DOWN
+//             mode_ = Mode::MANUAL;
 //         }
 
 //         last_command_time_ = node_->now();
@@ -311,7 +314,6 @@
 //         int new_step = step_;
 //         int new_repeat = repeat_;
 
-//         // Giai đoạn 1: Lưu tham số vào biến tạm
 //         for (const auto& param : parameters) {
 //             RCLCPP_INFO(logger_, "Motor 0x%02X: Processing parameter: %s", motor_id_, param.name.c_str());
 //             if (param.name == "target_positions") {
@@ -322,7 +324,7 @@
 //                 }
 //                 validatePositions(temp_positions);
 //                 update_positions = true;
-//                 mode_ = Mode::AUTO; // Chuyển sang AUTO khi nhận target_positions
+//                 mode_ = Mode::AUTO;
 //             } else if (param.name == "speed") {
 //                 new_speed = static_cast<float>(param.value.double_value);
 //                 RCLCPP_INFO(logger_, "Motor 0x%02X: Updated speed: %.2f", motor_id_, new_speed);
@@ -340,7 +342,6 @@
 //             }
 //         }
 
-//         // Giai đoạn 2: Cập nhật các giá trị và xử lý lặp lại target_positions
 //         speed_ = new_speed;
 //         accel_ = new_accel;
 //         step_ = new_step;
@@ -379,7 +380,6 @@
 
 //     void stop() override {
 //         try {
-//             // Áp dụng phanh nếu trước đó là UP, DOWN hoặc chế độ MANUAL với target_pos
 //             if ((last_command_ == "UP" || last_command_ == "DOWN" || 
 //                  (mode_ == Mode::MANUAL && !target_positions_cmd_.empty())) && 
 //                 !can_->setCurrentBrake(motor_id_, 300)) {
@@ -387,7 +387,6 @@
 //                 transitionTo(State::ERROR);
 //                 return;
 //             }
-//             // Giữ vị trí hiện tại
 //             can_->setPositionSpeed(motor_id_, last_data_.position, 1000, 1000);
 //             target_position_ = last_data_.position;
 //             transitionTo(State::STOPPED);
@@ -399,11 +398,7 @@
 //         }
 //     }
 
-
 // private:
-//     enum class State { INITIALIZING, HOMING, MOVING, STOPPED, PAUSED, ERROR };
-//     enum class Mode { AUTO, MANUAL };
-
 //     std::string stateToString(State state) const {
 //         switch (state) {
 //             case State::INITIALIZING: return "INITIALIZING";
@@ -476,9 +471,7 @@
 //     }
 
 //     void handlePaused(const MotorData& data) {
-    
 //         try {
-//             // Stage 1: Reduce velocity to zero for 0.3 seconds
 //             if (last_command_ == "PAUSE" && 
 //                 (node_->now() - last_command_time_) < rclcpp::Duration::from_seconds(0.3)) {
 //                 if (can_->setRPM(motor_id_, 0.0)) {
@@ -489,14 +482,11 @@
 //                     transitionTo(State::ERROR);
 //                     return;
 //                 }
-//             }
-//             // Stage 2: Hold exact pause position
-//             else {
-//                 float target_pos = pause_position_; // No offset
+//             } else {
+//                 float target_pos = pause_position_;
 //                 target_pos = std::clamp(target_pos, min_angle_, max_angle_);
 
 //                 if (std::abs(data.velocity) > VELOCITY_TOLERANCE) {
-//                     // Continue reducing velocity if still moving
 //                     if (can_->setRPM(motor_id_, 0.0)) {
 //                         RCLCPP_INFO(logger_, "Motor 0x%02X: Stabilizing velocity to 0, current velocity: %.2f", 
 //                                     motor_id_, data.velocity);
@@ -506,7 +496,6 @@
 //                         return;
 //                     }
 //                 } else {
-//                     // Hold position with high-gain control
 //                     if (can_->setPositionSpeed(motor_id_, target_pos, 2000, 2000)) {
 //                         target_reached_ = true;
 //                         RCLCPP_INFO(logger_, "Motor 0x%02X: Holding at %.2f, velocity: %.2f", 
@@ -522,9 +511,7 @@
 //             RCLCPP_ERROR(logger_, "Motor 0x%02X: PAUSED failed: %s", motor_id_, e.what());
 //             transitionTo(State::ERROR);
 //         }
-     
 //     }
-
 
 //     void handleStopped(const MotorData& data) {
 //         can_->setPositionSpeed(motor_id_, data.position, static_cast<float>(speed_/2), static_cast<float>(accel_/2));
@@ -532,29 +519,25 @@
 
 //     void handleError(const MotorData& data) {
 //         try {
-//             static bool is_braking = true; // Trạng thái phanh
+//             static bool is_braking = true;
 //             static rclcpp::Time error_start_time = node_->now();
     
 //             if (is_braking && (node_->now() - error_start_time) < rclcpp::Duration::from_seconds(0.3)) {
-//                 // Phanh khẩn cấp 300mA trong 0.5 giây
-//                 if (can_->setCurrentBrake(motor_id_, 300.0) && std::abs(data.velocity) < VELOCITY_TOLERANCE) {
-//                     is_braking = false; // Chuyển sang về gốc
+//                 if (can_->setCurrentBrake(motor_id_, 100.0) && std::abs(data.velocity) < VELOCITY_TOLERANCE) {
+//                     is_braking = false;
 //                     error_start_time = node_->now();
 //                 }
 //             } else {
-//                 // Di chuyển về gốc với tốc độ/gia tốc 20%
 //                 if (std::abs(data.position) < POSITION_TOLERANCE) {
-//                     can_->setCurrent(motor_id_, 0.0); // Ngắt mô-men xoắn
+//                     can_->setCurrent(motor_id_, 0.0);
 //                     target_reached_ = true;
-//                     // transitionTo(State::STOPPED);
 //                 } else {
 //                     can_->setPositionSpeed(motor_id_, 0.0, static_cast<int>(speed_/3), static_cast<int>(accel_/3));
 //                     target_reached_ = false;
 //                 }
 //             }
 //         } catch (const std::exception& e) {
-//             can_->setCurrent(motor_id_, 0.0); // Ngắt mô-men xoắn nếu lỗi
-//             // transitionTo(State::STOPPED);
+//             can_->setCurrent(motor_id_, 0.0);
 //         }
 //     }
 
@@ -604,7 +587,6 @@
 //                     state_publisher_.publishResponse(response.str());
 //                 }
 //             }},
-
 //             {"PAUSE", [this]() {
 //                 std::stringstream response;
 //                 response << "Motor 0x" << std::hex << std::setw(2) << std::setfill('0') << static_cast<int>(motor_id_) << ": ";
@@ -615,10 +597,10 @@
 //                     return;
 //                 }
 //                 try {
-//                     pause_position_ = last_data_.position; // Lưu vị trí hiện tại
-//                     pre_pause_command_ = last_command_; // Lưu lệnh trước đó
+//                     pause_position_ = last_data_.position;
+//                     pre_pause_command_ = last_command_;
 //                     last_command_ = "PAUSE";
-//                     last_command_time_ = node_->now(); // Ghi thời gian áp dụng PAUSE
+//                     last_command_time_ = node_->now();
 //                     target_reached_ = false;
 //                     response << "Paused at position " << pause_position_;
 //                     RCLCPP_INFO(logger_, "%s", response.str().c_str());
@@ -631,7 +613,6 @@
 //                     transitionTo(State::ERROR);
 //                 }
 //             }},
-
 //             {"RUN", [this]() {
 //                 std::stringstream response;
 //                 response << "Motor 0x" << std::hex << static_cast<int>(motor_id_) << ": ";
@@ -742,7 +723,6 @@
 //             RCLCPP_INFO(logger_, "Motor 0x%02X: SetOrigin completed.", motor_id_);
 //         } catch (const std::exception& e) {
 //             RCLCPP_ERROR(logger_, "Motor 0x%02X: SetOrigin failed: %s", motor_id_, e.what());
-            
 //             throw std::runtime_error("Failed to set motor origin");
 //         }
 //     }
@@ -752,7 +732,7 @@
 //         node_->declare_parameter(param_prefix_ + "target_positions_cmd", std::vector<double>{0.0});
 //         node_->declare_parameter(param_prefix_ + "speed", 10000.0);
 //         node_->declare_parameter(param_prefix_ + "accel", 1000.0);
-//         node_->declare_parameter(param_prefix_ + "min_angle", 0.0);
+//         node_->declare_parameter(param_prefix_ + "min_angle", -20.0);
 //         node_->declare_parameter(param_prefix_ + "max_angle", 90.0);
 //         node_->declare_parameter(param_prefix_ + "step", 2);
 //         node_->declare_parameter(param_prefix_ + "reach_count_max", 100);
@@ -827,7 +807,7 @@
 //     std::unordered_map<std::string, std::function<void()>> command_map_;
 // };
 
-// // Lớp chính điều phối
+// // Main ROS node for motor control
 // class MotorControlNode : public rclcpp::Node {
 // public:
 //     MotorControlNode() : Node("motor_control_node") {
@@ -889,24 +869,20 @@
 //             }
 //         } catch (const std::exception& e) {
 //             RCLCPP_ERROR(get_logger(), "CAN error: %s", e.what());
-//             for (const auto& controller : controllers_) {
-//                 stopAllMotors();
-//             }
+//             stopAllMotors();
 //         }
 //     }
 
 //     void stopAllMotors() {
-//         RCLCPP_INFO(get_logger(), "Stopping all motors."); // Thông báo chung khi bắt đầu dừng
+//         RCLCPP_INFO(get_logger(), "Stopping all motors.");
 //         for (const auto& controller : controllers_) {
 //             try {
-//                 // Giả sử can_->setCurrent trả về bool, true nếu thành công
-//                 bool success = can_->setCurrent(controller->motorId(), 0.0);
-//                 if (success) {
+//                 if (can_->setCurrent(controller->motorId(), 0.0)) {
 //                     RCLCPP_INFO(get_logger(), "Motor 0x%02X: Torque successfully disabled.", 
-//                                  controller->motorId());
+//                                 controller->motorId());
 //                 } else {
 //                     RCLCPP_ERROR(get_logger(), "Motor 0x%02X: Failed to disable torque via CAN command.", 
-//                                  controller->motorId());
+//                                 controller->motorId());
 //                 }
 //             } catch (const std::exception& e) {
 //                 RCLCPP_ERROR(get_logger(), "Motor 0x%02X: Exception caught while trying to disable torque: %s", 
@@ -939,9 +915,7 @@
 
 //     void safeShutdown() {
 //         RCLCPP_WARN(get_logger(), "ROS shutdown detected! Stopping motors.");
-//         for (const auto& controller : controllers_) {
-//             stopAllMotors();
-//         }
+//         stopAllMotors();
 //     }
 
 //     std::shared_ptr<ICANInterface> can_;
@@ -969,6 +943,22 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #include "rclcpp/rclcpp.hpp"
 #include "rcl_interfaces/srv/set_parameters.hpp"
 #include "std_msgs/msg/string.hpp"
@@ -976,6 +966,7 @@
 #include "std_msgs/msg/bool.hpp"
 #include "std_msgs/msg/int8.hpp"
 #include <vector>
+#include <queue>
 #include <chrono>
 #include <cmath>
 #include <memory>
@@ -1121,12 +1112,13 @@ public:
         : position_publisher_(node->create_publisher<std_msgs::msg::Float32>(name + "_position", 10)),
           velocity_publisher_(node->create_publisher<std_msgs::msg::Float32>(name + "_vel_actual", 10)),
           reached_publisher_(node->create_publisher<std_msgs::msg::Bool>(name + "_target_reached", 10)),
+          all_reached_publisher_(node->create_publisher<std_msgs::msg::Bool>(name + "_all_targets_reached", 10)),
           response_publisher_(node->create_publisher<std_msgs::msg::String>(name + "_response", 10)),
           current_publisher_(node->create_publisher<std_msgs::msg::Float32>(name + "_current", 10)),
           temperature_publisher_(node->create_publisher<std_msgs::msg::Float32>(name + "_temperature", 10)),
           state_publisher_(node->create_publisher<std_msgs::msg::String>(name + "_state", 10)) {}
 
-    void publish(const MotorData& data, bool target_reached) {
+    void publish(const MotorData& data, bool target_reached, bool all_targets_reached) {
         std_msgs::msg::Float32 pos_msg;
         pos_msg.data = data.position;
         position_publisher_->publish(pos_msg);
@@ -1138,6 +1130,10 @@ public:
         std_msgs::msg::Bool reached_msg;
         reached_msg.data = target_reached;
         reached_publisher_->publish(reached_msg);
+
+        std_msgs::msg::Bool all_reached_msg;
+        all_reached_msg.data = all_targets_reached;
+        all_reached_publisher_->publish(all_reached_msg);
 
         std_msgs::msg::Float32 cur_msg;
         cur_msg.data = data.current;
@@ -1162,6 +1158,7 @@ private:
     rclcpp::Publisher<std_msgs::msg::Float32>::SharedPtr position_publisher_;
     rclcpp::Publisher<std_msgs::msg::Float32>::SharedPtr velocity_publisher_;
     rclcpp::Publisher<std_msgs::msg::Bool>::SharedPtr reached_publisher_;
+    rclcpp::Publisher<std_msgs::msg::Bool>::SharedPtr all_reached_publisher_;
     rclcpp::Publisher<std_msgs::msg::String>::SharedPtr response_publisher_;
     rclcpp::Publisher<std_msgs::msg::Float32>::SharedPtr current_publisher_;
     rclcpp::Publisher<std_msgs::msg::Float32>::SharedPtr temperature_publisher_;
@@ -1180,8 +1177,8 @@ public:
         : motor_id_(motor_id), can_(can), node_(node), logger_(node->get_logger()),
           state_(State::INITIALIZING), mode_(Mode::MANUAL), is_origin_set_(false), 
           is_home_(false), current_target_index_(0), reach_counter_(0), 
-          target_reached_(true), speed_(10000.0), accel_(1000.0), min_angle_(0.0), 
-          max_angle_(90.0), step_(5), target_position_(0.0), pause_position_(0.0),
+          target_reached_(true), all_targets_reached_(true), speed_(10000.0), accel_(1000.0), 
+          min_angle_(-20.0), max_angle_(90.0), step_(5), target_position_(0.0), pause_position_(0.0),
           reach_count_max_(100), safety_checker_(min_angle_, max_angle_, MAX_MOTOR_TEMPERATURE),
           state_publisher_(node, name), param_prefix_(name + "."), 
           last_command_(), pre_pause_command_(), last_command_time_(node_->now()), 
@@ -1243,7 +1240,7 @@ public:
             return;
         }
 
-        state_publisher_.publish(last_data_, target_reached_);
+        state_publisher_.publish(last_data_, target_reached_, all_targets_reached_);
 
         switch (state_) {
             case State::INITIALIZING:
@@ -1328,6 +1325,7 @@ public:
             }
             target_positions_ = repeated_positions;
             target_reached_ = false;
+            all_targets_reached_ = false;
             current_target_index_ = 0;
             RCLCPP_INFO(logger_, "Motor 0x%02X: Updated target_positions: %ld targets (repeated %d times)", 
                         motor_id_, target_positions_.size(), repeat_);
@@ -1343,7 +1341,7 @@ public:
     }
 
     bool isOriginSet() const override { return is_origin_set_; }
-    bool isTargetReached() const override { return target_reached_; }
+    bool isTargetReached() const override { return all_targets_reached_; }
     uint8_t motorId() const override { return motor_id_; }
 
     void stop() override {
@@ -1358,6 +1356,7 @@ public:
             can_->setPositionSpeed(motor_id_, last_data_.position, 1000, 1000);
             target_position_ = last_data_.position;
             transitionTo(State::STOPPED);
+            all_targets_reached_ = true;
             state_publisher_.publishResponse("Motor 0x" + std::to_string(motor_id_) + 
                                             ": Stopped at position " + std::to_string(last_data_.position));
         } catch (const std::exception& e) {
@@ -1393,6 +1392,7 @@ private:
             std::abs(data.velocity) < VELOCITY_TOLERANCE) {
             is_home_ = true;
             target_reached_ = true;
+            all_targets_reached_ = true;
             RCLCPP_INFO(logger_, "Motor 0x%02X reached Home Position!", motor_id_);
             transitionTo(State::MOVING);
         }
@@ -1406,12 +1406,14 @@ private:
                 if (reach_counter_ >= reach_count_max_) {
                     reach_counter_ = 0;
                     target_reached_ = true;
+                    all_targets_reached_ = true;
                     RCLCPP_INFO(logger_, "Motor 0x%02X: Reached target position %.2f", 
                                 motor_id_, target_position_);
                 }
             } else {
                 reach_counter_ = 0;
                 target_reached_ = false;
+                all_targets_reached_ = false;
             }
         } else if (mode_ == Mode::AUTO && !target_positions_.empty()) {
             float target = target_positions_[current_target_index_];
@@ -1423,13 +1425,17 @@ private:
                     target_reached_ = true;
                     current_target_index_++;
                     if (current_target_index_ >= target_positions_.size()) {
+                        all_targets_reached_ = true;
                         current_target_index_ = target_positions_.size() - 1;
                         RCLCPP_INFO(logger_, "Motor 0x%02X: All targets reached.", motor_id_);
+                    } else {
+                        all_targets_reached_ = false;
                     }
                 }
             } else {
                 reach_counter_ = 0;
                 target_reached_ = false;
+                all_targets_reached_ = false;
             }
         } else {
             RCLCPP_ERROR(logger_, "Motor 0x%02X: No target positions or command!", motor_id_);
@@ -1466,6 +1472,7 @@ private:
                 } else {
                     if (can_->setPositionSpeed(motor_id_, target_pos, 2000, 2000)) {
                         target_reached_ = true;
+                        all_targets_reached_ = false;
                         RCLCPP_INFO(logger_, "Motor 0x%02X: Holding at %.2f, velocity: %.2f", 
                                     motor_id_, target_pos, data.velocity);
                     } else {
@@ -1483,6 +1490,7 @@ private:
 
     void handleStopped(const MotorData& data) {
         can_->setPositionSpeed(motor_id_, data.position, static_cast<float>(speed_/2), static_cast<float>(accel_/2));
+        all_targets_reached_ = true;
     }
 
     void handleError(const MotorData& data) {
@@ -1499,9 +1507,11 @@ private:
                 if (std::abs(data.position) < POSITION_TOLERANCE) {
                     can_->setCurrent(motor_id_, 0.0);
                     target_reached_ = true;
+                    all_targets_reached_ = true;
                 } else {
                     can_->setPositionSpeed(motor_id_, 0.0, static_cast<int>(speed_/3), static_cast<int>(accel_/3));
                     target_reached_ = false;
+                    all_targets_reached_ = false;
                 }
             }
         } catch (const std::exception& e) {
@@ -1524,6 +1534,7 @@ private:
                     target_positions_cmd_.push_back(target_position_);
                     current_target_index_ = 0;
                     target_reached_ = false;
+                    all_targets_reached_ = false;
                     RCLCPP_INFO(logger_, "%s", response.str().c_str());
                     state_publisher_.publishResponse(response.str());
                     transitionTo(State::MOVING);
@@ -1546,6 +1557,7 @@ private:
                     target_positions_cmd_.push_back(target_position_);
                     current_target_index_ = 0;
                     target_reached_ = false;
+                    all_targets_reached_ = false;
                     RCLCPP_INFO(logger_, "%s", response.str().c_str());
                     state_publisher_.publishResponse(response.str());
                     transitionTo(State::MOVING);
@@ -1570,6 +1582,7 @@ private:
                     last_command_ = "PAUSE";
                     last_command_time_ = node_->now();
                     target_reached_ = false;
+                    all_targets_reached_ = false;
                     response << "Paused at position " << pause_position_;
                     RCLCPP_INFO(logger_, "%s", response.str().c_str());
                     state_publisher_.publishResponse(response.str());
@@ -1589,6 +1602,7 @@ private:
                     target_position_ = target_positions_[current_target_index_];
                     response << "Running AUTO mode at position " << target_position_;
                     target_reached_ = false;
+                    all_targets_reached_ = false;
                     transitionTo(State::MOVING);
                 } else if (mode_ == Mode::MANUAL && !pre_pause_command_.empty()) {
                     handleCommand(pre_pause_command_);
@@ -1610,6 +1624,7 @@ private:
                 target_positions_.push_back(target_position_);
                 current_target_index_ = 0;
                 target_reached_ = false;
+                all_targets_reached_ = false;
                 response << "Initiating move to HOME position (0.0)";
                 RCLCPP_INFO(logger_, "%s", response.str().c_str());
                 state_publisher_.publishResponse(response.str());
@@ -1700,7 +1715,7 @@ private:
         node_->declare_parameter(param_prefix_ + "target_positions_cmd", std::vector<double>{0.0});
         node_->declare_parameter(param_prefix_ + "speed", 10000.0);
         node_->declare_parameter(param_prefix_ + "accel", 1000.0);
-        node_->declare_parameter(param_prefix_ + "min_angle", 0.0);
+        node_->declare_parameter(param_prefix_ + "min_angle", -20.0);
         node_->declare_parameter(param_prefix_ + "max_angle", 90.0);
         node_->declare_parameter(param_prefix_ + "step", 2);
         node_->declare_parameter(param_prefix_ + "reach_count_max", 100);
@@ -1762,6 +1777,7 @@ private:
     float target_position_;
     float pause_position_;
     bool target_reached_;
+    bool all_targets_reached_;
     float min_angle_;
     float max_angle_;
     SafetyChecker safety_checker_;
@@ -1775,19 +1791,40 @@ private:
     std::unordered_map<std::string, std::function<void()>> command_map_;
 };
 
+// Structure to hold parameter request
+struct Request {
+    size_t controller_index; // 0 for Motor 1 (0x68), 1 for Motor 2 (0x69)
+    std::vector<rcl_interfaces::msg::Parameter> parameters;
+    std::shared_ptr<rcl_interfaces::srv::SetParameters::Response> response;
+};
+
 // Main ROS node for motor control
 class MotorControlNode : public rclcpp::Node {
+private:
+    enum class ExecutionMode { CONCURRENT, MOTOR1_THEN_MOTOR2, MOTOR2_THEN_MOTOR1 };
+
 public:
-    MotorControlNode() : Node("motor_control_node") {
+    MotorControlNode() : Node("motor_control_node"), execution_mode_(ExecutionMode::CONCURRENT) {
+        // Declare and get execution_mode parameter
+        declare_parameter("execution_mode", 0);
+        int mode;
+        get_parameter("execution_mode", mode);
+        setExecutionMode(mode);
+
+        // Initialize CAN interface
         can_ = std::make_shared<CANInterfaceWrapper>("can0");
+
+        // Create control loop timer
         timer_ = create_wall_timer(std::chrono::milliseconds(1), 
                                   std::bind(&MotorControlNode::controlLoop, this));
 
+        // Initialize motor controllers
         controllers_.push_back(std::make_unique<MotorController>(
             0x68, can_, this, "/motor1_control_node"));
         controllers_.push_back(std::make_unique<MotorController>(
             0x69, can_, this, "/motor2_control_node"));
 
+        // Create command subscribers
         command_m1_sub_ = create_subscription<std_msgs::msg::String>(
             "Motor1ControlCMD", 10, 
             std::bind(&MotorControlNode::commandM1Callback, this, std::placeholders::_1));
@@ -1795,6 +1832,7 @@ public:
             "Motor2ControlCMD", 10, 
             std::bind(&MotorControlNode::commandM2Callback, this, std::placeholders::_1));
 
+        // Create parameter services
         services_.push_back(create_service<rcl_interfaces::srv::SetParameters>(
             "/motor1_control_node/set_parameters",
             std::bind(&MotorControlNode::setParametersCallback, this, std::placeholders::_1,
@@ -1804,6 +1842,13 @@ public:
             std::bind(&MotorControlNode::setParametersCallback, this, std::placeholders::_1,
                       std::placeholders::_2, 1)));
 
+        // Create service for setting execution_mode
+        mode_service_ = create_service<rcl_interfaces::srv::SetParameters>(
+            "/motor_control_node/set_parameters",
+            std::bind(&MotorControlNode::setModeCallback, this, std::placeholders::_1,
+                      std::placeholders::_2));
+
+        // Register shutdown handler
         rclcpp::on_shutdown(std::bind(&MotorControlNode::safeShutdown, this));
     }
 
@@ -1820,7 +1865,171 @@ private:
         }
     }
 
+    void setParametersCallback(
+        const std::shared_ptr<rcl_interfaces::srv::SetParameters::Request> request,
+        std::shared_ptr<rcl_interfaces::srv::SetParameters::Response> response,
+        size_t controller_index) {
+        RCLCPP_INFO(get_logger(), "Received set_parameters request for controller index: %zu", controller_index);
+        if (controller_index >= controllers_.size()) {
+            RCLCPP_ERROR(get_logger(), "Invalid controller index: %zu", controller_index);
+            response->results.resize(request->parameters.size());
+            for (size_t i = 0; i < request->parameters.size(); ++i) {
+                response->results[i].successful = false;
+                response->results[i].reason = "Invalid controller index";
+            }
+            return;
+        }
+
+        // Queue the request
+        Request req;
+        req.controller_index = controller_index;
+        req.parameters = request->parameters;
+        req.response = response;
+        request_queue_.push(req);
+        RCLCPP_INFO(get_logger(), "Queued request for controller index: %zu", controller_index);
+    }
+
+    void setModeCallback(
+        const std::shared_ptr<rcl_interfaces::srv::SetParameters::Request> request,
+        std::shared_ptr<rcl_interfaces::srv::SetParameters::Response> response) {
+        RCLCPP_INFO(get_logger(), "Received set_parameters request for motor_control_node");
+        response->results.resize(request->parameters.size());
+        for (size_t i = 0; i < request->parameters.size(); ++i) {
+            const auto& param = request->parameters[i];
+            if (param.name == "execution_mode") {
+                int mode = param.value.integer_value;
+                if (mode >= 0 && mode <= 2) {
+                    setExecutionMode(mode);
+                    RCLCPP_INFO(get_logger(), "Updated execution_mode to %d", mode);
+                    response->results[i].successful = true;
+                    response->results[i].reason = "";
+                } else {
+                    RCLCPP_ERROR(get_logger(), "Invalid execution_mode %d", mode);
+                    response->results[i].successful = false;
+                    response->results[i].reason = "Invalid execution_mode value";
+                }
+            } else {
+                RCLCPP_WARN(get_logger(), "Unknown parameter: %s", param.name.c_str());
+                response->results[i].successful = false;
+                response->results[i].reason = "Unknown parameter";
+            }
+        }
+    }
+
+    void setExecutionMode(int mode) {
+        switch (mode) {
+            case 0: execution_mode_ = ExecutionMode::CONCURRENT; break;
+            case 1: execution_mode_ = ExecutionMode::MOTOR1_THEN_MOTOR2; break;
+            case 2: execution_mode_ = ExecutionMode::MOTOR2_THEN_MOTOR1; break;
+            default: 
+                execution_mode_ = ExecutionMode::CONCURRENT;
+                RCLCPP_WARN(get_logger(), "Invalid execution_mode %d, defaulting to CONCURRENT", mode);
+        }
+    }
+
+    void processRequestQueue() {
+        if (request_queue_.empty() && current_request_.parameters.empty()) {
+            return;
+        }
+    
+        if (execution_mode_ == ExecutionMode::CONCURRENT) {
+            // Process all requests immediately
+            while (!request_queue_.empty()) {
+                auto req = request_queue_.front();
+                request_queue_.pop();
+                processRequest(req);
+                completeRequest(req);
+                RCLCPP_INFO(get_logger(), "Processed and completed request for controller index: %zu", req.controller_index);
+            }
+            current_request_ = Request(); // Clear current request
+        } else if (execution_mode_ == ExecutionMode::MOTOR1_THEN_MOTOR2) {
+            // Process Motor 1 requests first
+            if (!current_request_.parameters.empty()) {
+                // A request is being processed
+                size_t idx = current_request_.controller_index;
+                if (controllers_[idx]->isTargetReached()) {
+                    completeRequest(current_request_);
+                    RCLCPP_INFO(get_logger(), "Completed request for controller index: %zu", idx);
+                    current_request_ = Request(); // Clear current request
+                }
+            } else {
+                // Find the next request to process
+                std::queue<Request> temp_queue;
+                bool processed = false;
+                while (!request_queue_.empty() && !processed) {
+                    auto req = request_queue_.front();
+                    request_queue_.pop();
+                    if (req.controller_index == 0) {
+                        // Process Motor 1 request
+                        current_request_ = req;
+                        processRequest(req);
+                        processed = true;
+                    } else if (req.controller_index == 1 && controllers_[0]->isTargetReached()) {
+                        // Process Motor 2 request if Motor 1 is done
+                        current_request_ = req;
+                        processRequest(req);
+                        processed = true;
+                    } else {
+                        temp_queue.push(req); // Preserve unprocessed requests
+                    }
+                }
+                request_queue_ = temp_queue;
+            }
+        } else if (execution_mode_ == ExecutionMode::MOTOR2_THEN_MOTOR1) {
+            // Process Motor 2 requests first
+            if (!current_request_.parameters.empty()) {
+                // A request is being processed
+                size_t idx = current_request_.controller_index;
+                if (controllers_[idx]->isTargetReached()) {
+                    completeRequest(current_request_);
+                    RCLCPP_INFO(get_logger(), "Completed request for controller index: %zu", idx);
+                    current_request_ = Request(); // Clear current request
+                }
+            } else {
+                // Find the next request to process
+                std::queue<Request> temp_queue;
+                bool processed = false;
+                while (!request_queue_.empty() && !processed) {
+                    auto req = request_queue_.front();
+                    request_queue_.pop();
+                    if (req.controller_index == 1) {
+                        // Process Motor 2 request
+                        current_request_ = req;
+                        processRequest(req);
+                        processed = true;
+                    } else if (req.controller_index == 0 && controllers_[1]->isTargetReached()) {
+                        // Process Motor 1 request if Motor 2 is done
+                        current_request_ = req;
+                        processRequest(req);
+                        processed = true;
+                    } else {
+                        temp_queue.push(req); // Preserve unprocessed requests
+                    }
+                }
+                request_queue_ = temp_queue;
+            }
+        }
+    }
+
+    void processRequest(const Request& req) {
+        controllers_[req.controller_index]->setParameters(req.parameters);
+        RCLCPP_INFO(get_logger(), "Processing request for controller index: %zu", req.controller_index);
+    }
+
+    void completeRequest(const Request& req) {
+        req.response->results.resize(req.parameters.size());
+        for (size_t i = 0; i < req.parameters.size(); ++i) {
+            req.response->results[i].successful = true;
+            req.response->results[i].reason = "";
+        }
+        RCLCPP_INFO(get_logger(), "Completed request for controller index: %zu", req.controller_index);
+    }
+
     void controlLoop() {
+        // Process the request queue
+        processRequestQueue();
+
+        // Handle CAN data
         uint32_t id;
         std::vector<uint8_t> raw_data;
         try {
@@ -1859,28 +2068,6 @@ private:
         }
     }
 
-    void setParametersCallback(
-        const std::shared_ptr<rcl_interfaces::srv::SetParameters::Request> request,
-        std::shared_ptr<rcl_interfaces::srv::SetParameters::Response> response,
-        size_t controller_index) {
-        RCLCPP_INFO(get_logger(), "Received set_parameters request for controller index: %zu", controller_index);
-        if (controller_index >= controllers_.size()) {
-            RCLCPP_ERROR(get_logger(), "Invalid controller index: %zu", controller_index);
-            response->results.resize(request->parameters.size());
-            for (size_t i = 0; i < request->parameters.size(); ++i) {
-                response->results[i].successful = false;
-                response->results[i].reason = "Invalid controller index";
-            }
-            return;
-        }
-        controllers_[controller_index]->setParameters(request->parameters);
-        response->results.resize(request->parameters.size());
-        for (size_t i = 0; i < request->parameters.size(); ++i) {
-            response->results[i].successful = true;
-            response->results[i].reason = "";
-        }
-    }
-
     void safeShutdown() {
         RCLCPP_WARN(get_logger(), "ROS shutdown detected! Stopping motors.");
         stopAllMotors();
@@ -1890,8 +2077,12 @@ private:
     rclcpp::TimerBase::SharedPtr timer_;
     std::vector<std::unique_ptr<IMotorController>> controllers_;
     std::vector<rclcpp::Service<rcl_interfaces::srv::SetParameters>::SharedPtr> services_;
+    rclcpp::Service<rcl_interfaces::srv::SetParameters>::SharedPtr mode_service_;
     rclcpp::Subscription<std_msgs::msg::String>::SharedPtr command_m1_sub_;
     rclcpp::Subscription<std_msgs::msg::String>::SharedPtr command_m2_sub_;
+    std::queue<Request> request_queue_;
+    Request current_request_;
+    ExecutionMode execution_mode_;
 };
 
 int main(int argc, char** argv) {
@@ -1904,3 +2095,8 @@ int main(int argc, char** argv) {
     rclcpp::shutdown();
     return 0;
 }
+
+
+
+
+

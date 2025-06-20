@@ -1,0 +1,420 @@
+[0.000000] (-) TimerEvent: {}
+[0.000832] (can_interface) JobQueued: {'identifier': 'can_interface', 'dependencies': OrderedDict()}
+[0.000904] (motor_driver) JobQueued: {'identifier': 'motor_driver', 'dependencies': OrderedDict([('can_interface', '/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface')])}
+[0.000960] (can_interface) JobStarted: {'identifier': 'can_interface'}
+[0.017405] (can_interface) JobProgress: {'identifier': 'can_interface', 'progress': 'cmake'}
+[0.018410] (can_interface) JobProgress: {'identifier': 'can_interface', 'progress': 'build'}
+[0.019602] (can_interface) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/Desktop/AK8064_ws_Jun/build/can_interface', '--', '-j8', '-l8'], 'cwd': '/home/ubuntu/Desktop/AK8064_ws_Jun/build/can_interface', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'ubuntu'), ('LC_TIME', 'vi_VN'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'vi_VN'), ('MANAGERPID', '1709'), ('SYSTEMD_EXEC_PID', '1836'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4938'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu'), ('JOURNAL_STREAM', '8:13708'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ubuntu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ubuntu/.local/share/pnpm:/opt/ros/humble/bin:/home/ubuntu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu-Aspire-A315-58:@/tmp/.ICE-unix/1813,unix/ubuntu-Aspire-A315-58:/tmp/.ICE-unix/1813'), ('INVOCATION_ID', 'b050649697a24505bb1616844b67ad50'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'vi_VN'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'vi_VN'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.MRP872'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'vi_VN'), ('TERMINATOR_UUID', 'urn:uuid:2118008d-9d55-4bf2-8a43-0e4145c4d3be'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'vi_VN'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'vi_VN'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ubuntu/Desktop/AK8064_ws_Jun/build/can_interface'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'vi_VN'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('PNPM_HOME', '/home/ubuntu/.local/share/pnpm'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099271] (-) TimerEvent: {}
+[0.125543] (can_interface) StdoutLine: {'line': b'[100%] Built target can_interface\n'}
+[0.147120] (can_interface) CommandEnded: {'returncode': 0}
+[0.149007] (can_interface) JobProgress: {'identifier': 'can_interface', 'progress': 'install'}
+[0.167873] (can_interface) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/Desktop/AK8064_ws_Jun/build/can_interface'], 'cwd': '/home/ubuntu/Desktop/AK8064_ws_Jun/build/can_interface', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'ubuntu'), ('LC_TIME', 'vi_VN'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'vi_VN'), ('MANAGERPID', '1709'), ('SYSTEMD_EXEC_PID', '1836'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4938'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu'), ('JOURNAL_STREAM', '8:13708'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ubuntu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ubuntu/.local/share/pnpm:/opt/ros/humble/bin:/home/ubuntu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu-Aspire-A315-58:@/tmp/.ICE-unix/1813,unix/ubuntu-Aspire-A315-58:/tmp/.ICE-unix/1813'), ('INVOCATION_ID', 'b050649697a24505bb1616844b67ad50'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'vi_VN'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'vi_VN'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.MRP872'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'vi_VN'), ('TERMINATOR_UUID', 'urn:uuid:2118008d-9d55-4bf2-8a43-0e4145c4d3be'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'vi_VN'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'vi_VN'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ubuntu/Desktop/AK8064_ws_Jun/build/can_interface'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'vi_VN'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('PNPM_HOME', '/home/ubuntu/.local/share/pnpm'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.181853] (can_interface) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.182311] (can_interface) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/lib/libcan_interface.so\n'}
+[0.183027] (can_interface) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/include\n'}
+[0.183331] (can_interface) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/include/can_interface\n'}
+[0.183546] (can_interface) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/include/can_interface/caninterface.hpp\n'}
+[0.183932] (can_interface) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/share/can_interface/environment/library_path.sh\n'}
+[0.184168] (can_interface) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/share/can_interface/environment/library_path.dsv\n'}
+[0.184361] (can_interface) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/share/ament_index/resource_index/package_run_dependencies/can_interface\n'}
+[0.184560] (can_interface) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/share/ament_index/resource_index/parent_prefix_path/can_interface\n'}
+[0.184749] (can_interface) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/share/can_interface/environment/ament_prefix_path.sh\n'}
+[0.184943] (can_interface) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/share/can_interface/environment/ament_prefix_path.dsv\n'}
+[0.185597] (can_interface) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/share/can_interface/environment/path.sh\n'}
+[0.185794] (can_interface) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/share/can_interface/environment/path.dsv\n'}
+[0.185966] (can_interface) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/share/can_interface/local_setup.bash\n'}
+[0.186166] (can_interface) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/share/can_interface/local_setup.sh\n'}
+[0.186362] (can_interface) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/share/can_interface/local_setup.zsh\n'}
+[0.186544] (can_interface) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/share/can_interface/local_setup.dsv\n'}
+[0.186726] (can_interface) StdoutLine: {'line': b'-- Installing: /home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/share/can_interface/package.dsv\n'}
+[0.186908] (can_interface) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/share/ament_index/resource_index/packages/can_interface\n'}
+[0.187117] (can_interface) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/share/can_interface/cmake/export_can_interfaceExport.cmake\n'}
+[0.187374] (can_interface) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/share/can_interface/cmake/export_can_interfaceExport-noconfig.cmake\n'}
+[0.187572] (can_interface) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/share/can_interface/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.187767] (can_interface) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/share/can_interface/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.188364] (can_interface) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/share/can_interface/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.188797] (can_interface) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/share/can_interface/cmake/can_interfaceConfig.cmake\n'}
+[0.189066] (can_interface) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/share/can_interface/cmake/can_interfaceConfig-version.cmake\n'}
+[0.189337] (can_interface) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/share/can_interface/package.xml\n'}
+[0.190179] (can_interface) CommandEnded: {'returncode': 0}
+[0.199895] (-) TimerEvent: {}
+[0.235865] (can_interface) JobEnded: {'identifier': 'can_interface', 'rc': 0}
+[0.238464] (motor_driver) JobStarted: {'identifier': 'motor_driver'}
+[0.249735] (motor_driver) JobProgress: {'identifier': 'motor_driver', 'progress': 'cmake'}
+[0.250960] (motor_driver) JobProgress: {'identifier': 'motor_driver', 'progress': 'build'}
+[0.252225] (motor_driver) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/Desktop/AK8064_ws_Jun/build/motor_driver', '--', '-j8', '-l8'], 'cwd': '/home/ubuntu/Desktop/AK8064_ws_Jun/build/motor_driver', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'ubuntu'), ('LC_TIME', 'vi_VN'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'vi_VN'), ('MANAGERPID', '1709'), ('SYSTEMD_EXEC_PID', '1836'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4938'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu'), ('JOURNAL_STREAM', '8:13708'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ubuntu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ubuntu/.local/share/pnpm:/opt/ros/humble/bin:/home/ubuntu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu-Aspire-A315-58:@/tmp/.ICE-unix/1813,unix/ubuntu-Aspire-A315-58:/tmp/.ICE-unix/1813'), ('INVOCATION_ID', 'b050649697a24505bb1616844b67ad50'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'vi_VN'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'vi_VN'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.MRP872'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'vi_VN'), ('TERMINATOR_UUID', 'urn:uuid:2118008d-9d55-4bf2-8a43-0e4145c4d3be'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'vi_VN'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'vi_VN'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ubuntu/Desktop/AK8064_ws_Jun/build/motor_driver'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'vi_VN'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('PNPM_HOME', '/home/ubuntu/.local/share/pnpm'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface:/opt/ros/humble')]), 'shell': False}
+[0.300059] (-) TimerEvent: {}
+[0.325632] (motor_driver) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target ControlMotor\x1b[0m\n'}
+[0.361084] (motor_driver) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/ControlMotor.dir/src/ControlMotor.cpp.o\x1b[0m\n'}
+[0.400194] (-) TimerEvent: {}
+[0.500688] (-) TimerEvent: {}
+[0.601200] (-) TimerEvent: {}
+[0.701648] (-) TimerEvent: {}
+[0.802107] (-) TimerEvent: {}
+[0.902683] (-) TimerEvent: {}
+[1.003350] (-) TimerEvent: {}
+[1.103838] (-) TimerEvent: {}
+[1.204378] (-) TimerEvent: {}
+[1.304879] (-) TimerEvent: {}
+[1.405403] (-) TimerEvent: {}
+[1.505913] (-) TimerEvent: {}
+[1.606411] (-) TimerEvent: {}
+[1.706963] (-) TimerEvent: {}
+[1.807557] (-) TimerEvent: {}
+[1.908060] (-) TimerEvent: {}
+[2.008576] (-) TimerEvent: {}
+[2.109086] (-) TimerEvent: {}
+[2.209594] (-) TimerEvent: {}
+[2.310083] (-) TimerEvent: {}
+[2.410579] (-) TimerEvent: {}
+[2.511097] (-) TimerEvent: {}
+[2.611570] (-) TimerEvent: {}
+[2.712080] (-) TimerEvent: {}
+[2.812628] (-) TimerEvent: {}
+[2.913185] (-) TimerEvent: {}
+[3.013736] (-) TimerEvent: {}
+[3.114242] (-) TimerEvent: {}
+[3.214721] (-) TimerEvent: {}
+[3.315238] (-) TimerEvent: {}
+[3.415742] (-) TimerEvent: {}
+[3.516266] (-) TimerEvent: {}
+[3.616784] (-) TimerEvent: {}
+[3.717326] (-) TimerEvent: {}
+[3.817860] (-) TimerEvent: {}
+[3.918429] (-) TimerEvent: {}
+[4.018968] (-) TimerEvent: {}
+[4.119513] (-) TimerEvent: {}
+[4.220057] (-) TimerEvent: {}
+[4.320573] (-) TimerEvent: {}
+[4.421149] (-) TimerEvent: {}
+[4.521697] (-) TimerEvent: {}
+[4.622221] (-) TimerEvent: {}
+[4.722720] (-) TimerEvent: {}
+[4.823218] (-) TimerEvent: {}
+[4.923732] (-) TimerEvent: {}
+[5.024256] (-) TimerEvent: {}
+[5.115461] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KMotorController::MotorController(uint8_t, std::shared_ptr<ICANInterface>, MotorControlNode*, const string&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.116180] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1166:68:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of incomplete type \xe2\x80\x98\x1b[01m\x1b[Kclass MotorControlNode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.116446] (motor_driver) StderrLine: {'line': b' 1166 |         : motor_id_(motor_id), can_(can), node_(node), logger_(node\x1b[01;31m\x1b[K->\x1b[m\x1b[Kget_logger()),\n'}
+[5.116665] (motor_driver) StderrLine: {'line': b'      |                                                                    \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[5.116872] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1154:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kforward declaration of \xe2\x80\x98\x1b[01m\x1b[Kclass MotorControlNode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.117104] (motor_driver) StderrLine: {'line': b' 1154 | class \x1b[01;36m\x1b[KMotorControlNode\x1b[m\x1b[K;\n'}
+[5.117320] (motor_driver) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.117525] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1172:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kclass \xe2\x80\x98\x1b[01m\x1b[KMotorController\x1b[m\x1b[K\xe2\x80\x99 does not have any field named \xe2\x80\x98\x1b[01m\x1b[Kstate_publisher_\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.117737] (motor_driver) StderrLine: {'line': b' 1172 |           \x1b[01;31m\x1b[Kstate_publisher_\x1b[m\x1b[K(node, name), param_prefix_(name + "."),\n'}
+[5.117942] (motor_driver) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.118161] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1173:73:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of incomplete type \xe2\x80\x98\x1b[01m\x1b[Kclass MotorControlNode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.118396] (motor_driver) StderrLine: {'line': b' 1173 |           last_command_(), pre_pause_command_(), last_command_time_(node\x1b[01;31m\x1b[K->\x1b[m\x1b[Know()),\n'}
+[5.118597] (motor_driver) StderrLine: {'line': b'      |                                                                         \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[5.118800] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1154:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kforward declaration of \xe2\x80\x98\x1b[01m\x1b[Kclass MotorControlNode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.119013] (motor_driver) StderrLine: {'line': b' 1154 | class \x1b[01;36m\x1b[KMotorControlNode\x1b[m\x1b[K;\n'}
+[5.119229] (motor_driver) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.121648] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1174:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KStatePublisher::StatePublisher()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.121949] (motor_driver) StderrLine: {'line': b' 1174 |           repeat_(1), is_waiting_(false\x1b[01;31m\x1b[K)\x1b[m\x1b[K {\n'}
+[5.122319] (motor_driver) StderrLine: {'line': b'      |                                        \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[5.122530] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1102:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[KStatePublisher::StatePublisher(rclcpp::Node*, const string&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.122736] (motor_driver) StderrLine: {'line': b' 1102 |     \x1b[01;36m\x1b[KStatePublisher\x1b[m\x1b[K(rclcpp::Node* node, const std::string& name)\n'}
+[5.122941] (motor_driver) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.123160] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1102:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 0 provided\n'}
+[5.123366] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1100:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[KStatePublisher::StatePublisher(const StatePublisher&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.123570] (motor_driver) StderrLine: {'line': b' 1100 | class \x1b[01;36m\x1b[KStatePublisher\x1b[m\x1b[K {\n'}
+[5.123773] (motor_driver) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.123973] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1100:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 0 provided\n'}
+[5.124216] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1100:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[KStatePublisher::StatePublisher(StatePublisher&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.124422] (-) TimerEvent: {}
+[5.124655] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1100:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 0 provided\n'}
+[5.147798] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void MotorController::handleCommand(const string&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.148165] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1187:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstate_publisher_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KStatePublisher\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[5.148385] (motor_driver) StderrLine: {'line': b' 1187 |             \x1b[01;31m\x1b[Kstate_publisher_\x1b[m\x1b[K.publishResponse(response.str());\n'}
+[5.148584] (motor_driver) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.148768] (motor_driver) StderrLine: {'line': b'      |             \x1b[32m\x1b[KStatePublisher\x1b[m\x1b[K\n'}
+[5.163974] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1194:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstate_publisher_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KStatePublisher\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[5.164351] (motor_driver) StderrLine: {'line': b' 1194 |             \x1b[01;31m\x1b[Kstate_publisher_\x1b[m\x1b[K.publishResponse(response.str());\n'}
+[5.164548] (motor_driver) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.164734] (motor_driver) StderrLine: {'line': b'      |             \x1b[32m\x1b[KStatePublisher\x1b[m\x1b[K\n'}
+[5.180092] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1202:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstate_publisher_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KStatePublisher\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[5.180442] (motor_driver) StderrLine: {'line': b' 1202 |                 \x1b[01;31m\x1b[Kstate_publisher_\x1b[m\x1b[K.publishResponse(response.str());\n'}
+[5.180636] (motor_driver) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.180830] (motor_driver) StderrLine: {'line': b'      |                 \x1b[32m\x1b[KStatePublisher\x1b[m\x1b[K\n'}
+[5.197912] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1213:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstate_publisher_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KStatePublisher\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[5.198273] (motor_driver) StderrLine: {'line': b' 1213 |             \x1b[01;31m\x1b[Kstate_publisher_\x1b[m\x1b[K.publishResponse(response.str());\n'}
+[5.198469] (motor_driver) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.198663] (motor_driver) StderrLine: {'line': b'      |             \x1b[32m\x1b[KStatePublisher\x1b[m\x1b[K\n'}
+[5.198904] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1217:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of incomplete type \xe2\x80\x98\x1b[01m\x1b[Kclass MotorControlNode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.199115] (motor_driver) StderrLine: {'line': b' 1217 |         last_command_time_ = node_\x1b[01;31m\x1b[K->\x1b[m\x1b[Know();\n'}
+[5.199299] (motor_driver) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[5.199487] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1154:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kforward declaration of \xe2\x80\x98\x1b[01m\x1b[Kclass MotorControlNode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.199685] (motor_driver) StderrLine: {'line': b' 1154 | class \x1b[01;36m\x1b[KMotorControlNode\x1b[m\x1b[K;\n'}
+[5.199880] (motor_driver) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.214396] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1225:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstate_publisher_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KStatePublisher\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[5.214712] (motor_driver) StderrLine: {'line': b' 1225 |             \x1b[01;31m\x1b[Kstate_publisher_\x1b[m\x1b[K.publishResponse(response.str());\n'}
+[5.214901] (motor_driver) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.215100] (motor_driver) StderrLine: {'line': b'      |             \x1b[32m\x1b[KStatePublisher\x1b[m\x1b[K\n'}
+[5.224598] (-) TimerEvent: {}
+[5.230290] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void MotorController::control(const MotorData&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.230606] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1239:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstate_publisher_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KStatePublisher\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[5.230813] (motor_driver) StderrLine: {'line': b' 1239 |         \x1b[01;31m\x1b[Kstate_publisher_\x1b[m\x1b[K.publish(last_data_, target_reached_);\n'}
+[5.231046] (motor_driver) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.231260] (motor_driver) StderrLine: {'line': b'      |         \x1b[32m\x1b[KStatePublisher\x1b[m\x1b[K\n'}
+[5.259471] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void MotorController::stop()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.259829] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1377:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstate_publisher_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KStatePublisher\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[5.260052] (motor_driver) StderrLine: {'line': b' 1377 |             \x1b[01;31m\x1b[Kstate_publisher_\x1b[m\x1b[K.publishResponse("Motor 0x" + std::to_string(motor_id_) +\n'}
+[5.260262] (motor_driver) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.260458] (motor_driver) StderrLine: {'line': b'      |             \x1b[32m\x1b[KStatePublisher\x1b[m\x1b[K\n'}
+[5.266008] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid MotorController::handlePaused(const MotorData&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.266275] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1468:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of incomplete type \xe2\x80\x98\x1b[01m\x1b[Kclass MotorControlNode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.266496] (motor_driver) StderrLine: {'line': b' 1468 |                 (node_\x1b[01;31m\x1b[K->\x1b[m\x1b[Know() - last_command_time_) < rclcpp::Duration::from_seconds(0.3)) {\n'}
+[5.266746] (motor_driver) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[5.266940] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1154:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kforward declaration of \xe2\x80\x98\x1b[01m\x1b[Kclass MotorControlNode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.267182] (motor_driver) StderrLine: {'line': b' 1154 | class \x1b[01;36m\x1b[KMotorControlNode\x1b[m\x1b[K;\n'}
+[5.267383] (motor_driver) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.272126] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid MotorController::handleError(const MotorData&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.272421] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1523:57:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of incomplete type \xe2\x80\x98\x1b[01m\x1b[Kclass MotorControlNode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.272627] (motor_driver) StderrLine: {'line': b' 1523 |             static rclcpp::Time error_start_time = node_\x1b[01;31m\x1b[K->\x1b[m\x1b[Know();\n'}
+[5.272836] (motor_driver) StderrLine: {'line': b'      |                                                         \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[5.273302] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1154:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kforward declaration of \xe2\x80\x98\x1b[01m\x1b[Kclass MotorControlNode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.273522] (motor_driver) StderrLine: {'line': b' 1154 | class \x1b[01;36m\x1b[KMotorControlNode\x1b[m\x1b[K;\n'}
+[5.273860] (motor_driver) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.274063] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1525:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of incomplete type \xe2\x80\x98\x1b[01m\x1b[Kclass MotorControlNode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.274251] (motor_driver) StderrLine: {'line': b' 1525 |             if (is_braking && (node_\x1b[01;31m\x1b[K->\x1b[m\x1b[Know() - error_start_time) < rclcpp::Duration::from_seconds(0.3)) {\n'}
+[5.274432] (motor_driver) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[5.274612] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1154:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kforward declaration of \xe2\x80\x98\x1b[01m\x1b[Kclass MotorControlNode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.274812] (motor_driver) StderrLine: {'line': b' 1154 | class \x1b[01;36m\x1b[KMotorControlNode\x1b[m\x1b[K;\n'}
+[5.275015] (motor_driver) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.275226] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1528:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of incomplete type \xe2\x80\x98\x1b[01m\x1b[Kclass MotorControlNode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.275423] (motor_driver) StderrLine: {'line': b' 1528 |                     error_start_time = node_\x1b[01;31m\x1b[K->\x1b[m\x1b[Know();\n'}
+[5.275616] (motor_driver) StderrLine: {'line': b'      |                                             \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[5.275815] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1154:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kforward declaration of \xe2\x80\x98\x1b[01m\x1b[Kclass MotorControlNode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.276022] (motor_driver) StderrLine: {'line': b' 1154 | class \x1b[01;36m\x1b[KMotorControlNode\x1b[m\x1b[K;\n'}
+[5.276236] (motor_driver) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.291574] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:\x1b[m\x1b[K In lambda function:\n'}
+[5.291953] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1563:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstate_publisher_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KStatePublisher\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[5.292198] (motor_driver) StderrLine: {'line': b' 1563 |                     \x1b[01;31m\x1b[Kstate_publisher_\x1b[m\x1b[K.publishResponse(response.str());\n'}
+[5.292402] (motor_driver) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.292596] (motor_driver) StderrLine: {'line': b'      |                     \x1b[32m\x1b[KStatePublisher\x1b[m\x1b[K\n'}
+[5.308058] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1568:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstate_publisher_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KStatePublisher\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[5.308399] (motor_driver) StderrLine: {'line': b' 1568 |                     \x1b[01;31m\x1b[Kstate_publisher_\x1b[m\x1b[K.publishResponse(response.str());\n'}
+[5.308604] (motor_driver) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.308800] (motor_driver) StderrLine: {'line': b'      |                     \x1b[32m\x1b[KStatePublisher\x1b[m\x1b[K\n'}
+[5.324742] (-) TimerEvent: {}
+[5.325433] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:\x1b[m\x1b[K In lambda function:\n'}
+[5.325749] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1586:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstate_publisher_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KStatePublisher\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[5.325966] (motor_driver) StderrLine: {'line': b' 1586 |                     \x1b[01;31m\x1b[Kstate_publisher_\x1b[m\x1b[K.publishResponse(response.str());\n'}
+[5.326214] (motor_driver) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.326416] (motor_driver) StderrLine: {'line': b'      |                     \x1b[32m\x1b[KStatePublisher\x1b[m\x1b[K\n'}
+[5.341475] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1591:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstate_publisher_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KStatePublisher\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[5.341814] (motor_driver) StderrLine: {'line': b' 1591 |                     \x1b[01;31m\x1b[Kstate_publisher_\x1b[m\x1b[K.publishResponse(response.str());\n'}
+[5.342013] (motor_driver) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.342210] (motor_driver) StderrLine: {'line': b'      |                     \x1b[32m\x1b[KStatePublisher\x1b[m\x1b[K\n'}
+[5.359554] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:\x1b[m\x1b[K In lambda function:\n'}
+[5.359898] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1600:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstate_publisher_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KStatePublisher\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[5.360269] (motor_driver) StderrLine: {'line': b' 1600 |                     \x1b[01;31m\x1b[Kstate_publisher_\x1b[m\x1b[K.publishResponse(response.str());\n'}
+[5.360483] (motor_driver) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.360701] (motor_driver) StderrLine: {'line': b'      |                     \x1b[32m\x1b[KStatePublisher\x1b[m\x1b[K\n'}
+[5.360894] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1607:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of incomplete type \xe2\x80\x98\x1b[01m\x1b[Kclass MotorControlNode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.361117] (motor_driver) StderrLine: {'line': b' 1607 |                     last_command_time_ = node_\x1b[01;31m\x1b[K->\x1b[m\x1b[Know();\n'}
+[5.361318] (motor_driver) StderrLine: {'line': b'      |                                               \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[5.361512] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1154:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kforward declaration of \xe2\x80\x98\x1b[01m\x1b[Kclass MotorControlNode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.361714] (motor_driver) StderrLine: {'line': b' 1154 | class \x1b[01;36m\x1b[KMotorControlNode\x1b[m\x1b[K;\n'}
+[5.361908] (motor_driver) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.376461] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1612:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstate_publisher_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KStatePublisher\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[5.376784] (motor_driver) StderrLine: {'line': b' 1612 |                     \x1b[01;31m\x1b[Kstate_publisher_\x1b[m\x1b[K.publishResponse(response.str());\n'}
+[5.376973] (motor_driver) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.377173] (motor_driver) StderrLine: {'line': b'      |                     \x1b[32m\x1b[KStatePublisher\x1b[m\x1b[K\n'}
+[5.391924] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1618:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstate_publisher_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KStatePublisher\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[5.392299] (motor_driver) StderrLine: {'line': b' 1618 |                     \x1b[01;31m\x1b[Kstate_publisher_\x1b[m\x1b[K.publishResponse(response.str());\n'}
+[5.392501] (motor_driver) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.392686] (motor_driver) StderrLine: {'line': b'      |                     \x1b[32m\x1b[KStatePublisher\x1b[m\x1b[K\n'}
+[5.409868] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:\x1b[m\x1b[K In lambda function:\n'}
+[5.410198] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1638:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstate_publisher_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KStatePublisher\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[5.410402] (motor_driver) StderrLine: {'line': b' 1638 |                     \x1b[01;31m\x1b[Kstate_publisher_\x1b[m\x1b[K.publishResponse(response.str());\n'}
+[5.410590] (motor_driver) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.410787] (motor_driver) StderrLine: {'line': b'      |                     \x1b[32m\x1b[KStatePublisher\x1b[m\x1b[K\n'}
+[5.424870] (-) TimerEvent: {}
+[5.425364] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1642:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstate_publisher_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KStatePublisher\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[5.425681] (motor_driver) StderrLine: {'line': b' 1642 |                 \x1b[01;31m\x1b[Kstate_publisher_\x1b[m\x1b[K.publishResponse(response.str());\n'}
+[5.425885] (motor_driver) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.426098] (motor_driver) StderrLine: {'line': b'      |                 \x1b[32m\x1b[KStatePublisher\x1b[m\x1b[K\n'}
+[5.442351] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:\x1b[m\x1b[K In lambda function:\n'}
+[5.442716] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1655:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstate_publisher_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KStatePublisher\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[5.442928] (motor_driver) StderrLine: {'line': b' 1655 |                 \x1b[01;31m\x1b[Kstate_publisher_\x1b[m\x1b[K.publishResponse(response.str());\n'}
+[5.443176] (motor_driver) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.443377] (motor_driver) StderrLine: {'line': b'      |                 \x1b[32m\x1b[KStatePublisher\x1b[m\x1b[K\n'}
+[5.444640] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:\x1b[m\x1b[K In lambda function:\n'}
+[5.444942] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1664:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of incomplete type \xe2\x80\x98\x1b[01m\x1b[Kclass MotorControlNode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.445174] (motor_driver) StderrLine: {'line': b' 1664 |                     last_command_time_ = node_\x1b[01;31m\x1b[K->\x1b[m\x1b[Know();\n'}
+[5.445378] (motor_driver) StderrLine: {'line': b'      |                                               \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[5.445576] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1154:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kforward declaration of \xe2\x80\x98\x1b[01m\x1b[Kclass MotorControlNode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.445775] (motor_driver) StderrLine: {'line': b' 1154 | class \x1b[01;36m\x1b[KMotorControlNode\x1b[m\x1b[K;\n'}
+[5.445976] (motor_driver) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.461440] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1667:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstate_publisher_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KStatePublisher\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[5.461795] (motor_driver) StderrLine: {'line': b' 1667 |                     \x1b[01;31m\x1b[Kstate_publisher_\x1b[m\x1b[K.publishResponse(response.str());\n'}
+[5.462016] (motor_driver) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.462227] (motor_driver) StderrLine: {'line': b'      |                     \x1b[32m\x1b[KStatePublisher\x1b[m\x1b[K\n'}
+[5.477953] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1673:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstate_publisher_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KStatePublisher\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[5.478396] (motor_driver) StderrLine: {'line': b' 1673 |                     \x1b[01;31m\x1b[Kstate_publisher_\x1b[m\x1b[K.publishResponse(response.str());\n'}
+[5.478590] (motor_driver) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.478798] (motor_driver) StderrLine: {'line': b'      |                     \x1b[32m\x1b[KStatePublisher\x1b[m\x1b[K\n'}
+[5.525035] (-) TimerEvent: {}
+[5.535190] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid MotorController::initializeParameters()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.535658] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1741:14:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of incomplete type \xe2\x80\x98\x1b[01m\x1b[Kclass MotorControlNode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.536050] (motor_driver) StderrLine: {'line': b' 1741 |         node_\x1b[01;31m\x1b[K->\x1b[m\x1b[Kdeclare_parameter(param_prefix_ + "target_positions", std::vector<double>{0.0});\n'}
+[5.536653] (motor_driver) StderrLine: {'line': b'      |              \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[5.536870] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1154:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kforward declaration of \xe2\x80\x98\x1b[01m\x1b[Kclass MotorControlNode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.537522] (motor_driver) StderrLine: {'line': b' 1154 | class \x1b[01;36m\x1b[KMotorControlNode\x1b[m\x1b[K;\n'}
+[5.537750] (motor_driver) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.537957] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1742:14:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of incomplete type \xe2\x80\x98\x1b[01m\x1b[Kclass MotorControlNode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.538270] (motor_driver) StderrLine: {'line': b' 1742 |         node_\x1b[01;31m\x1b[K->\x1b[m\x1b[Kdeclare_parameter(param_prefix_ + "speed", 10000.0);\n'}
+[5.538485] (motor_driver) StderrLine: {'line': b'      |              \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[5.538691] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1154:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kforward declaration of \xe2\x80\x98\x1b[01m\x1b[Kclass MotorControlNode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.538907] (motor_driver) StderrLine: {'line': b' 1154 | class \x1b[01;36m\x1b[KMotorControlNode\x1b[m\x1b[K;\n'}
+[5.539447] (motor_driver) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.539658] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1743:14:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of incomplete type \xe2\x80\x98\x1b[01m\x1b[Kclass MotorControlNode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.539861] (motor_driver) StderrLine: {'line': b' 1743 |         node_\x1b[01;31m\x1b[K->\x1b[m\x1b[Kdeclare_parameter(param_prefix_ + "accel", 1000.0);\n'}
+[5.540077] (motor_driver) StderrLine: {'line': b'      |              \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[5.540283] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1154:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kforward declaration of \xe2\x80\x98\x1b[01m\x1b[Kclass MotorControlNode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.540483] (motor_driver) StderrLine: {'line': b' 1154 | class \x1b[01;36m\x1b[KMotorControlNode\x1b[m\x1b[K;\n'}
+[5.540678] (motor_driver) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.540875] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1744:14:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of incomplete type \xe2\x80\x98\x1b[01m\x1b[Kclass MotorControlNode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.541090] (motor_driver) StderrLine: {'line': b' 1744 |         node_\x1b[01;31m\x1b[K->\x1b[m\x1b[Kdeclare_parameter(param_prefix_ + "min_angle", -20.0);\n'}
+[5.541332] (motor_driver) StderrLine: {'line': b'      |              \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[5.541533] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1154:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kforward declaration of \xe2\x80\x98\x1b[01m\x1b[Kclass MotorControlNode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.541745] (motor_driver) StderrLine: {'line': b' 1154 | class \x1b[01;36m\x1b[KMotorControlNode\x1b[m\x1b[K;\n'}
+[5.541940] (motor_driver) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.542157] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1745:14:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of incomplete type \xe2\x80\x98\x1b[01m\x1b[Kclass MotorControlNode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.542359] (motor_driver) StderrLine: {'line': b' 1745 |         node_\x1b[01;31m\x1b[K->\x1b[m\x1b[Kdeclare_parameter(param_prefix_ + "max_angle", 90.0);\n'}
+[5.542558] (motor_driver) StderrLine: {'line': b'      |              \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[5.542753] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1154:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kforward declaration of \xe2\x80\x98\x1b[01m\x1b[Kclass MotorControlNode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.542951] (motor_driver) StderrLine: {'line': b' 1154 | class \x1b[01;36m\x1b[KMotorControlNode\x1b[m\x1b[K;\n'}
+[5.543172] (motor_driver) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.543373] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1746:14:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of incomplete type \xe2\x80\x98\x1b[01m\x1b[Kclass MotorControlNode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.543572] (motor_driver) StderrLine: {'line': b' 1746 |         node_\x1b[01;31m\x1b[K->\x1b[m\x1b[Kdeclare_parameter(param_prefix_ + "step", 2);\n'}
+[5.543766] (motor_driver) StderrLine: {'line': b'      |              \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[5.543959] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1154:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kforward declaration of \xe2\x80\x98\x1b[01m\x1b[Kclass MotorControlNode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.544177] (motor_driver) StderrLine: {'line': b' 1154 | class \x1b[01;36m\x1b[KMotorControlNode\x1b[m\x1b[K;\n'}
+[5.544376] (motor_driver) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.544570] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1747:14:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of incomplete type \xe2\x80\x98\x1b[01m\x1b[Kclass MotorControlNode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.544768] (motor_driver) StderrLine: {'line': b' 1747 |         node_\x1b[01;31m\x1b[K->\x1b[m\x1b[Kdeclare_parameter(param_prefix_ + "reach_count_max", 100);\n'}
+[5.544978] (motor_driver) StderrLine: {'line': b'      |              \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[5.545193] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1154:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kforward declaration of \xe2\x80\x98\x1b[01m\x1b[Kclass MotorControlNode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.545394] (motor_driver) StderrLine: {'line': b' 1154 | class \x1b[01;36m\x1b[KMotorControlNode\x1b[m\x1b[K;\n'}
+[5.545593] (motor_driver) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.545786] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1748:14:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of incomplete type \xe2\x80\x98\x1b[01m\x1b[Kclass MotorControlNode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.546011] (motor_driver) StderrLine: {'line': b' 1748 |         node_\x1b[01;31m\x1b[K->\x1b[m\x1b[Kdeclare_parameter(param_prefix_ + "repeat", 1);\n'}
+[5.546311] (motor_driver) StderrLine: {'line': b'      |              \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[5.546513] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1154:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kforward declaration of \xe2\x80\x98\x1b[01m\x1b[Kclass MotorControlNode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.546709] (motor_driver) StderrLine: {'line': b' 1154 | class \x1b[01;36m\x1b[KMotorControlNode\x1b[m\x1b[K;\n'}
+[5.546897] (motor_driver) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.547120] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1751:14:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of incomplete type \xe2\x80\x98\x1b[01m\x1b[Kclass MotorControlNode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.547328] (motor_driver) StderrLine: {'line': b' 1751 |         node_\x1b[01;31m\x1b[K->\x1b[m\x1b[Kget_parameter(param_prefix_ + "target_positions", temp_positions);\n'}
+[5.547524] (motor_driver) StderrLine: {'line': b'      |              \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[5.547716] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1154:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kforward declaration of \xe2\x80\x98\x1b[01m\x1b[Kclass MotorControlNode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.547912] (motor_driver) StderrLine: {'line': b' 1154 | class \x1b[01;36m\x1b[KMotorControlNode\x1b[m\x1b[K;\n'}
+[5.548123] (motor_driver) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.548320] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1752:14:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of incomplete type \xe2\x80\x98\x1b[01m\x1b[Kclass MotorControlNode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.548515] (motor_driver) StderrLine: {'line': b' 1752 |         node_\x1b[01;31m\x1b[K->\x1b[m\x1b[Kget_parameter(param_prefix_ + "speed", speed_);\n'}
+[5.548711] (motor_driver) StderrLine: {'line': b'      |              \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[5.548906] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1154:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kforward declaration of \xe2\x80\x98\x1b[01m\x1b[Kclass MotorControlNode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.549076] (motor_driver) StderrLine: {'line': b' 1154 | class \x1b[01;36m\x1b[KMotorControlNode\x1b[m\x1b[K;\n'}
+[5.549222] (motor_driver) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.549423] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1753:14:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of incomplete type \xe2\x80\x98\x1b[01m\x1b[Kclass MotorControlNode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.549640] (motor_driver) StderrLine: {'line': b' 1753 |         node_\x1b[01;31m\x1b[K->\x1b[m\x1b[Kget_parameter(param_prefix_ + "accel", accel_);\n'}
+[5.549854] (motor_driver) StderrLine: {'line': b'      |              \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[5.550058] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1154:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kforward declaration of \xe2\x80\x98\x1b[01m\x1b[Kclass MotorControlNode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.550257] (motor_driver) StderrLine: {'line': b' 1154 | class \x1b[01;36m\x1b[KMotorControlNode\x1b[m\x1b[K;\n'}
+[5.550463] (motor_driver) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.550650] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1754:14:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of incomplete type \xe2\x80\x98\x1b[01m\x1b[Kclass MotorControlNode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.550848] (motor_driver) StderrLine: {'line': b' 1754 |         node_\x1b[01;31m\x1b[K->\x1b[m\x1b[Kget_parameter(param_prefix_ + "min_angle", min_angle_);\n'}
+[5.551055] (motor_driver) StderrLine: {'line': b'      |              \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[5.551258] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1154:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kforward declaration of \xe2\x80\x98\x1b[01m\x1b[Kclass MotorControlNode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.551453] (motor_driver) StderrLine: {'line': b' 1154 | class \x1b[01;36m\x1b[KMotorControlNode\x1b[m\x1b[K;\n'}
+[5.551645] (motor_driver) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.551834] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1755:14:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of incomplete type \xe2\x80\x98\x1b[01m\x1b[Kclass MotorControlNode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.552042] (motor_driver) StderrLine: {'line': b' 1755 |         node_\x1b[01;31m\x1b[K->\x1b[m\x1b[Kget_parameter(param_prefix_ + "max_angle", max_angle_);\n'}
+[5.552248] (motor_driver) StderrLine: {'line': b'      |              \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[5.552438] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1154:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kforward declaration of \xe2\x80\x98\x1b[01m\x1b[Kclass MotorControlNode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.552643] (motor_driver) StderrLine: {'line': b' 1154 | class \x1b[01;36m\x1b[KMotorControlNode\x1b[m\x1b[K;\n'}
+[5.552838] (motor_driver) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.553038] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1756:14:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of incomplete type \xe2\x80\x98\x1b[01m\x1b[Kclass MotorControlNode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.553245] (motor_driver) StderrLine: {'line': b' 1756 |         node_\x1b[01;31m\x1b[K->\x1b[m\x1b[Kget_parameter(param_prefix_ + "step", step_);\n'}
+[5.553438] (motor_driver) StderrLine: {'line': b'      |              \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[5.553629] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1154:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kforward declaration of \xe2\x80\x98\x1b[01m\x1b[Kclass MotorControlNode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.553824] (motor_driver) StderrLine: {'line': b' 1154 | class \x1b[01;36m\x1b[KMotorControlNode\x1b[m\x1b[K;\n'}
+[5.554021] (motor_driver) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.554231] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1757:14:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of incomplete type \xe2\x80\x98\x1b[01m\x1b[Kclass MotorControlNode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.554426] (motor_driver) StderrLine: {'line': b' 1757 |         node_\x1b[01;31m\x1b[K->\x1b[m\x1b[Kget_parameter(param_prefix_ + "reach_count_max", reach_count_max_);\n'}
+[5.554619] (motor_driver) StderrLine: {'line': b'      |              \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[5.554808] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1154:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kforward declaration of \xe2\x80\x98\x1b[01m\x1b[Kclass MotorControlNode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.555025] (motor_driver) StderrLine: {'line': b' 1154 | class \x1b[01;36m\x1b[KMotorControlNode\x1b[m\x1b[K;\n'}
+[5.555237] (motor_driver) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.555427] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1758:14:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of incomplete type \xe2\x80\x98\x1b[01m\x1b[Kclass MotorControlNode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.555622] (motor_driver) StderrLine: {'line': b' 1758 |         node_\x1b[01;31m\x1b[K->\x1b[m\x1b[Kget_parameter(param_prefix_ + "repeat", repeat_);\n'}
+[5.555814] (motor_driver) StderrLine: {'line': b'      |              \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[5.556016] (motor_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1154:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kforward declaration of \xe2\x80\x98\x1b[01m\x1b[Kclass MotorControlNode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.556226] (motor_driver) StderrLine: {'line': b' 1154 | class \x1b[01;36m\x1b[KMotorControlNode\x1b[m\x1b[K;\n'}
+[5.556415] (motor_driver) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.625173] (-) TimerEvent: {}
+[5.725647] (-) TimerEvent: {}
+[5.826098] (-) TimerEvent: {}
+[5.926568] (-) TimerEvent: {}
+[6.027058] (-) TimerEvent: {}
+[6.127499] (-) TimerEvent: {}
+[6.227969] (-) TimerEvent: {}
+[6.328481] (-) TimerEvent: {}
+[6.429075] (-) TimerEvent: {}
+[6.529591] (-) TimerEvent: {}
+[6.630047] (-) TimerEvent: {}
+[6.730454] (-) TimerEvent: {}
+[6.830882] (-) TimerEvent: {}
+[6.931435] (-) TimerEvent: {}
+[7.031938] (-) TimerEvent: {}
+[7.132457] (-) TimerEvent: {}
+[7.233047] (-) TimerEvent: {}
+[7.333596] (-) TimerEvent: {}
+[7.434106] (-) TimerEvent: {}
+[7.534605] (-) TimerEvent: {}
+[7.635184] (-) TimerEvent: {}
+[7.735702] (-) TimerEvent: {}
+[7.836234] (-) TimerEvent: {}
+[7.936844] (-) TimerEvent: {}
+[8.037332] (-) TimerEvent: {}
+[8.137920] (-) TimerEvent: {}
+[8.238537] (-) TimerEvent: {}
+[8.339153] (-) TimerEvent: {}
+[8.439722] (-) TimerEvent: {}
+[8.540308] (-) TimerEvent: {}
+[8.640844] (-) TimerEvent: {}
+[8.741442] (-) TimerEvent: {}
+[8.842072] (-) TimerEvent: {}
+[8.942674] (-) TimerEvent: {}
+[9.043175] (-) TimerEvent: {}
+[9.143807] (-) TimerEvent: {}
+[9.244371] (-) TimerEvent: {}
+[9.344855] (-) TimerEvent: {}
+[9.445340] (-) TimerEvent: {}
+[9.545897] (-) TimerEvent: {}
+[9.646456] (-) TimerEvent: {}
+[9.747064] (-) TimerEvent: {}
+[9.847650] (-) TimerEvent: {}
+[9.948092] (-) TimerEvent: {}
+[10.048536] (-) TimerEvent: {}
+[10.149122] (-) TimerEvent: {}
+[10.249592] (-) TimerEvent: {}
+[10.350045] (-) TimerEvent: {}
+[10.450489] (-) TimerEvent: {}
+[10.550953] (-) TimerEvent: {}
+[10.651424] (-) TimerEvent: {}
+[10.751900] (-) TimerEvent: {}
+[10.852373] (-) TimerEvent: {}
+[10.952959] (-) TimerEvent: {}
+[11.053494] (-) TimerEvent: {}
+[11.154110] (-) TimerEvent: {}
+[11.254619] (-) TimerEvent: {}
+[11.355135] (-) TimerEvent: {}
+[11.377190] (motor_driver) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/ControlMotor.dir/build.make:76: CMakeFiles/ControlMotor.dir/src/ControlMotor.cpp.o] Error 1\n'}
+[11.377640] (motor_driver) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ControlMotor.dir/all] Error 2\n'}
+[11.377933] (motor_driver) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[11.382038] (motor_driver) CommandEnded: {'returncode': 2}
+[11.397943] (motor_driver) JobEnded: {'identifier': 'motor_driver', 'rc': 2}
+[11.408841] (-) EventReactorShutdown: {}

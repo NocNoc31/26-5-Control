@@ -705,6 +705,11 @@ CMakeFiles/ControlMotor.dir/src/ControlMotor.cpp.o: /home/ubuntu/Desktop/AK8064_
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int8__builder.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int8__traits.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int8__type_support.hpp \
+  /usr/include/c++/11/queue \
+  /usr/include/c++/11/deque \
+  /usr/include/c++/11/bits/stl_deque.h \
+  /usr/include/c++/11/bits/deque.tcc \
+  /usr/include/c++/11/bits/stl_queue.h \
   /home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/include/can_interface/caninterface.hpp \
   /usr/include/linux/can.h \
   /usr/include/linux/types.h \
@@ -777,6 +782,16 @@ CMakeFiles/ControlMotor.dir/src/ControlMotor.cpp.o: /home/ubuntu/Desktop/AK8064_
 /usr/include/linux/can.h:
 
 /home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/include/can_interface/caninterface.hpp:
+
+/usr/include/c++/11/bits/stl_queue.h:
+
+/usr/include/c++/11/bits/deque.tcc:
+
+/usr/include/c++/11/bits/stl_deque.h:
+
+/usr/include/c++/11/deque:
+
+/usr/include/c++/11/queue:
 
 /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int8__type_support.hpp:
 

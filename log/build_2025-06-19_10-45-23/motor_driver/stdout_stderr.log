@@ -1,0 +1,145 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+-- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found can_interface: 0.0.1 (/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/share/can_interface/cmake)
+-- Found std_srvs: 4.8.0 (/opt/ros/humble/share/std_srvs/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/ubuntu/Desktop/AK8064_ws_Jun/build/motor_driver
+[ 50%] [32mBuilding CXX object CMakeFiles/ControlMotor.dir/src/ControlMotor.cpp.o[0m
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1965:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_srvs[m[K’ was not declared in this scope
+ 1965 |         const std::shared_ptr<[01;31m[Kstd_srvs[m[K::srv::Trigger::Request> request,
+      |                               [01;31m[K^~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1965:62:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1965 |         const std::shared_ptr<std_srvs::srv::Trigger::Request[01;31m[K>[m[K request,
+      |                                                              [01;31m[K^[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1965:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_srvs[m[K’ was not declared in this scope
+ 1965 |         const std::shared_ptr<[01;31m[Kstd_srvs[m[K::srv::Trigger::Request> request,
+      |                               [01;31m[K^~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1965:62:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1965 |         const std::shared_ptr<std_srvs::srv::Trigger::Request[01;31m[K>[m[K request,
+      |                                                              [01;31m[K^[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1965:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_srvs[m[K’ was not declared in this scope
+ 1965 |         const std::shared_ptr<[01;31m[Kstd_srvs[m[K::srv::Trigger::Request> request,
+      |                               [01;31m[K^~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1965:62:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1965 |         const std::shared_ptr<std_srvs::srv::Trigger::Request[01;31m[K>[m[K request,
+      |                                                              [01;31m[K^[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1965:15:[m[K [01;31m[Kerror: [m[Kinvalid template-id
+ 1965 |         const [01;31m[Kstd[m[K::shared_ptr<std_srvs::srv::Trigger::Request> request,
+      |               [01;31m[K^~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1965:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_srvs[m[K’ has not been declared
+ 1965 |         const std::shared_ptr<[01;31m[Kstd_srvs[m[K::srv::Trigger::Request> request,
+      |                               [01;31m[K^~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1965:9:[m[K [01;31m[Kerror: [m[Kclass template placeholder ‘[01m[Kstd::shared_ptr[m[K’ not permitted in this context
+ 1965 |         [01;31m[Kconst[m[K std::shared_ptr<std_srvs::srv::Trigger::Request> request,
+      |         [01;31m[K^~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1966:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_srvs[m[K’ was not declared in this scope
+ 1966 |         std::shared_ptr<[01;31m[Kstd_srvs[m[K::srv::Trigger::Response> response) {
+      |                         [01;31m[K^~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1966:57:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1966 |         std::shared_ptr<std_srvs::srv::Trigger::Response[01;31m[K>[m[K response) {
+      |                                                         [01;31m[K^[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1966:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_srvs[m[K’ was not declared in this scope
+ 1966 |         std::shared_ptr<[01;31m[Kstd_srvs[m[K::srv::Trigger::Response> response) {
+      |                         [01;31m[K^~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1966:57:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1966 |         std::shared_ptr<std_srvs::srv::Trigger::Response[01;31m[K>[m[K response) {
+      |                                                         [01;31m[K^[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1966:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_srvs[m[K’ was not declared in this scope
+ 1966 |         std::shared_ptr<[01;31m[Kstd_srvs[m[K::srv::Trigger::Response> response) {
+      |                         [01;31m[K^~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1966:57:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1966 |         std::shared_ptr<std_srvs::srv::Trigger::Response[01;31m[K>[m[K response) {
+      |                                                         [01;31m[K^[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1966:9:[m[K [01;31m[Kerror: [m[Kinvalid template-id
+ 1966 |         [01;31m[Kstd[m[K::shared_ptr<std_srvs::srv::Trigger::Response> response) {
+      |         [01;31m[K^~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1966:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_srvs[m[K’ has not been declared
+ 1966 |         std::shared_ptr<[01;31m[Kstd_srvs[m[K::srv::Trigger::Response> response) {
+      |                         [01;31m[K^~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1966:9:[m[K [01;31m[Kerror: [m[Kclass template placeholder ‘[01m[Kstd::shared_ptr[m[K’ not permitted in this context
+ 1966 |         [01;31m[Kstd[m[K::shared_ptr<std_srvs::srv::Trigger::Response> response) {
+      |         [01;31m[K^~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:2002:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_srvs[m[K’ was not declared in this scope
+ 2002 |     rclcpp::Service<[01;31m[Kstd_srvs[m[K::srv::Trigger>::SharedPtr reset_cycle_service_;
+      |                     [01;31m[K^~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:2002:43:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 2002 |     rclcpp::Service<std_srvs::srv::Trigger[01;31m[K>[m[K::SharedPtr reset_cycle_service_;
+      |                                           [01;31m[K^[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:2002:46:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+ 2002 |     rclcpp::Service<std_srvs::srv::Trigger>::[01;31m[KSharedPtr[m[K reset_cycle_service_;
+      |                                              [01;31m[K^~~~~~~~~[m[K
+      |                                                       [32m[K;[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:2002:56:[m[K [01;31m[Kerror: [m[K‘[01m[Kreset_cycle_service_[m[K’ does not name a type
+ 2002 |     rclcpp::Service<std_srvs::srv::Trigger>::SharedPtr [01;31m[Kreset_cycle_service_[m[K;
+      |                                                        [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In constructor ‘[01m[KMotorControlNode::MotorControlNode()[m[K’:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1787:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kreset_cycle_service_[m[K’ was not declared in this scope
+ 1787 |         [01;31m[Kreset_cycle_service_[m[K = create_service<std_srvs::srv::Trigger>(
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1787:47:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_srvs[m[K’ was not declared in this scope
+ 1787 |         reset_cycle_service_ = create_service<[01;31m[Kstd_srvs[m[K::srv::Trigger>(
+      |                                               [01;31m[K^~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1787:32:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+ 1787 |         reset_cycle_service_ = [01;31m[Kcreate_service<std_srvs::srv::Trigger>[m[K(
+      |                                [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1787:70:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KMotorControlNode::create_service<<expression error> >(const char [32], std::_Bind_helper<false, void (MotorControlNode::*)(...), MotorControlNode*, const std::_Placeholder<1>&, const std::_Placeholder<2>&>::type)[m[K’
+ 1787 |         reset_cycle_service_ = [01;31m[Kcreate_service<std_srvs::srv::Trigger>([m[K
+      |                                [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+ 1788 | [01;31m[K            "/motor_control_node/reset_cycle",[m[K
+      |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                        
+ 1789 | [01;31m[K            std::bind(&MotorControlNode::resetCycleCallback, this, std::placeholders::_1, std::placeholders::_2))[m[K;
+      |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1321[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:950[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:141:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ServiceT, class CallbackT> typename rclcpp::Service<ServiceT>::SharedPtr rclcpp::Node::create_service(const string&, CallbackT&&, const rmw_qos_profile_t&, rclcpp::CallbackGroup::SharedPtr)[m[K’
+  141 | [01;36m[KNode[m[K::create_service(
+      | [01;36m[K^~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:141:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1787:70:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1787 |         reset_cycle_service_ = [01;31m[Kcreate_service<std_srvs::srv::Trigger>([m[K
+      |                                [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+ 1788 | [01;31m[K            "/motor_control_node/reset_cycle",[m[K
+      |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                        
+ 1789 | [01;31m[K            std::bind(&MotorControlNode::resetCycleCallback, this, std::placeholders::_1, std::placeholders::_2))[m[K;
+      |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kvoid MotorControlNode::resetCycleCallback(...)[m[K’:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1968:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kresponse[m[K’ was not declared in this scope
+ 1968 |         [01;31m[Kresponse[m[K->success = true;
+      |         [01;31m[K^~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:2009:5:[m[K [01;31m[Kerror: [m[K‘[01m[Krcpp[m[K’ has not been declared
+ 2009 |     [01;31m[Krcpp[m[K::init(argc, argv);
+      |     [01;31m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/ControlMotor.dir/build.make:76: CMakeFiles/ControlMotor.dir/src/ControlMotor.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ControlMotor.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

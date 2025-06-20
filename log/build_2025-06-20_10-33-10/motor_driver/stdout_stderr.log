@@ -1,0 +1,1216 @@
+[35m[1mConsolidate compiler generated dependencies of target ControlMotor[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/ControlMotor.dir/src/ControlMotor.cpp.o[0m
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:2064:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+ 2064 | }
+      |  [01;31m[K^[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1161:49:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+ 1161 | class MotorController : public IMotorController [01;36m[K{[m[K
+      |                                                 [01;36m[K^[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In constructor ‘[01m[KMotorController::MotorController(uint8_t, std::shared_ptr<ICANInterface>, rclcpp::Node*, const string&)[m[K’:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1169:11:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KMotorController[m[K’ does not have any field named ‘[01m[Kmotor_id_[m[K’
+ 1169 |         : [01;31m[Kmotor_id_[m[K(motor_id), can_(can), node_(node), logger_(node->get_logger()),
+      |           [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1169:32:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KMotorController[m[K’ does not have any field named ‘[01m[Kcan_[m[K’
+ 1169 |         : motor_id_(motor_id), [01;31m[Kcan_[m[K(can), node_(node), logger_(node->get_logger()),
+      |                                [01;31m[K^~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1169:43:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KMotorController[m[K’ does not have any field named ‘[01m[Knode_[m[K’
+ 1169 |         : motor_id_(motor_id), can_(can), [01;31m[Knode_[m[K(node), logger_(node->get_logger()),
+      |                                           [01;31m[K^~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1169:56:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KMotorController[m[K’ does not have any field named ‘[01m[Klogger_[m[K’
+ 1169 |         : motor_id_(motor_id), can_(can), node_(node), [01;31m[Klogger_[m[K(node->get_logger()),
+      |                                                        [01;31m[K^~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1170:11:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KMotorController[m[K’ does not have any field named ‘[01m[Kstate_[m[K’
+ 1170 |           [01;31m[Kstate_[m[K(State::INITIALIZING), mode_(Mode::MANUAL), is_origin_set_(false),
+      |           [01;31m[K^~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1170:40:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KMotorController[m[K’ does not have any field named ‘[01m[Kmode_[m[K’
+ 1170 |           state_(State::INITIALIZING), [01;31m[Kmode_[m[K(Mode::MANUAL), is_origin_set_(false),
+      |                                        [01;31m[K^~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1170:61:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KMotorController[m[K’ does not have any field named ‘[01m[Kis_origin_set_[m[K’
+ 1170 |       state_(State::INITIALIZING), mode_(Mode::MANUAL), [01;31m[Kis_origin_set_[m[K(false),
+      |                                                         [01;31m[K^~~~~~~~~~~~~~[m[K
+
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1171:11:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KMotorController[m[K’ does not have any field named ‘[01m[Kis_home_[m[K’
+ 1171 |           [01;31m[Kis_home_[m[K(false), current_target_index_(0), reach_counter_(0),
+      |           [01;31m[K^~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1171:28:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KMotorController[m[K’ does not have any field named ‘[01m[Kcurrent_target_index_[m[K’
+ 1171 |           is_home_(false), [01;31m[Kcurrent_target_index_[m[K(0), reach_counter_(0),
+      |                            [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1171:54:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KMotorController[m[K’ does not have any field named ‘[01m[Kreach_counter_[m[K’
+ 1171 |           is_home_(false), current_target_index_(0), [01;31m[Kreach_counter_[m[K(0),
+      |                                                      [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1172:11:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KMotorController[m[K’ does not have any field named ‘[01m[Ktarget_reached_[m[K’
+ 1172 |           [01;31m[Ktarget_reached_[m[K(true), speed_(10000.0), accel_(1000.0), min_angle_(-20.0),
+      |           [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1172:34:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KMotorController[m[K’ does not have any field named ‘[01m[Kspeed_[m[K’
+ 1172 |           target_reached_(true), [01;31m[Kspeed_[m[K(10000.0), accel_(1000.0), min_angle_(-20.0),
+      |                                  [01;31m[K^~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1172:51:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KMotorController[m[K’ does not have any field named ‘[01m[Kaccel_[m[K’
+ 1172 |           target_reached_(true), speed_(10000.0), [01;31m[Kaccel_[m[K(1000.0), min_angle_(-20.0),
+      |                                                   [01;31m[K^~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1172:67:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KMotorController[m[K’ does not have any field named ‘[01m[Kmin_angle_[m[K’
+ 1172 | target_reached_(true), speed_(10000.0), accel_(1000.0), [01;31m[Kmin_angle_[m[K(-20.0),
+      |                                                         [01;31m[K^~~~~~~~~~[m[K
+
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1173:11:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KMotorController[m[K’ does not have any field named ‘[01m[Kmax_angle_[m[K’
+ 1173 |           [01;31m[Kmax_angle_[m[K(90.0), step_(5), target_position_(0.0), pause_position_(0.0),
+      |           [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1173:29:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KMotorController[m[K’ does not have any field named ‘[01m[Kstep_[m[K’
+ 1173 |           max_angle_(90.0), [01;31m[Kstep_[m[K(5), target_position_(0.0), pause_position_(0.0),
+      |                             [01;31m[K^~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1173:39:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KMotorController[m[K’ does not have any field named ‘[01m[Ktarget_position_[m[K’
+ 1173 |           max_angle_(90.0), step_(5), [01;31m[Ktarget_position_[m[K(0.0), pause_position_(0.0),
+      |                                       [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1173:62:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KMotorController[m[K’ does not have any field named ‘[01m[Kpause_position_[m[K’
+ 1173 |      max_angle_(90.0), step_(5), target_position_(0.0), [01;31m[Kpause_position_[m[K(0.0),
+      |                                                         [01;31m[K^~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1174:11:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KMotorController[m[K’ does not have any field named ‘[01m[Kreach_count_max_[m[K’
+ 1174 |           [01;31m[Kreach_count_max_[m[K(100), safety_checker_(min_angle_, max_angle_, MAX_MOTOR_TEMPERATURE),
+      |           [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1174:34:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KMotorController[m[K’ does not have any field named ‘[01m[Ksafety_checker_[m[K’
+ 1174 |           reach_count_max_(100), [01;31m[Ksafety_checker_[m[K(min_angle_, max_angle_, MAX_MOTOR_TEMPERATURE),
+      |                                  [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1174:50:[m[K [01;31m[Kerror: [m[K‘[01m[Kmin_angle_[m[K’ was not declared in this scope
+ 1174 |           reach_count_max_(100), safety_checker_([01;31m[Kmin_angle_[m[K, max_angle_, MAX_MOTOR_TEMPERATURE),
+      |                                                  [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1174:62:[m[K [01;31m[Kerror: [m[K‘[01m[Kmax_angle_[m[K’ was not declared in this scope
+ 1174 |      reach_count_max_(100), safety_checker_(min_angle_, [01;31m[Kmax_angle_[m[K, MAX_MOTOR_TEMPERATURE),
+      |                                                         [01;31m[K^~~~~~~~~~[m[K
+
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1174:74:[m[K [01;31m[Kerror: [m[K‘[01m[KMAX_MOTOR_TEMPERATURE[m[K’ was not declared in this scope
+ 1174 | ount_max_(100), safety_checker_(min_angle_, max_angle_, [01;31m[KMAX_MOTOR_TEMPERATURE[m[K),
+      |                                                         [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1175:11:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KMotorController[m[K’ does not have any field named ‘[01m[Kstate_publisher_[m[K’
+ 1175 |           [01;31m[Kstate_publisher_[m[K(node, name), param_prefix_(name + "."),
+      |           [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1175:41:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KMotorController[m[K’ does not have any field named ‘[01m[Kparam_prefix_[m[K’
+ 1175 |           state_publisher_(node, name), [01;31m[Kparam_prefix_[m[K(name + "."),
+      |                                         [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1176:11:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KMotorController[m[K’ does not have any field named ‘[01m[Klast_command_[m[K’
+ 1176 |           [01;31m[Klast_command_[m[K(), pre_pause_command_(), last_command_time_(node_->now()),
+      |           [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1176:28:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KMotorController[m[K’ does not have any field named ‘[01m[Kpre_pause_command_[m[K’
+ 1176 |           last_command_(), [01;31m[Kpre_pause_command_[m[K(), last_command_time_(node_->now()),
+      |                            [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1176:50:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KMotorController[m[K’ does not have any field named ‘[01m[Klast_command_time_[m[K’
+ 1176 |           last_command_(), pre_pause_command_(), [01;31m[Klast_command_time_[m[K(node_->now()),
+      |                                                  [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1176:69:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Knode[m[K’?
+ 1176 | st_command_(), pre_pause_command_(), last_command_time_([01;31m[Knode_[m[K->now()),
+      |                                                         [01;31m[K^~~~~[m[K
+      |                                                         [32m[Knode[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1177:11:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KMotorController[m[K’ does not have any field named ‘[01m[Krepeat_[m[K’
+ 1177 |           [01;31m[Krepeat_[m[K(1) {
+      |           [01;31m[K^~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1178:9:[m[K [01;31m[Kerror: [m[K‘[01m[KinitializeParameters[m[K’ was not declared in this scope
+ 1178 |         [01;31m[KinitializeParameters[m[K();
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1179:9:[m[K [01;31m[Kerror: [m[K‘[01m[KsetOrigin[m[K’ was not declared in this scope; did you mean ‘[01m[Ksetregid[m[K’?
+ 1179 |         [01;31m[KsetOrigin[m[K();
+      |         [01;31m[K^~~~~~~~~[m[K
+      |         [32m[Ksetregid[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1180:9:[m[K [01;31m[Kerror: [m[K‘[01m[KinitializeCommandMap[m[K’ was not declared in this scope
+ 1180 |         [01;31m[KinitializeCommandMap[m[K();
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kvirtual void MotorController::handleCommand(const string&)[m[K’:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1185:64:[m[K [01;31m[Kerror: [m[K‘[01m[Kmotor_id_[m[K’ was not declared in this scope; did you mean ‘[01m[KmotorId[m[K’?
+ 1185 |  response << "Motor 0x" << std::hex << static_cast<int>([01;31m[Kmotor_id_[m[K) << ": ";
+      |                                                         [01;31m[K^~~~~~~~~[m[K
+      |                                                         [32m[KmotorId[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1187:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kis_origin_set_[m[K’ was not declared in this scope; did you mean ‘[01m[KisOriginSet[m[K’?
+ 1187 |         if (![01;31m[Kis_origin_set_[m[K) {
+      |              [01;31m[K^~~~~~~~~~~~~~[m[K
+      |              [32m[KisOriginSet[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:959[m[K:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1189:25:[m[K [01;31m[Kerror: [m[K‘[01m[Klogger_[m[K’ was not declared in this scope
+ 1189 |             RCLCPP_WARN([01;31m[Klogger_[m[K, "%s", response.str().c_str());
+      |                         [01;31m[K^~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1189:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1189 |             [01;31m[KRCLCPP_WARN[m[K(logger_, "%s", response.str().c_str());
+      |             [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1189:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1189 |             [01;31m[KRCLCPP_WARN[m[K(logger_, "%s", response.str().c_str());
+      |             [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1189:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1189 |             [01;31m[KRCLCPP_WARN[m[K(logger_, "%s", response.str().c_str());
+      |             [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1190:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kstate_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[KStatePublisher[m[K’?
+ 1190 |             [01;31m[Kstate_publisher_[m[K.publishResponse(response.str());
+      |             [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |             [32m[KStatePublisher[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1194:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kis_home_[m[K’ was not declared in this scope
+ 1194 |         if (![01;31m[Kis_home_[m[K && last_data_.position == 0.0) {
+      |              [01;31m[K^~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1194:26:[m[K [01;31m[Kerror: [m[K‘[01m[Klast_data_[m[K’ was not declared in this scope
+ 1194 |         if (!is_home_ && [01;31m[Klast_data_[m[K.position == 0.0) {
+      |                          [01;31m[K^~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:959[m[K:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1196:25:[m[K [01;31m[Kerror: [m[K‘[01m[Klogger_[m[K’ was not declared in this scope
+ 1196 |             RCLCPP_WARN([01;31m[Klogger_[m[K, "%s", response.str().c_str());
+      |                         [01;31m[K^~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1196:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1196 |             [01;31m[KRCLCPP_WARN[m[K(logger_, "%s", response.str().c_str());
+      |             [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1196:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1196 |             [01;31m[KRCLCPP_WARN[m[K(logger_, "%s", response.str().c_str());
+      |             [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1196:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1196 |             [01;31m[KRCLCPP_WARN[m[K(logger_, "%s", response.str().c_str());
+      |             [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1197:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kstate_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[KStatePublisher[m[K’?
+ 1197 |             [01;31m[Kstate_publisher_[m[K.publishResponse(response.str());
+      |             [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |             [32m[KStatePublisher[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1202:17:[m[K [01;31m[Kerror: [m[K‘[01m[Klast_data_[m[K’ was not declared in this scope
+ 1202 |             if ([01;31m[Klast_data_[m[K.position < 0.0 || last_data_.position > 90.0) {
+      |                 [01;31m[K^~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:959[m[K:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1204:30:[m[K [01;31m[Kerror: [m[K‘[01m[Klogger_[m[K’ was not declared in this scope
+ 1204 |                 RCLCPP_ERROR([01;31m[Klogger_[m[K, "%s", response.str().c_str());
+      |                              [01;31m[K^~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1204:17:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1204 |                 [01;31m[KRCLCPP_ERROR[m[K(logger_, "%s", response.str().c_str());
+      |                 [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1204:17:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1204 |                 [01;31m[KRCLCPP_ERROR[m[K(logger_, "%s", response.str().c_str());
+      |                 [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1204:17:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1204 |                 [01;31m[KRCLCPP_ERROR[m[K(logger_, "%s", response.str().c_str());
+      |                 [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1205:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kstate_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[KStatePublisher[m[K’?
+ 1205 |                 [01;31m[Kstate_publisher_[m[K.publishResponse(response.str());
+      |                 [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |                 [32m[KStatePublisher[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1207:17:[m[K [01;31m[Kerror: [m[K‘[01m[KtransitionTo[m[K’ was not declared in this scope
+ 1207 |                 [01;31m[KtransitionTo[m[K(State::STOPPED);
+      |                 [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1210:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kmode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_t[m[K’?
+ 1210 |             [01;31m[Kmode_[m[K = Mode::MANUAL;
+      |             [01;31m[K^~~~~[m[K
+      |             [32m[Kmode_t[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1213:9:[m[K [01;31m[Kerror: [m[K‘[01m[Klast_command_time_[m[K’ was not declared in this scope
+ 1213 |         [01;31m[Klast_command_time_[m[K = node_->now();
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1213:30:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_t[m[K’?
+ 1213 |         last_command_time_ = [01;31m[Knode_[m[K->now();
+      |                              [01;31m[K^~~~~[m[K
+      |                              [32m[Kmode_t[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1215:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kcommand_map_[m[K’ was not declared in this scope
+ 1215 |         auto it = [01;31m[Kcommand_map_[m[K.find(command);
+      |                   [01;31m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:959[m[K:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1220:25:[m[K [01;31m[Kerror: [m[K‘[01m[Klogger_[m[K’ was not declared in this scope
+ 1220 |             RCLCPP_WARN([01;31m[Klogger_[m[K, "%s", response.str().c_str());
+      |                         [01;31m[K^~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1220:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1220 |             [01;31m[KRCLCPP_WARN[m[K(logger_, "%s", response.str().c_str());
+      |             [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1220:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1220 |             [01;31m[KRCLCPP_WARN[m[K(logger_, "%s", response.str().c_str());
+      |             [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1220:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1220 |             [01;31m[KRCLCPP_WARN[m[K(logger_, "%s", response.str().c_str());
+      |             [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1221:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kstate_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[KStatePublisher[m[K’?
+ 1221 |             [01;31m[Kstate_publisher_[m[K.publishResponse(response.str());
+      |             [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |             [32m[KStatePublisher[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kvirtual void MotorController::control(const MotorData&)[m[K’:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1226:9:[m[K [01;31m[Kerror: [m[K‘[01m[Klast_data_[m[K’ was not declared in this scope
+ 1226 |         [01;31m[Klast_data_[m[K = data;
+      |         [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1227:42:[m[K [01;31m[Kerror: [m[K‘[01m[Kstate_[m[K’ was not declared in this scope; did you mean ‘[01m[KState[m[K’?
+ 1227 |         last_data_.state = stateToString([01;31m[Kstate_[m[K);
+      |                                          [01;31m[K^~~~~~[m[K
+      |                                          [32m[KState[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1229:14:[m[K [01;31m[Kerror: [m[K‘[01m[Ksafety_checker_[m[K’ was not declared in this scope; did you mean ‘[01m[KSafetyChecker[m[K’?
+ 1229 |         if (![01;31m[Ksafety_checker_[m[K.check(data, logger_)) {
+      |              [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |              [32m[KSafetyChecker[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1229:42:[m[K [01;31m[Kerror: [m[K‘[01m[Klogger_[m[K’ was not declared in this scope
+ 1229 |         if (!safety_checker_.check(data, [01;31m[Klogger_[m[K)) {
+      |                                          [01;31m[K^~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1231:13:[m[K [01;31m[Kerror: [m[K‘[01m[KtransitionTo[m[K’ was not declared in this scope
+ 1231 |             [01;31m[KtransitionTo[m[K(State::ERROR);
+      |             [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1235:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kstate_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[KStatePublisher[m[K’?
+ 1235 |         [01;31m[Kstate_publisher_[m[K.publish(last_data_, target_reached_);
+      |         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |         [32m[KStatePublisher[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1235:46:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_reached_[m[K’ was not declared in this scope; did you mean ‘[01m[KisTargetReached[m[K’?
+ 1235 |         state_publisher_.publish(last_data_, [01;31m[Ktarget_reached_[m[K);
+      |                                              [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |                                              [32m[KisTargetReached[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1248:17:[m[K [01;31m[Kerror: [m[K‘[01m[KhandlePaused[m[K’ was not declared in this scope
+ 1248 |                 [01;31m[KhandlePaused[m[K(data);
+      |                 [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1251:17:[m[K [01;31m[Kerror: [m[K‘[01m[KhandleStopped[m[K’ was not declared in this scope
+ 1251 |                 [01;31m[KhandleStopped[m[K(data);
+      |                 [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1254:17:[m[K [01;31m[Kerror: [m[K‘[01m[KhandleError[m[K’ was not declared in this scope
+ 1254 |                 [01;31m[KhandleError[m[K(data);
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:959[m[K:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kvirtual void MotorController::setParameters(const std::vector<rcl_interfaces::msg::Parameter_<std::allocator<void> >, std::allocator<rcl_interfaces::msg::Parameter_<std::allocator<void> > > >&)[m[K’:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1260:21:[m[K [01;31m[Kerror: [m[K‘[01m[Klogger_[m[K’ was not declared in this scope
+ 1260 |         RCLCPP_INFO([01;31m[Klogger_[m[K, "Motor 0x%02X: Received set_parameters request with %zu parameters",
+      |                     [01;31m[K^~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1260:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1260 |         [01;31m[KRCLCPP_INFO[m[K(logger_, "Motor 0x%02X: Received set_parameters request with %zu parameters",
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1260:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1260 |         [01;31m[KRCLCPP_INFO[m[K(logger_, "Motor 0x%02X: Received set_parameters request with %zu parameters",
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1260:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1260 |         [01;31m[KRCLCPP_INFO[m[K(logger_, "Motor 0x%02X: Received set_parameters request with %zu parameters",
+      |         [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:959[m[K:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1261:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kmotor_id_[m[K’ was not declared in this scope; did you mean ‘[01m[KmotorId[m[K’?
+ 1261 |                     [01;31m[Kmotor_id_[m[K, parameters.size());
+      |                     [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1262:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kis_origin_set_[m[K’ was not declared in this scope; did you mean ‘[01m[KisOriginSet[m[K’?
+ 1262 |         if (![01;31m[Kis_origin_set_[m[K) {
+      |              [01;31m[K^~~~~~~~~~~~~~[m[K
+      |              [32m[KisOriginSet[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:959[m[K:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1263:25:[m[K [01;31m[Kerror: [m[K‘[01m[Klogger_[m[K’ was not declared in this scope
+ 1263 |             RCLCPP_WARN([01;31m[Klogger_[m[K, "Motor 0x%02X: Cannot update parameters until origin is set!", motor_id_);
+      |                         [01;31m[K^~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1263:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1263 |             [01;31m[KRCLCPP_WARN[m[K(logger_, "Motor 0x%02X: Cannot update parameters until origin is set!", motor_id_);
+      |             [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1263:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1263 |             [01;31m[KRCLCPP_WARN[m[K(logger_, "Motor 0x%02X: Cannot update parameters until origin is set!", motor_id_);
+      |             [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1263:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1263 |             [01;31m[KRCLCPP_WARN[m[K(logger_, "Motor 0x%02X: Cannot update parameters until origin is set!", motor_id_);
+      |             [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:959[m[K:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1263:97:[m[K [01;31m[Kerror: [m[K‘[01m[Kmotor_id_[m[K’ was not declared in this scope; did you mean ‘[01m[KmotorId[m[K’?
+ 1263 | 0x%02X: Cannot update parameters until origin is set!", [01;31m[Kmotor_id_[m[K);
+      |                                                         [01;31m[K^~~~~~~~~[m[K
+
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1269:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kspeed_[m[K’ was not declared in this scope
+ 1269 |         float new_speed = [01;31m[Kspeed_[m[K;
+      |                           [01;31m[K^~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1270:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kaccel_[m[K’ was not declared in this scope; did you mean ‘[01m[Kaccess[m[K’?
+ 1270 |         float new_accel = [01;31m[Kaccel_[m[K;
+      |                           [01;31m[K^~~~~~[m[K
+      |                           [32m[Kaccess[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1271:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kstep_[m[K’ was not declared in this scope
+ 1271 |         int new_step = [01;31m[Kstep_[m[K;
+      |                        [01;31m[K^~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1272:26:[m[K [01;31m[Kerror: [m[K‘[01m[Krepeat_[m[K’ was not declared in this scope
+ 1272 |         int new_repeat = [01;31m[Krepeat_[m[K;
+      |                          [01;31m[K^~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:959[m[K:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1275:25:[m[K [01;31m[Kerror: [m[K‘[01m[Klogger_[m[K’ was not declared in this scope
+ 1275 |             RCLCPP_INFO([01;31m[Klogger_[m[K, "Motor 0x%02X: Processing parameter: %s", motor_id_, param.name.c_str());
+      |                         [01;31m[K^~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1275:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1275 |             [01;31m[KRCLCPP_INFO[m[K(logger_, "Motor 0x%02X: Processing parameter: %s", motor_id_, param.name.c_str());
+      |             [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1275:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1275 |             [01;31m[KRCLCPP_INFO[m[K(logger_, "Motor 0x%02X: Processing parameter: %s", motor_id_, param.name.c_str());
+      |             [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1275:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1275 |             [01;31m[KRCLCPP_INFO[m[K(logger_, "Motor 0x%02X: Processing parameter: %s", motor_id_, param.name.c_str());
+      |             [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:959[m[K:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1275:76:[m[K [01;31m[Kerror: [m[K‘[01m[Kmotor_id_[m[K’ was not declared in this scope; did you mean ‘[01m[KmotorId[m[K’?
+ 1275 | INFO(logger_, "Motor 0x%02X: Processing parameter: %s", [01;31m[Kmotor_id_[m[K, param.name.c_str());
+      |                                                         [01;31m[K^~~~~~~~~[m[K
+
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:959[m[K:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1279:34:[m[K [01;31m[Kerror: [m[K‘[01m[Klogger_[m[K’ was not declared in this scope
+ 1279 |                     RCLCPP_ERROR([01;31m[Klogger_[m[K, "Motor 0x%02X: Empty target_positions received!", motor_id_);
+      |                                  [01;31m[K^~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1279:21:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1279 |                     [01;31m[KRCLCPP_ERROR[m[K(logger_, "Motor 0x%02X: Empty target_positions received!", motor_id_);
+      |                     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1279:21:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1279 |                     [01;31m[KRCLCPP_ERROR[m[K(logger_, "Motor 0x%02X: Empty target_positions received!", motor_id_);
+      |                     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1279:21:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1279 |                     [01;31m[KRCLCPP_ERROR[m[K(logger_, "Motor 0x%02X: Empty target_positions received!", motor_id_);
+      |                     [01;31m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:959[m[K:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1279:93:[m[K [01;31m[Kerror: [m[K‘[01m[Kmotor_id_[m[K’ was not declared in this scope; did you mean ‘[01m[KmotorId[m[K’?
+ 1279 | ger_, "Motor 0x%02X: Empty target_positions received!", [01;31m[Kmotor_id_[m[K);
+      |                                                         [01;31m[K^~~~~~~~~[m[K
+
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1282:17:[m[K [01;31m[Kerror: [m[K‘[01m[KvalidatePositions[m[K’ was not declared in this scope
+ 1282 |                 [01;31m[KvalidatePositions[m[K(temp_positions);
+      |                 [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1284:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kmode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_t[m[K’?
+ 1284 |                 [01;31m[Kmode_[m[K = Mode::AUTO;
+      |                 [01;31m[K^~~~~[m[K
+      |                 [32m[Kmode_t[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:959[m[K:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1287:29:[m[K [01;31m[Kerror: [m[K‘[01m[Klogger_[m[K’ was not declared in this scope
+ 1287 |                 RCLCPP_INFO([01;31m[Klogger_[m[K, "Motor 0x%02X: Updated speed: %.2f", motor_id_, new_speed);
+      |                             [01;31m[K^~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1287:17:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1287 |                 [01;31m[KRCLCPP_INFO[m[K(logger_, "Motor 0x%02X: Updated speed: %.2f", motor_id_, new_speed);
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1287:17:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1287 |                 [01;31m[KRCLCPP_INFO[m[K(logger_, "Motor 0x%02X: Updated speed: %.2f", motor_id_, new_speed);
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1287:17:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1287 |                 [01;31m[KRCLCPP_INFO[m[K(logger_, "Motor 0x%02X: Updated speed: %.2f", motor_id_, new_speed);
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:959[m[K:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1287:75:[m[K [01;31m[Kerror: [m[K‘[01m[Kmotor_id_[m[K’ was not declared in this scope; did you mean ‘[01m[KmotorId[m[K’?
+ 1287 | LCPP_INFO(logger_, "Motor 0x%02X: Updated speed: %.2f", [01;31m[Kmotor_id_[m[K, new_speed);
+      |                                                         [01;31m[K^~~~~~~~~[m[K
+
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:959[m[K:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1290:29:[m[K [01;31m[Kerror: [m[K‘[01m[Klogger_[m[K’ was not declared in this scope
+ 1290 |                 RCLCPP_INFO([01;31m[Klogger_[m[K, "Motor 0x%02X: Updated accel: %.2f", motor_id_, new_accel);
+      |                             [01;31m[K^~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1290:17:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1290 |                 [01;31m[KRCLCPP_INFO[m[K(logger_, "Motor 0x%02X: Updated accel: %.2f", motor_id_, new_accel);
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1290:17:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1290 |                 [01;31m[KRCLCPP_INFO[m[K(logger_, "Motor 0x%02X: Updated accel: %.2f", motor_id_, new_accel);
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1290:17:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1290 |                 [01;31m[KRCLCPP_INFO[m[K(logger_, "Motor 0x%02X: Updated accel: %.2f", motor_id_, new_accel);
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:959[m[K:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1290:75:[m[K [01;31m[Kerror: [m[K‘[01m[Kmotor_id_[m[K’ was not declared in this scope; did you mean ‘[01m[KmotorId[m[K’?
+ 1290 | LCPP_INFO(logger_, "Motor 0x%02X: Updated accel: %.2f", [01;31m[Kmotor_id_[m[K, new_accel);
+      |                                                         [01;31m[K^~~~~~~~~[m[K
+
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:959[m[K:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1293:29:[m[K [01;31m[Kerror: [m[K‘[01m[Klogger_[m[K’ was not declared in this scope
+ 1293 |                 RCLCPP_INFO([01;31m[Klogger_[m[K, "Motor 0x%02X: Updated step: %d", motor_id_, new_step);
+      |                             [01;31m[K^~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1293:17:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1293 |                 [01;31m[KRCLCPP_INFO[m[K(logger_, "Motor 0x%02X: Updated step: %d", motor_id_, new_step);
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1293:17:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1293 |                 [01;31m[KRCLCPP_INFO[m[K(logger_, "Motor 0x%02X: Updated step: %d", motor_id_, new_step);
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1293:17:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1293 |                 [01;31m[KRCLCPP_INFO[m[K(logger_, "Motor 0x%02X: Updated step: %d", motor_id_, new_step);
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:959[m[K:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1293:72:[m[K [01;31m[Kerror: [m[K‘[01m[Kmotor_id_[m[K’ was not declared in this scope; did you mean ‘[01m[KmotorId[m[K’?
+ 1293 |  RCLCPP_INFO(logger_, "Motor 0x%02X: Updated step: %d", [01;31m[Kmotor_id_[m[K, new_step);
+      |                                                         [01;31m[K^~~~~~~~~[m[K
+
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:959[m[K:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1296:29:[m[K [01;31m[Kerror: [m[K‘[01m[Klogger_[m[K’ was not declared in this scope
+ 1296 |                 RCLCPP_INFO([01;31m[Klogger_[m[K, "Motor 0x%02X: Updated repeat: %d", motor_id_, new_repeat);
+      |                             [01;31m[K^~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1296:17:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1296 |                 [01;31m[KRCLCPP_INFO[m[K(logger_, "Motor 0x%02X: Updated repeat: %d", motor_id_, new_repeat);
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1296:17:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1296 |                 [01;31m[KRCLCPP_INFO[m[K(logger_, "Motor 0x%02X: Updated repeat: %d", motor_id_, new_repeat);
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1296:17:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1296 |                 [01;31m[KRCLCPP_INFO[m[K(logger_, "Motor 0x%02X: Updated repeat: %d", motor_id_, new_repeat);
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:959[m[K:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1296:74:[m[K [01;31m[Kerror: [m[K‘[01m[Kmotor_id_[m[K’ was not declared in this scope; did you mean ‘[01m[KmotorId[m[K’?
+ 1296 | CLCPP_INFO(logger_, "Motor 0x%02X: Updated repeat: %d", [01;31m[Kmotor_id_[m[K, new_repeat);
+      |                                                         [01;31m[K^~~~~~~~~[m[K
+
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:959[m[K:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1298:29:[m[K [01;31m[Kerror: [m[K‘[01m[Klogger_[m[K’ was not declared in this scope
+ 1298 |                 RCLCPP_WARN([01;31m[Klogger_[m[K, "Motor 0x%02X: Unknown parameter: %s", motor_id_, param.name.c_str());
+      |                             [01;31m[K^~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1298:17:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1298 |                 [01;31m[KRCLCPP_WARN[m[K(logger_, "Motor 0x%02X: Unknown parameter: %s", motor_id_, param.name.c_str());
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1298:17:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1298 |                 [01;31m[KRCLCPP_WARN[m[K(logger_, "Motor 0x%02X: Unknown parameter: %s", motor_id_, param.name.c_str());
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1298:17:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1298 |                 [01;31m[KRCLCPP_WARN[m[K(logger_, "Motor 0x%02X: Unknown parameter: %s", motor_id_, param.name.c_str());
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:959[m[K:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1298:77:[m[K [01;31m[Kerror: [m[K‘[01m[Kmotor_id_[m[K’ was not declared in this scope; did you mean ‘[01m[KmotorId[m[K’?
+ 1298 | PP_WARN(logger_, "Motor 0x%02X: Unknown parameter: %s", [01;31m[Kmotor_id_[m[K, param.name.c_str());
+      |                                                         [01;31m[K^~~~~~~~~[m[K
+
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:959[m[K:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1315:30:[m[K [01;31m[Kerror: [m[K‘[01m[Klogger_[m[K’ was not declared in this scope
+ 1315 |                 RCLCPP_ERROR([01;31m[Klogger_[m[K, "Motor 0x%02X: Repeated target_positions is empty!", motor_id_);
+      |                              [01;31m[K^~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1315:17:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1315 |                 [01;31m[KRCLCPP_ERROR[m[K(logger_, "Motor 0x%02X: Repeated target_positions is empty!", motor_id_);
+      |                 [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1315:17:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1315 |                 [01;31m[KRCLCPP_ERROR[m[K(logger_, "Motor 0x%02X: Repeated target_positions is empty!", motor_id_);
+      |                 [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1315:17:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1315 |                 [01;31m[KRCLCPP_ERROR[m[K(logger_, "Motor 0x%02X: Repeated target_positions is empty!", motor_id_);
+      |                 [01;31m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:959[m[K:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1315:92:[m[K [01;31m[Kerror: [m[K‘[01m[Kmotor_id_[m[K’ was not declared in this scope; did you mean ‘[01m[KmotorId[m[K’?
+ 1315 | _, "Motor 0x%02X: Repeated target_positions is empty!", [01;31m[Kmotor_id_[m[K);
+      |                                                         [01;31m[K^~~~~~~~~[m[K
+
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1318:13:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_positions_[m[K’ was not declared in this scope; did you mean ‘[01m[KgetTargetPositions[m[K’?
+ 1318 |             [01;31m[Ktarget_positions_[m[K = repeated_positions;
+      |             [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |             [32m[KgetTargetPositions[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1319:13:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_reached_[m[K’ was not declared in this scope; did you mean ‘[01m[KisTargetReached[m[K’?
+ 1319 |             [01;31m[Ktarget_reached_[m[K = false;
+      |             [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |             [32m[KisTargetReached[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1320:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_target_index_[m[K’ was not declared in this scope
+ 1320 |             [01;31m[Kcurrent_target_index_[m[K = 0;
+      |             [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:959[m[K:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1321:25:[m[K [01;31m[Kerror: [m[K‘[01m[Klogger_[m[K’ was not declared in this scope
+ 1321 |             RCLCPP_INFO([01;31m[Klogger_[m[K, "Motor 0x%02X: Updated target_positions: %ld targets (repeated %d times)",
+      |                         [01;31m[K^~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1321:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1321 |             [01;31m[KRCLCPP_INFO[m[K(logger_, "Motor 0x%02X: Updated target_positions: %ld targets (repeated %d times)",
+      |             [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1321:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1321 |             [01;31m[KRCLCPP_INFO[m[K(logger_, "Motor 0x%02X: Updated target_positions: %ld targets (repeated %d times)",
+      |             [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1321:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1321 |             [01;31m[KRCLCPP_INFO[m[K(logger_, "Motor 0x%02X: Updated target_positions: %ld targets (repeated %d times)",
+      |             [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:959[m[K:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1322:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kmotor_id_[m[K’ was not declared in this scope; did you mean ‘[01m[KmotorId[m[K’?
+ 1322 |             [01;31m[Kmotor_id_[m[K, target_positions_.size(), repeat_);
+      |             [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1323:13:[m[K [01;31m[Kerror: [m[K‘[01m[KtransitionTo[m[K’ was not declared in this scope
+ 1323 |             [01;31m[KtransitionTo[m[K(State::MOVING); // Start moving to new targets
+      |             [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1326:9:[m[K [01;31m[Kerror: [m[K‘[01m[KvalidateSpeed[m[K’ was not declared in this scope
+ 1326 |         [01;31m[KvalidateSpeed[m[K();
+      |         [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1327:9:[m[K [01;31m[Kerror: [m[K‘[01m[KvalidateAccel[m[K’ was not declared in this scope
+ 1327 |         [01;31m[KvalidateAccel[m[K();
+      |         [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1328:9:[m[K [01;31m[Kerror: [m[K‘[01m[KvalidateStep[m[K’ was not declared in this scope
+ 1328 |         [01;31m[KvalidateStep[m[K();
+      |         [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1329:9:[m[K [01;31m[Kerror: [m[K‘[01m[KvalidateRepeat[m[K’ was not declared in this scope
+ 1329 |         [01;31m[KvalidateRepeat[m[K();
+      |         [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kvirtual bool MotorController::isOriginSet() const[m[K’:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1332:48:[m[K [01;31m[Kerror: [m[K‘[01m[Kis_origin_set_[m[K’ was not declared in this scope; did you mean ‘[01m[KisOriginSet[m[K’?
+ 1332 |     bool isOriginSet() const override { return [01;31m[Kis_origin_set_[m[K; }
+      |                                                [01;31m[K^~~~~~~~~~~~~~[m[K
+      |                                                [32m[KisOriginSet[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kvirtual bool MotorController::isTargetReached() const[m[K’:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1333:52:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_reached_[m[K’ was not declared in this scope; did you mean ‘[01m[KisTargetReached[m[K’?
+ 1333 |     bool isTargetReached() const override { return [01;31m[Ktarget_reached_[m[K; }
+      |                                                    [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |                                                    [32m[KisTargetReached[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kvirtual uint8_t MotorController::motorId() const[m[K’:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1334:47:[m[K [01;31m[Kerror: [m[K‘[01m[Kmotor_id_[m[K’ was not declared in this scope; did you mean ‘[01m[KmotorId[m[K’?
+ 1334 |     uint8_t motorId() const override { return [01;31m[Kmotor_id_[m[K; }
+      |                                               [01;31m[K^~~~~~~~~[m[K
+      |                                               [32m[KmotorId[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kvirtual void MotorController::stop()[m[K’:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1338:18:[m[K [01;31m[Kerror: [m[K‘[01m[Klast_command_[m[K’ was not declared in this scope
+ 1338 |             if (([01;31m[Klast_command_[m[K == "UP" || last_command_ == "DOWN" ||
+      |                  [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1339:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kmode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_t[m[K’?
+ 1339 |                  ([01;31m[Kmode_[m[K == Mode::MANUAL && !target_positions_cmd_.empty())) &&
+      |                   [01;31m[K^~~~~[m[K
+      |                   [32m[Kmode_t[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1339:45:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_positions_cmd_[m[K’ was not declared in this scope
+ 1339 |                  (mode_ == Mode::MANUAL && ![01;31m[Ktarget_positions_cmd_[m[K.empty())) &&
+      |                                             [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1340:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kcan_[m[K’ was not declared in this scope
+ 1340 |                 ![01;31m[Kcan_[m[K->setCurrentBrake(motor_id_, 300)) {
+      |                  [01;31m[K^~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1340:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kmotor_id_[m[K’ was not declared in this scope; did you mean ‘[01m[KmotorId[m[K’?
+ 1340 |                 !can_->setCurrentBrake([01;31m[Kmotor_id_[m[K, 300)) {
+      |                                        [01;31m[K^~~~~~~~~[m[K
+      |                                        [32m[KmotorId[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:959[m[K:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1341:30:[m[K [01;31m[Kerror: [m[K‘[01m[Klogger_[m[K’ was not declared in this scope
+ 1341 |                 RCLCPP_ERROR([01;31m[Klogger_[m[K, "Motor 0x%02X: Brake failed", motor_id_);
+      |                              [01;31m[K^~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1341:17:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1341 |                 [01;31m[KRCLCPP_ERROR[m[K(logger_, "Motor 0x%02X: Brake failed", motor_id_);
+      |                 [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1341:17:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1341 |                 [01;31m[KRCLCPP_ERROR[m[K(logger_, "Motor 0x%02X: Brake failed", motor_id_);
+      |                 [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1341:17:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1341 |                 [01;31m[KRCLCPP_ERROR[m[K(logger_, "Motor 0x%02X: Brake failed", motor_id_);
+      |                 [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1342:17:[m[K [01;31m[Kerror: [m[K‘[01m[KtransitionTo[m[K’ was not declared in this scope
+ 1342 |                 [01;31m[KtransitionTo[m[K(State::ERROR);
+      |                 [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1345:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kcan_[m[K’ was not declared in this scope
+ 1345 |             [01;31m[Kcan_[m[K->setPositionSpeed(motor_id_, last_data_.position, 1000, 1000);
+      |             [01;31m[K^~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1345:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kmotor_id_[m[K’ was not declared in this scope; did you mean ‘[01m[KmotorId[m[K’?
+ 1345 |             can_->setPositionSpeed([01;31m[Kmotor_id_[m[K, last_data_.position, 1000, 1000);
+      |                                    [01;31m[K^~~~~~~~~[m[K
+      |                                    [32m[KmotorId[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1345:47:[m[K [01;31m[Kerror: [m[K‘[01m[Klast_data_[m[K’ was not declared in this scope
+ 1345 |             can_->setPositionSpeed(motor_id_, [01;31m[Klast_data_[m[K.position, 1000, 1000);
+      |                                               [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1346:13:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_position_[m[K’ was not declared in this scope; did you mean ‘[01m[KgetTargetPositions[m[K’?
+ 1346 |             [01;31m[Ktarget_position_[m[K = last_data_.position;
+      |             [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |             [32m[KgetTargetPositions[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1347:13:[m[K [01;31m[Kerror: [m[K‘[01m[KtransitionTo[m[K’ was not declared in this scope
+ 1347 |             [01;31m[KtransitionTo[m[K(State::STOPPED);
+      |             [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1348:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kstate_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[KStatePublisher[m[K’?
+ 1348 |             [01;31m[Kstate_publisher_[m[K.publishResponse("Motor 0x" + std::to_string(motor_id_) +
+      |             [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |             [32m[KStatePublisher[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:959[m[K:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1351:26:[m[K [01;31m[Kerror: [m[K‘[01m[Klogger_[m[K’ was not declared in this scope
+ 1351 |             RCLCPP_ERROR([01;31m[Klogger_[m[K, "Motor 0x%02X: Stop failed: %s", motor_id_, e.what());
+      |                          [01;31m[K^~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1351:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1351 |             [01;31m[KRCLCPP_ERROR[m[K(logger_, "Motor 0x%02X: Stop failed: %s", motor_id_, e.what());
+      |             [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1351:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1351 |             [01;31m[KRCLCPP_ERROR[m[K(logger_, "Motor 0x%02X: Stop failed: %s", motor_id_, e.what());
+      |             [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1351:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1351 |             [01;31m[KRCLCPP_ERROR[m[K(logger_, "Motor 0x%02X: Stop failed: %s", motor_id_, e.what());
+      |             [01;31m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:959[m[K:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1351:68:[m[K [01;31m[Kerror: [m[K‘[01m[Kmotor_id_[m[K’ was not declared in this scope; did you mean ‘[01m[KmotorId[m[K’?
+ 1351 |  RCLCPP_ERROR(logger_, "Motor 0x%02X: Stop failed: %s", [01;31m[Kmotor_id_[m[K, e.what());
+      |                                                         [01;31m[K^~~~~~~~~[m[K
+
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1352:13:[m[K [01;31m[Kerror: [m[K‘[01m[KtransitionTo[m[K’ was not declared in this scope
+ 1352 |             [01;31m[KtransitionTo[m[K(State::ERROR);
+      |             [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kvoid MotorController::handleInitializing(const MotorData&)[m[K’:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1370:39:[m[K [01;31m[Kerror: [m[K‘[01m[KPOSITION_TOLERANCE[m[K’ was not declared in this scope
+ 1370 |         if (std::abs(data.position) < [01;31m[KPOSITION_TOLERANCE[m[K &&
+      |                                       [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1371:39:[m[K [01;31m[Kerror: [m[K‘[01m[KVELOCITY_TOLERANCE[m[K’ was not declared in this scope
+ 1371 |             std::abs(data.velocity) < [01;31m[KVELOCITY_TOLERANCE[m[K) {
+      |                                       [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1372:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kis_origin_set_[m[K’ was not declared in this scope; did you mean ‘[01m[KisOriginSet[m[K’?
+ 1372 |             [01;31m[Kis_origin_set_[m[K = true;
+      |             [01;31m[K^~~~~~~~~~~~~~[m[K
+      |             [32m[KisOriginSet[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1373:13:[m[K [01;31m[Kerror: [m[K‘[01m[KtransitionTo[m[K’ was not declared in this scope
+ 1373 |             [01;31m[KtransitionTo[m[K(State::HOMING);
+      |             [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kvoid MotorController::handleHoming(const MotorData&)[m[K’:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1378:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcan_[m[K’ was not declared in this scope
+ 1378 |         [01;31m[Kcan_[m[K->setPositionSpeed(motor_id_, 0.0, static_cast<int>(speed_), static_cast<int>(accel_));
+      |         [01;31m[K^~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1378:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kmotor_id_[m[K’ was not declared in this scope; did you mean ‘[01m[KmotorId[m[K’?
+ 1378 |         can_->setPositionSpeed([01;31m[Kmotor_id_[m[K, 0.0, static_cast<int>(speed_), static_cast<int>(accel_));
+      |                                [01;31m[K^~~~~~~~~[m[K
+      |                                [32m[KmotorId[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1378:65:[m[K [01;31m[Kerror: [m[K‘[01m[Kspeed_[m[K’ was not declared in this scope
+ 1378 | can_->setPositionSpeed(motor_id_, 0.0, static_cast<int>([01;31m[Kspeed_[m[K), static_cast<int>(accel_));
+      |                                                         [01;31m[K^~~~~~[m[K
+
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1378:91:[m[K [01;31m[Kerror: [m[K‘[01m[Kaccel_[m[K’ was not declared in this scope; did you mean ‘[01m[Kaccess[m[K’?
+ 1378 | otor_id_, 0.0, static_cast<int>(speed_), static_cast<int>([01;31m[Kaccel_[m[K));
+      |                                                           [01;31m[K^~~~~~[m[K
+      |                                                           [32m[Kaccess[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1379:39:[m[K [01;31m[Kerror: [m[K‘[01m[KPOSITION_TOLERANCE[m[K’ was not declared in this scope
+ 1379 |         if (std::abs(data.position) < [01;31m[KPOSITION_TOLERANCE[m[K &&
+      |                                       [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1380:39:[m[K [01;31m[Kerror: [m[K‘[01m[KVELOCITY_TOLERANCE[m[K’ was not declared in this scope
+ 1380 |             std::abs(data.velocity) < [01;31m[KVELOCITY_TOLERANCE[m[K) {
+      |                                       [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1381:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kis_home_[m[K’ was not declared in this scope
+ 1381 |             [01;31m[Kis_home_[m[K = true;
+      |             [01;31m[K^~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1382:13:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_reached_[m[K’ was not declared in this scope; did you mean ‘[01m[KisTargetReached[m[K’?
+ 1382 |             [01;31m[Ktarget_reached_[m[K = true;
+      |             [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |             [32m[KisTargetReached[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:959[m[K:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1383:25:[m[K [01;31m[Kerror: [m[K‘[01m[Klogger_[m[K’ was not declared in this scope
+ 1383 |             RCLCPP_INFO([01;31m[Klogger_[m[K, "Motor 0x%02X reached Home Position!", motor_id_);
+      |                         [01;31m[K^~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1383:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1383 |             [01;31m[KRCLCPP_INFO[m[K(logger_, "Motor 0x%02X reached Home Position!", motor_id_);
+      |             [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1383:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1383 |             [01;31m[KRCLCPP_INFO[m[K(logger_, "Motor 0x%02X reached Home Position!", motor_id_);
+      |             [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1383:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1383 |             [01;31m[KRCLCPP_INFO[m[K(logger_, "Motor 0x%02X reached Home Position!", motor_id_);
+      |             [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1384:13:[m[K [01;31m[Kerror: [m[K‘[01m[KtransitionTo[m[K’ was not declared in this scope
+ 1384 |             [01;31m[KtransitionTo[m[K(State::MOVING);
+      |             [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kvoid MotorController::handleMoving(const MotorData&)[m[K’:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1389:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kmode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_t[m[K’?
+ 1389 |         if ([01;31m[Kmode_[m[K == Mode::MANUAL && !last_command_.empty()) {
+      |             [01;31m[K^~~~~[m[K
+      |             [32m[Kmode_t[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1389:39:[m[K [01;31m[Kerror: [m[K‘[01m[Klast_command_[m[K’ was not declared in this scope
+ 1389 |         if (mode_ == Mode::MANUAL && ![01;31m[Klast_command_[m[K.empty()) {
+      |                                       [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1390:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kcan_[m[K’ was not declared in this scope
+ 1390 |             [01;31m[Kcan_[m[K->setPositionSpeed(motor_id_, target_position_, static_cast<int>(speed_/3), static_cast<int>(accel_/3));
+      |             [01;31m[K^~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1390:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kmotor_id_[m[K’ was not declared in this scope; did you mean ‘[01m[KmotorId[m[K’?
+ 1390 |             can_->setPositionSpeed([01;31m[Kmotor_id_[m[K, target_position_, static_cast<int>(speed_/3), static_cast<int>(accel_/3));
+      |                                    [01;31m[K^~~~~~~~~[m[K
+      |                                    [32m[KmotorId[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1390:47:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_position_[m[K’ was not declared in this scope; did you mean ‘[01m[KgetTargetPositions[m[K’?
+ 1390 |             can_->setPositionSpeed(motor_id_, [01;31m[Ktarget_position_[m[K, static_cast<int>(speed_/3), static_cast<int>(accel_/3));
+      |                                               [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |                                               [32m[KgetTargetPositions[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1390:82:[m[K [01;31m[Kerror: [m[K‘[01m[Kspeed_[m[K’ was not declared in this scope
+ 1390 | tionSpeed(motor_id_, target_position_, static_cast<int>([01;31m[Kspeed_[m[K/3), static_cast<int>(accel_/3));
+      |                                                         [01;31m[K^~~~~~[m[K
+
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1390:110:[m[K [01;31m[Kerror: [m[K‘[01m[Kaccel_[m[K’ was not declared in this scope; did you mean ‘[01m[Kaccess[m[K’?
+ 1390 | position_, static_cast<int>(speed_/3), static_cast<int>([01;31m[Kaccel_[m[K/3));
+      |                                                         [01;31m[K^~~~~~[m[K
+      |                                                         [32m[Kaccess[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1391:62:[m[K [01;31m[Kerror: [m[K‘[01m[KPOSITION_TOLERANCE[m[K’ was not declared in this scope
+ 1391 |        if (std::abs(data.position - target_position_) < [01;31m[KPOSITION_TOLERANCE[m[K) {
+      |                                                         [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1392:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kreach_counter_[m[K’ was not declared in this scope
+ 1392 |                 [01;31m[Kreach_counter_[m[K++;
+      |                 [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1393:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kreach_count_max_[m[K’ was not declared in this scope
+ 1393 |                 if (reach_counter_ >= [01;31m[Kreach_count_max_[m[K) {
+      |                                       [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1395:21:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_reached_[m[K’ was not declared in this scope; did you mean ‘[01m[KisTargetReached[m[K’?
+ 1395 |                     [01;31m[Ktarget_reached_[m[K = true;
+      |                     [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |                     [32m[KisTargetReached[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:959[m[K:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1396:33:[m[K [01;31m[Kerror: [m[K‘[01m[Klogger_[m[K’ was not declared in this scope
+ 1396 |                     RCLCPP_INFO([01;31m[Klogger_[m[K, "Motor 0x%02X: Reached target position %.2f",
+      |                                 [01;31m[K^~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1396:21:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1396 |                     [01;31m[KRCLCPP_INFO[m[K(logger_, "Motor 0x%02X: Reached target position %.2f",
+      |                     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1396:21:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1396 |                     [01;31m[KRCLCPP_INFO[m[K(logger_, "Motor 0x%02X: Reached target position %.2f",
+      |                     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1396:21:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1396 |                     [01;31m[KRCLCPP_INFO[m[K(logger_, "Motor 0x%02X: Reached target position %.2f",
+      |                     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1398:21:[m[K [01;31m[Kerror: [m[K‘[01m[KtransitionTo[m[K’ was not declared in this scope
+ 1398 |                     [01;31m[KtransitionTo[m[K(State::STOPPED); // Stop after reaching target
+      |                     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1401:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kreach_counter_[m[K’ was not declared in this scope
+ 1401 |                 [01;31m[Kreach_counter_[m[K = 0;
+      |                 [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1402:17:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_reached_[m[K’ was not declared in this scope; did you mean ‘[01m[KisTargetReached[m[K’?
+ 1402 |                 [01;31m[Ktarget_reached_[m[K = false;
+      |                 [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |                 [32m[KisTargetReached[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1404:44:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_positions_[m[K’ was not declared in this scope; did you mean ‘[01m[KgetTargetPositions[m[K’?
+ 1404 |         } else if (mode_ == Mode::AUTO && ![01;31m[Ktarget_positions_[m[K.empty()) {
+      |                                            [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |                                            [32m[KgetTargetPositions[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1405:46:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_target_index_[m[K’ was not declared in this scope
+ 1405 |             float target = target_positions_[[01;31m[Kcurrent_target_index_[m[K];
+      |                                              [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1406:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kcan_[m[K’ was not declared in this scope
+ 1406 |             [01;31m[Kcan_[m[K->setPositionSpeed(motor_id_, target, static_cast<int>(speed_/3), static_cast<int>(accel_/3));
+      |             [01;31m[K^~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1406:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kmotor_id_[m[K’ was not declared in this scope; did you mean ‘[01m[KmotorId[m[K’?
+ 1406 |             can_->setPositionSpeed([01;31m[Kmotor_id_[m[K, target, static_cast<int>(speed_/3), static_cast<int>(accel_/3));
+      |                                    [01;31m[K^~~~~~~~~[m[K
+      |                                    [32m[KmotorId[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1406:72:[m[K [01;31m[Kerror: [m[K‘[01m[Kspeed_[m[K’ was not declared in this scope
+ 1406 | _->setPositionSpeed(motor_id_, target, static_cast<int>([01;31m[Kspeed_[m[K/3), static_cast<int>(accel_/3));
+      |                                                         [01;31m[K^~~~~~[m[K
+
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1406:100:[m[K [01;31m[Kerror: [m[K‘[01m[Kaccel_[m[K’ was not declared in this scope; did you mean ‘[01m[Kaccess[m[K’?
+ 1406 | _, target, static_cast<int>(speed_/3), static_cast<int>([01;31m[Kaccel_[m[K/3));
+      |                                                         [01;31m[K^~~~~~[m[K
+      |                                                         [32m[Kaccess[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1407:52:[m[K [01;31m[Kerror: [m[K‘[01m[KPOSITION_TOLERANCE[m[K’ was not declared in this scope
+ 1407 |             if (std::abs(data.position - target) < [01;31m[KPOSITION_TOLERANCE[m[K) {
+      |                                                    [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1408:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kreach_counter_[m[K’ was not declared in this scope
+ 1408 |                 [01;31m[Kreach_counter_[m[K++;
+      |                 [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1409:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kreach_count_max_[m[K’ was not declared in this scope
+ 1409 |                 if (reach_counter_ >= [01;31m[Kreach_count_max_[m[K) {
+      |                                       [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1411:21:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_reached_[m[K’ was not declared in this scope; did you mean ‘[01m[KisTargetReached[m[K’?
+ 1411 |                     [01;31m[Ktarget_reached_[m[K = true;
+      |                     [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |                     [32m[KisTargetReached[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:959[m[K:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1414:37:[m[K [01;31m[Kerror: [m[K‘[01m[Klogger_[m[K’ was not declared in this scope
+ 1414 |                         RCLCPP_INFO([01;31m[Klogger_[m[K, "Motor 0x%02X: All targets reached.", motor_id_);
+      |                                     [01;31m[K^~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1414:25:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1414 |                         [01;31m[KRCLCPP_INFO[m[K(logger_, "Motor 0x%02X: All targets reached.", motor_id_);
+      |                         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1414:25:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1414 |                         [01;31m[KRCLCPP_INFO[m[K(logger_, "Motor 0x%02X: All targets reached.", motor_id_);
+      |                         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1414:25:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+ 1414 |                         [01;31m[KRCLCPP_INFO[m[K(logger_, "Motor 0x%02X: All targets reached.", motor_id_);
+      |                         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1416:25:[m[K [01;31m[Kerror: [m[K‘[01m[KtransitionTo[m[K’ was not declared in this scope
+ 1416 |                         [01;31m[KtransitionTo[m[K(State::STOPPED); // Stop after all targets
+      |                         [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1420:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kreach_counter_[m[K’ was not declared in this scope
+ 1420 |                 [01;31m[Kreach_counter_[m[K = 0;
+      |                 [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1421:17:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_reached_[m[K’ was not declared in this scope; did you mean ‘[01m[KisTargetReached[m[K’?
+ 1421 |                 [01;31m[Ktarget_reached_[m[K = false;
+      |                 [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |                 [32m[KisTargetReached[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1425:46:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+ 1425 |     void handlePaused(const MotorData& data) [01;31m[K{[m[K
+      |                                              [01;31m[K^[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1468:47:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+ 1468 |     void handleStopped(const MotorData& data) [01;31m[K{[m[K
+      |                                               [01;31m[K^[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1472:45:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+ 1472 |     void handleError(const MotorData& data) [01;31m[K{[m[K
+      |                                             [01;31m[K^[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1496:33:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+ 1496 |     void initializeCommandMap() [01;31m[K{[m[K
+      |                                 [01;31m[K^[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1621:66:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+ 1621 |     void validatePositions(const std::vector<double>& positions) [01;31m[K{[m[K
+      |                                                                  [01;31m[K^[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1631:26:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+ 1631 |     void validateSpeed() [01;31m[K{[m[K
+      |                          [01;31m[K^[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1639:26:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+ 1639 |     void validateAccel() [01;31m[K{[m[K
+      |                          [01;31m[K^[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1647:25:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+ 1647 |     void validateStep() [01;31m[K{[m[K
+      |                         [01;31m[K^[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1654:27:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+ 1654 |     void validateRepeat() [01;31m[K{[m[K
+      |                           [01;31m[K^[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1661:40:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+ 1661 |     void transitionTo(State new_state) [01;31m[K{[m[K
+      |                                        [01;31m[K^[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1669:22:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+ 1669 |     void setOrigin() [01;31m[K{[m[K
+      |                      [01;31m[K^[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1682:33:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+ 1682 |     void initializeParameters() [01;31m[K{[m[K
+      |                                 [01;31m[K^[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1722:1:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kpublic[m[K’
+ 1722 | [01;31m[Kpublic[m[K:
+      | [01;31m[K^~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1725:1:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kprivate[m[K’
+ 1725 | [01;31m[Kprivate[m[K:
+      | [01;31m[K^~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1733:20:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp::Logger::Logger()[m[K’ is private within this context
+ 1733 |     rclcpp::Logger [01;31m[Klogger_[m[K;
+      |                    [01;31m[K^~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:23[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:959[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/logger.hpp:114:3:[m[K [01;36m[Knote: [m[Kdeclared private here
+  114 |   [01;36m[KLogger[m[K()
+      |   [01;36m[K^~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1751:19:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KSafetyChecker::SafetyChecker()[m[K’
+ 1751 |     SafetyChecker [01;31m[Ksafety_checker_[m[K;
+      |                   [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1084:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KSafetyChecker::SafetyChecker(float, float, int)[m[K’
+ 1084 |     [01;36m[KSafetyChecker[m[K(float min_angle, float max_angle, int max_temperature)
+      |     [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1084:5:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 0 provided
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1082:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr SafetyChecker::SafetyChecker(const SafetyChecker&)[m[K’
+ 1082 | class [01;36m[KSafetyChecker[m[K {
+      |       [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1082:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1082:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr SafetyChecker::SafetyChecker(SafetyChecker&&)[m[K’
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1082:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1752:20:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KStatePublisher::StatePublisher()[m[K’
+ 1752 |     StatePublisher [01;31m[Kstate_publisher_[m[K;
+      |                    [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1109:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KStatePublisher::StatePublisher(rclcpp::Node*, const string&)[m[K’
+ 1109 |     [01;36m[KStatePublisher[m[K(rclcpp::Node* node, const std::string& name)
+      |     [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1109:5:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1107:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KStatePublisher::StatePublisher(const StatePublisher&)[m[K’
+ 1107 | class [01;36m[KStatePublisher[m[K {
+      |       [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1107:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1107:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KStatePublisher::StatePublisher(StatePublisher&&)[m[K’
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1107:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kvoid MotorController::MotorControlNode::controlLoop()[m[K’:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:2009:59:[m[K [01;31m[Kerror: [m[K‘[01m[KVELOCITY_CONVERSION_FACTOR[m[K’ is not a member of ‘[01m[KMotorController[m[K’
+ 2009 |                       data.velocity *= MotorController::[01;31m[KVELOCITY_CONVERSION_FACTOR[m[K;
+      |                                                         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K At global scope:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:2064:2:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id at end of input
+ 2064 | }
+      |  [01;31m[K^[m[K
+In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:959[m[K:
+/usr/include/c++/11/bits/unique_ptr.h: In instantiation of ‘[01m[Ktypename std::_MakeUniq<_Tp>::__single_object std::make_unique(_Args&& ...) [with _Tp = MotorController; _Args = {int, std::shared_ptr<ICANInterface>&, MotorController::MotorControlNode*, const char (&)[21]}; typename std::_MakeUniq<_Tp>::__single_object = std::unique_ptr<MotorController, std::default_delete<MotorController> >][m[K’:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1789:65:[m[K   required from here
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:962:30:[m[K [01;31m[Kerror: [m[Kinvalid new-expression of abstract class type ‘[01m[KMotorController[m[K’
+  962 |     { return unique_ptr<_Tp>([01;31m[Knew _Tp(std::forward<_Args>(__args)...)[m[K); }
+      |                              [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1161:7:[m[K [01;36m[Knote: [m[K  because the following virtual functions are pure within ‘[01m[KMotorController[m[K’:
+ 1161 | class [01;36m[KMotorController[m[K : public IMotorController {
+      |       [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1077:43:[m[K [01;36m[Knote: [m[K    ‘[01m[Kvirtual const std::vector<float>& IMotorController::getTargetPositions() const[m[K’
+ 1077 |         virtual const std::vector<float>& [01;36m[KgetTargetPositions[m[K() const = 0; // Added to access target_positions_
+      |                                           [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/ControlMotor.dir/build.make:76: CMakeFiles/ControlMotor.dir/src/ControlMotor.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ControlMotor.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

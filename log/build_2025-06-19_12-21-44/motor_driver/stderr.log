@@ -1,0 +1,105 @@
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:2067:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kqueue[m[K’ in namespace ‘[01m[Kstd[m[K’ does not name a template type
+ 2067 |     std::[01;31m[Kqueue[m[K<Request> request_queue_;
+      |          [01;31m[K^~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:977:1:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::queue[m[K’ is defined in header ‘[01m[K<queue>[m[K’; did you forget to ‘[01m[K#include <queue>[m[K’?
+  976 | #include "can_interface/caninterface.hpp"
+  +++ |+[32m[K#include <queue>[m[K
+  977 | 
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kvoid MotorControlNode::setParametersCallback(std::shared_ptr<rcl_interfaces::srv::SetParameters_Request_<std::allocator<void> > >, std::shared_ptr<rcl_interfaces::srv::SetParameters_Response_<std::allocator<void> > >, size_t)[m[K’:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1862:9:[m[K [01;31m[Kerror: [m[K‘[01m[Krequest_queue_[m[K’ was not declared in this scope
+ 1862 |         [01;31m[Krequest_queue_[m[K.push(req);
+      |         [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kvoid MotorControlNode::processRequestQueue()[m[K’:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1905:13:[m[K [01;31m[Kerror: [m[K‘[01m[Krequest_queue_[m[K’ was not declared in this scope
+ 1905 |         if ([01;31m[Krequest_queue_[m[K.empty()) {
+      |             [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1911:21:[m[K [01;31m[Kerror: [m[K‘[01m[Krequest_queue_[m[K’ was not declared in this scope
+ 1911 |             while (![01;31m[Krequest_queue_[m[K.empty()) {
+      |                     [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1920:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass IMotorController[m[K’ has no member named ‘[01m[KallTargetsReached[m[K’; did you mean ‘[01m[KisTargetReached[m[K’?
+ 1920 |                 if (controllers_[0]->[01;31m[KallTargetsReached[m[K()) {
+      |                                      [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |                                      [32m[KisTargetReached[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1926:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kqueue[m[K’ is not a member of ‘[01m[Kstd[m[K’
+ 1926 |                 std::[01;31m[Kqueue[m[K<Request> temp_queue;
+      |                      [01;31m[K^~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1926:22:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::queue[m[K’ is defined in header ‘[01m[K<queue>[m[K’; did you forget to ‘[01m[K#include <queue>[m[K’?
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1926:35:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+ 1926 |                 std::queue<Request[01;31m[K>[m[K temp_queue;
+      |                                   [01;31m[K^[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1926:37:[m[K [01;31m[Kerror: [m[K‘[01m[Ktemp_queue[m[K’ was not declared in this scope
+ 1926 |                 std::queue<Request> [01;31m[Ktemp_queue[m[K;
+      |                                     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1927:25:[m[K [01;31m[Kerror: [m[K‘[01m[Krequest_queue_[m[K’ was not declared in this scope
+ 1927 |                 while (![01;31m[Krequest_queue_[m[K.empty()) {
+      |                         [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1938:17:[m[K [01;31m[Kerror: [m[K‘[01m[Krequest_queue_[m[K’ was not declared in this scope
+ 1938 |                 [01;31m[Krequest_queue_[m[K = temp_queue;
+      |                 [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1939:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass IMotorController[m[K’ has no member named ‘[01m[KallTargetsReached[m[K’; did you mean ‘[01m[KisTargetReached[m[K’?
+ 1939 |             } else if (controllers_[0]->[01;31m[KallTargetsReached[m[K()) {
+      |                                         [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |                                         [32m[KisTargetReached[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1941:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kqueue[m[K’ is not a member of ‘[01m[Kstd[m[K’
+ 1941 |                 std::[01;31m[Kqueue[m[K<Request> temp_queue;
+      |                      [01;31m[K^~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1941:22:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::queue[m[K’ is defined in header ‘[01m[K<queue>[m[K’; did you forget to ‘[01m[K#include <queue>[m[K’?
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1941:35:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+ 1941 |                 std::queue<Request[01;31m[K>[m[K temp_queue;
+      |                                   [01;31m[K^[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1941:37:[m[K [01;31m[Kerror: [m[K‘[01m[Ktemp_queue[m[K’ was not declared in this scope
+ 1941 |                 std::queue<Request> [01;31m[Ktemp_queue[m[K;
+      |                                     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1942:25:[m[K [01;31m[Kerror: [m[K‘[01m[Krequest_queue_[m[K’ was not declared in this scope
+ 1942 |                 while (![01;31m[Krequest_queue_[m[K.empty()) {
+      |                         [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1953:17:[m[K [01;31m[Kerror: [m[K‘[01m[Krequest_queue_[m[K’ was not declared in this scope
+ 1953 |                 [01;31m[Krequest_queue_[m[K = temp_queue;
+      |                 [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1959:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass IMotorController[m[K’ has no member named ‘[01m[KallTargetsReached[m[K’; did you mean ‘[01m[KisTargetReached[m[K’?
+ 1959 |                 if (controllers_[1]->[01;31m[KallTargetsReached[m[K()) {
+      |                                      [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |                                      [32m[KisTargetReached[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1965:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kqueue[m[K’ is not a member of ‘[01m[Kstd[m[K’
+ 1965 |                 std::[01;31m[Kqueue[m[K<Request> temp_queue;
+      |                      [01;31m[K^~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1965:22:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::queue[m[K’ is defined in header ‘[01m[K<queue>[m[K’; did you forget to ‘[01m[K#include <queue>[m[K’?
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1965:35:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+ 1965 |                 std::queue<Request[01;31m[K>[m[K temp_queue;
+      |                                   [01;31m[K^[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1965:37:[m[K [01;31m[Kerror: [m[K‘[01m[Ktemp_queue[m[K’ was not declared in this scope
+ 1965 |                 std::queue<Request> [01;31m[Ktemp_queue[m[K;
+      |                                     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1966:25:[m[K [01;31m[Kerror: [m[K‘[01m[Krequest_queue_[m[K’ was not declared in this scope
+ 1966 |                 while (![01;31m[Krequest_queue_[m[K.empty()) {
+      |                         [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1977:17:[m[K [01;31m[Kerror: [m[K‘[01m[Krequest_queue_[m[K’ was not declared in this scope
+ 1977 |                 [01;31m[Krequest_queue_[m[K = temp_queue;
+      |                 [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1978:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass IMotorController[m[K’ has no member named ‘[01m[KallTargetsReached[m[K’; did you mean ‘[01m[KisTargetReached[m[K’?
+ 1978 |             } else if (controllers_[1]->[01;31m[KallTargetsReached[m[K()) {
+      |                                         [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |                                         [32m[KisTargetReached[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1980:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kqueue[m[K’ is not a member of ‘[01m[Kstd[m[K’
+ 1980 |                 std::[01;31m[Kqueue[m[K<Request> temp_queue;
+      |                      [01;31m[K^~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1980:22:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::queue[m[K’ is defined in header ‘[01m[K<queue>[m[K’; did you forget to ‘[01m[K#include <queue>[m[K’?
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1980:35:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+ 1980 |                 std::queue<Request[01;31m[K>[m[K temp_queue;
+      |                                   [01;31m[K^[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1980:37:[m[K [01;31m[Kerror: [m[K‘[01m[Ktemp_queue[m[K’ was not declared in this scope
+ 1980 |                 std::queue<Request> [01;31m[Ktemp_queue[m[K;
+      |                                     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1981:25:[m[K [01;31m[Kerror: [m[K‘[01m[Krequest_queue_[m[K’ was not declared in this scope
+ 1981 |                 while (![01;31m[Krequest_queue_[m[K.empty()) {
+      |                         [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1992:17:[m[K [01;31m[Kerror: [m[K‘[01m[Krequest_queue_[m[K’ was not declared in this scope
+ 1992 |                 [01;31m[Krequest_queue_[m[K = temp_queue;
+      |                 [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kvoid MotorControlNode::processRequest(const Request&)[m[K’:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1999:45:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass IMotorController[m[K’ has no member named ‘[01m[KsetWaiting[m[K’
+ 1999 |         controllers_[req.controller_index]->[01;31m[KsetWaiting[m[K(false); // Cho phép động cơ chạy
+      |                                             [01;31m[K^~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/ControlMotor.dir/build.make:76: CMakeFiles/ControlMotor.dir/src/ControlMotor.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ControlMotor.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

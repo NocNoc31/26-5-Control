@@ -1,0 +1,89 @@
+[0.017s] Invoking command in '/home/ubuntu/Desktop/AK8064_ws_Jun/build/motor_driver': AMENT_PREFIX_PATH=/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface:/opt/ros/humble LD_LIBRARY_PATH=/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/ubuntu/Desktop/AK8064_ws_Jun/build/motor_driver -- -j8 -l8
+[0.097s] [35m[1mConsolidate compiler generated dependencies of target ControlMotor[0m
+[0.131s] [ 50%] [32mBuilding CXX object CMakeFiles/ControlMotor.dir/src/ControlMotor.cpp.o[0m
+[4.994s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1163:21:[m[K [01;31m[Kerror: [m[K‘[01m[KMotorControlNode[m[K’ has not been declared
+[4.994s]  1163 |                     [01;31m[KMotorControlNode[m[K* node, const std::string& name)
+[4.994s]       |                     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[5.003s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1787:5:[m[K [01;31m[Kerror: [m[K‘[01m[KMotorControlNode[m[K’ does not name a type; did you mean ‘[01m[KMotorController[m[K’?
+[5.003s]  1787 |     [01;31m[KMotorControlNode[m[K* node_;
+[5.003s]       |     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[5.003s]       |     [32m[KMotorController[m[K
+[5.023s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In constructor ‘[01m[KMotorController::MotorController(uint8_t, std::shared_ptr<ICANInterface>, int*, const string&)[m[K’:
+[5.024s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1164:43:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KMotorController[m[K’ does not have any field named ‘[01m[Knode_[m[K’
+[5.024s]  1164 |         : motor_id_(motor_id), can_(can), [01;31m[Knode_[m[K(node), logger_(node->get_logger()),
+[5.024s]       |                                           [01;31m[K^~~~~[m[K
+[5.024s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1164:70:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kget_logger[m[K’ in ‘[01m[K* node[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[5.024s]  1164 |         : motor_id_(motor_id), can_(can), node_(node), logger_(node->[01;31m[Kget_logger[m[K()),
+[5.024s]       |                                                                      [01;31m[K^~~~~~~~~~[m[K
+[5.024s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1171:75:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Know[m[K’ in ‘[01m[K* node[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[5.024s]  1171 |           last_command_(), pre_pause_command_(), last_command_time_(node->[01;31m[Know[m[K()),
+[5.024s]       |                                                                           [01;31m[K^~~[m[K
+[5.027s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1170:11:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KStatePublisher::StatePublisher(int*&, const string&)[m[K’
+[5.027s]  1170 |           [01;31m[Kpublisher_(node, name)[m[K, param_prefix_(name + "."),
+[5.028s]       |           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[5.028s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1104:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KStatePublisher::StatePublisher(rclcpp::Node*, const string&)[m[K’
+[5.028s]  1104 |     [01;36m[KStatePublisher[m[K(rclcpp::Node* node, const std::string& name)
+[5.028s]       |     [01;36m[K^~~~~~~~~~~~~~[m[K
+[5.028s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1104:34:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kint*[m[K’ to ‘[01m[Krclcpp::Node*[m[K’
+[5.028s]  1104 |     StatePublisher([01;36m[Krclcpp::Node* node[m[K, const std::string& name)
+[5.028s]       |                    [01;36m[K~~~~~~~~~~~~~~^~~~[m[K
+[5.028s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1102:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KStatePublisher::StatePublisher(const StatePublisher&)[m[K’
+[5.029s]  1102 | class [01;36m[KStatePublisher[m[K {
+[5.029s]       |       [01;36m[K^~~~~~~~~~~~~~[m[K
+[5.029s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1102:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[5.029s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1102:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KStatePublisher::StatePublisher(StatePublisher&&)[m[K’
+[5.029s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1102:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[5.047s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kvirtual void MotorController::handleCommand(const string&)[m[K’:
+[5.047s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1215:30:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_[m[K’?
+[5.047s]  1215 |         last_command_time_ = [01;31m[Knode_[m[K->now();
+[5.047s]       |                              [01;31m[K^~~~~[m[K
+[5.047s]       |                              [32m[Kmode_[m[K
+[5.080s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kvoid MotorController::handlePaused(const MotorData&)[m[K’:
+[5.080s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1466:18:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_[m[K’?
+[5.080s]  1466 |                 ([01;31m[Knode_[m[K->now() - last_command_time_) < rclcpp::Duration::from_seconds(0.3)) {
+[5.080s]       |                  [01;31m[K^~~~~[m[K
+[5.081s]       |                  [32m[Kmode_[m[K
+[5.095s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kvoid MotorController::handleError(const MotorData&)[m[K’:
+[5.095s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1521:52:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_[m[K’?
+[5.095s]  1521 |             static rclcpp::Time error_start_time = [01;31m[Knode_[m[K->now();
+[5.095s]       |                                                    [01;31m[K^~~~~[m[K
+[5.095s]       |                                                    [32m[Kmode_[m[K
+[5.115s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In lambda function:
+[5.115s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1605:42:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_[m[K’?
+[5.115s]  1605 |                     last_command_time_ = [01;31m[Knode_[m[K->now();
+[5.115s]       |                                          [01;31m[K^~~~~[m[K
+[5.115s]       |                                          [32m[Kmode_[m[K
+[5.134s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In lambda function:
+[5.134s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1662:42:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_[m[K’?
+[5.134s]  1662 |                     last_command_time_ = [01;31m[Knode_[m[K->now();
+[5.134s]       |                                          [01;31m[K^~~~~[m[K
+[5.134s]       |                                          [32m[Kmode_[m[K
+[5.201s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kvoid MotorController::initializeParameters()[m[K’:
+[5.201s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1739:9:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_[m[K’?
+[5.201s]  1739 |         [01;31m[Knode_[m[K->declare_parameter(param_prefix_ + "target_positions", std::vector<double>{0.0});
+[5.201s]       |         [01;31m[K^~~~~[m[K
+[5.201s]       |         [32m[Kmode_[m[K
+[5.653s] In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+[5.653s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[5.653s]                  from [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:953[m[K:
+[5.653s] /usr/include/c++/11/bits/unique_ptr.h: In instantiation of ‘[01m[Ktypename std::_MakeUniq<_Tp>::__single_object std::make_unique(_Args&& ...) [with _Tp = MotorController; _Args = {int, std::shared_ptr<ICANInterface>&, MotorControlNode*, const char (&)[21]}; typename std::_MakeUniq<_Tp>::__single_object = std::unique_ptr<MotorController, std::default_delete<MotorController> >][m[K’:
+[5.654s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1837:65:[m[K   required from here
+[5.654s] [01m[K/usr/include/c++/11/bits/unique_ptr.h:962:30:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KMotorController::MotorController(int, std::shared_ptr<ICANInterface>&, MotorControlNode*, const char [21])[m[K’
+[5.654s]   962 |     { return unique_ptr<_Tp>([01;31m[Knew _Tp(std::forward<_Args>(__args)...)[m[K); }
+[5.654s]       |                              [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[5.654s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1162:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KMotorController::MotorController(uint8_t, std::shared_ptr<ICANInterface>, int*, const string&)[m[K’
+[5.654s]  1162 |     [01;36m[KMotorController[m[K(uint8_t motor_id, std::shared_ptr<ICANInterface> can,
+[5.654s]       |     [01;36m[K^~~~~~~~~~~~~~~[m[K
+[5.654s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1163:39:[m[K [01;36m[Knote: [m[K  no known conversion for argument 3 from ‘[01m[KMotorControlNode*[m[K’ to ‘[01m[Kint*[m[K’
+[5.654s]  1163 |                     [01;36m[KMotorControlNode* node[m[K, const std::string& name)
+[5.655s]       |                     [01;36m[K~~~~~~~~~~~~~~~~~~^~~~[m[K
+[5.655s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1156:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KMotorController::MotorController(const MotorController&)[m[K’
+[5.655s]  1156 | class [01;36m[KMotorController[m[K : public IMotorController {
+[5.655s]       |       [01;36m[K^~~~~~~~~~~~~~~[m[K
+[5.655s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1156:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 4 provided
+[5.655s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1156:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KMotorController::MotorController(MotorController&&)[m[K’
+[5.655s] [01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1156:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 4 provided
+[11.024s] gmake[2]: *** [CMakeFiles/ControlMotor.dir/build.make:76: CMakeFiles/ControlMotor.dir/src/ControlMotor.cpp.o] Error 1
+[11.025s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ControlMotor.dir/all] Error 2
+[11.025s] gmake: *** [Makefile:146: all] Error 2
+[11.029s] Invoked command in '/home/ubuntu/Desktop/AK8064_ws_Jun/build/motor_driver' returned '2': AMENT_PREFIX_PATH=/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface:/opt/ros/humble LD_LIBRARY_PATH=/home/ubuntu/Desktop/AK8064_ws_Jun/install/can_interface/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/ubuntu/Desktop/AK8064_ws_Jun/build/motor_driver -- -j8 -l8

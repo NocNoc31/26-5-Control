@@ -98,12 +98,28 @@ ros2 topic pub /Motor2ControlCMD std_msgs/msg/String "{data: 'PLAY'}"
 
 ros2 topic pub --once /Motor2ControlCMD std_msgs/msg/String "{data: 'PAUSE'}"
 
+ros2 topic pub --once /Motor1ControlCMD std_msgs/msg/String "{data: 'RUN'}"
+ros2 topic pub --once /Motor2ControlCMD std_msgs/msg/String "{data: 'RUN'}"
+
 ros2 topic pub /Motor2ControlCMD std_msgs/msg/String "{data: 'HOME'}"
 
 ros2 topic pub /Motor1ControlCMD std_msgs/msg/String "{data: 'DOWN'}"
 ros2 topic pub /Motor1ControlCMD std_msgs/msg/String "{data: 'UP'}"
 ros2 topic pub /Motor1ControlCMD std_msgs/msg/String "{data: 'PAUSE'}"
 ros2 topic pub /Motor1ControlCMD std_msgs/msg/String "{data: 'PLAY'}"
+
+
+
+ros2 service call /motor_control_node/set_parameters rcl_interfaces/srv/SetParameters "{parameters: [{name: 'execution_mode', value: {type: 2, integer_value: 2}}]}"
+
+ros2 service call /motor1_control_node/set_parameters rcl_interfaces/srv/SetParameters "{parameters: [{name: 'target_positions', value: {type: 9, double_array_value: [10.0, 20.0]}}]}"
+ros2 service call /motor2_control_node/set_parameters rcl_interfaces/srv/SetParameters "{parameters: [{name: 'target_positions', value: {type: 9, double_array_value: [15.0, 25.0]}}]}"
+
+ros2 topic pub --once /Motor1ControlCMD std_msgs/msg/String "{data: 'RUN'}"
+ros2 topic pub --once /Motor2ControlCMD std_msgs/msg/String "{data: 'RUN'}"
+
+ros2 service call /motor2_control_node/set_parameters rcl_interfaces/srv/SetParameters "{parameters: [{name: 'target_positions', value: {type: 9, double_array_value: [15.0, 25.0]}}]}"
+ros2 service call /motor1_control_node/set_parameters rcl_interfaces/srv/SetParameters "{parameters: [{name: 'target_positions', value: {type: 9, double_array_value: [10.0, 20.0]}}]}"
 
 Lưu ý:
 

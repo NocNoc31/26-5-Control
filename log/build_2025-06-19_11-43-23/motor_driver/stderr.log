@@ -1,0 +1,258 @@
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In constructor ‘[01m[KMotorController::MotorController(uint8_t, std::shared_ptr<ICANInterface>, MotorControlNode*, const string&)[m[K’:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1166:68:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass MotorControlNode[m[K’
+ 1166 |         : motor_id_(motor_id), can_(can), node_(node), logger_(node[01;31m[K->[m[Kget_logger()),
+      |                                                                    [01;31m[K^~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1154:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass MotorControlNode[m[K’
+ 1154 | class [01;36m[KMotorControlNode[m[K;
+      |       [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1172:11:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KMotorController[m[K’ does not have any field named ‘[01m[Kstate_publisher_[m[K’
+ 1172 |           [01;31m[Kstate_publisher_[m[K(node, name), param_prefix_(name + "."),
+      |           [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1173:73:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass MotorControlNode[m[K’
+ 1173 |           last_command_(), pre_pause_command_(), last_command_time_(node[01;31m[K->[m[Know()),
+      |                                                                         [01;31m[K^~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1154:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass MotorControlNode[m[K’
+ 1154 | class [01;36m[KMotorControlNode[m[K;
+      |       [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1174:40:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KStatePublisher::StatePublisher()[m[K’
+ 1174 |           repeat_(1), is_waiting_(false[01;31m[K)[m[K {
+      |                                        [01;31m[K^[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1102:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KStatePublisher::StatePublisher(rclcpp::Node*, const string&)[m[K’
+ 1102 |     [01;36m[KStatePublisher[m[K(rclcpp::Node* node, const std::string& name)
+      |     [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1102:5:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1100:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KStatePublisher::StatePublisher(const StatePublisher&)[m[K’
+ 1100 | class [01;36m[KStatePublisher[m[K {
+      |       [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1100:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1100:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KStatePublisher::StatePublisher(StatePublisher&&)[m[K’
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1100:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kvirtual void MotorController::handleCommand(const string&)[m[K’:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1187:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kstate_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[KStatePublisher[m[K’?
+ 1187 |             [01;31m[Kstate_publisher_[m[K.publishResponse(response.str());
+      |             [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |             [32m[KStatePublisher[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1194:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kstate_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[KStatePublisher[m[K’?
+ 1194 |             [01;31m[Kstate_publisher_[m[K.publishResponse(response.str());
+      |             [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |             [32m[KStatePublisher[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1202:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kstate_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[KStatePublisher[m[K’?
+ 1202 |                 [01;31m[Kstate_publisher_[m[K.publishResponse(response.str());
+      |                 [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |                 [32m[KStatePublisher[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1213:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kstate_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[KStatePublisher[m[K’?
+ 1213 |             [01;31m[Kstate_publisher_[m[K.publishResponse(response.str());
+      |             [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |             [32m[KStatePublisher[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1217:35:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass MotorControlNode[m[K’
+ 1217 |         last_command_time_ = node_[01;31m[K->[m[Know();
+      |                                   [01;31m[K^~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1154:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass MotorControlNode[m[K’
+ 1154 | class [01;36m[KMotorControlNode[m[K;
+      |       [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1225:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kstate_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[KStatePublisher[m[K’?
+ 1225 |             [01;31m[Kstate_publisher_[m[K.publishResponse(response.str());
+      |             [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |             [32m[KStatePublisher[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kvirtual void MotorController::control(const MotorData&)[m[K’:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1239:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kstate_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[KStatePublisher[m[K’?
+ 1239 |         [01;31m[Kstate_publisher_[m[K.publish(last_data_, target_reached_);
+      |         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |         [32m[KStatePublisher[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kvirtual void MotorController::stop()[m[K’:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1377:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kstate_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[KStatePublisher[m[K’?
+ 1377 |             [01;31m[Kstate_publisher_[m[K.publishResponse("Motor 0x" + std::to_string(motor_id_) +
+      |             [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |             [32m[KStatePublisher[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kvoid MotorController::handlePaused(const MotorData&)[m[K’:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1468:23:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass MotorControlNode[m[K’
+ 1468 |                 (node_[01;31m[K->[m[Know() - last_command_time_) < rclcpp::Duration::from_seconds(0.3)) {
+      |                       [01;31m[K^~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1154:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass MotorControlNode[m[K’
+ 1154 | class [01;36m[KMotorControlNode[m[K;
+      |       [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kvoid MotorController::handleError(const MotorData&)[m[K’:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1523:57:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass MotorControlNode[m[K’
+ 1523 |             static rclcpp::Time error_start_time = node_[01;31m[K->[m[Know();
+      |                                                         [01;31m[K^~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1154:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass MotorControlNode[m[K’
+ 1154 | class [01;36m[KMotorControlNode[m[K;
+      |       [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1525:37:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass MotorControlNode[m[K’
+ 1525 |             if (is_braking && (node_[01;31m[K->[m[Know() - error_start_time) < rclcpp::Duration::from_seconds(0.3)) {
+      |                                     [01;31m[K^~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1154:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass MotorControlNode[m[K’
+ 1154 | class [01;36m[KMotorControlNode[m[K;
+      |       [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1528:45:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass MotorControlNode[m[K’
+ 1528 |                     error_start_time = node_[01;31m[K->[m[Know();
+      |                                             [01;31m[K^~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1154:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass MotorControlNode[m[K’
+ 1154 | class [01;36m[KMotorControlNode[m[K;
+      |       [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In lambda function:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1563:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kstate_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[KStatePublisher[m[K’?
+ 1563 |                     [01;31m[Kstate_publisher_[m[K.publishResponse(response.str());
+      |                     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |                     [32m[KStatePublisher[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1568:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kstate_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[KStatePublisher[m[K’?
+ 1568 |                     [01;31m[Kstate_publisher_[m[K.publishResponse(response.str());
+      |                     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |                     [32m[KStatePublisher[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In lambda function:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1586:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kstate_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[KStatePublisher[m[K’?
+ 1586 |                     [01;31m[Kstate_publisher_[m[K.publishResponse(response.str());
+      |                     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |                     [32m[KStatePublisher[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1591:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kstate_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[KStatePublisher[m[K’?
+ 1591 |                     [01;31m[Kstate_publisher_[m[K.publishResponse(response.str());
+      |                     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |                     [32m[KStatePublisher[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In lambda function:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1600:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kstate_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[KStatePublisher[m[K’?
+ 1600 |                     [01;31m[Kstate_publisher_[m[K.publishResponse(response.str());
+      |                     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |                     [32m[KStatePublisher[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1607:47:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass MotorControlNode[m[K’
+ 1607 |                     last_command_time_ = node_[01;31m[K->[m[Know();
+      |                                               [01;31m[K^~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1154:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass MotorControlNode[m[K’
+ 1154 | class [01;36m[KMotorControlNode[m[K;
+      |       [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1612:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kstate_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[KStatePublisher[m[K’?
+ 1612 |                     [01;31m[Kstate_publisher_[m[K.publishResponse(response.str());
+      |                     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |                     [32m[KStatePublisher[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1618:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kstate_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[KStatePublisher[m[K’?
+ 1618 |                     [01;31m[Kstate_publisher_[m[K.publishResponse(response.str());
+      |                     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |                     [32m[KStatePublisher[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In lambda function:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1638:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kstate_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[KStatePublisher[m[K’?
+ 1638 |                     [01;31m[Kstate_publisher_[m[K.publishResponse(response.str());
+      |                     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |                     [32m[KStatePublisher[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1642:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kstate_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[KStatePublisher[m[K’?
+ 1642 |                 [01;31m[Kstate_publisher_[m[K.publishResponse(response.str());
+      |                 [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |                 [32m[KStatePublisher[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In lambda function:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1655:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kstate_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[KStatePublisher[m[K’?
+ 1655 |                 [01;31m[Kstate_publisher_[m[K.publishResponse(response.str());
+      |                 [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |                 [32m[KStatePublisher[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In lambda function:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1664:47:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass MotorControlNode[m[K’
+ 1664 |                     last_command_time_ = node_[01;31m[K->[m[Know();
+      |                                               [01;31m[K^~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1154:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass MotorControlNode[m[K’
+ 1154 | class [01;36m[KMotorControlNode[m[K;
+      |       [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1667:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kstate_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[KStatePublisher[m[K’?
+ 1667 |                     [01;31m[Kstate_publisher_[m[K.publishResponse(response.str());
+      |                     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |                     [32m[KStatePublisher[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1673:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kstate_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[KStatePublisher[m[K’?
+ 1673 |                     [01;31m[Kstate_publisher_[m[K.publishResponse(response.str());
+      |                     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |                     [32m[KStatePublisher[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:[m[K In member function ‘[01m[Kvoid MotorController::initializeParameters()[m[K’:
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1741:14:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass MotorControlNode[m[K’
+ 1741 |         node_[01;31m[K->[m[Kdeclare_parameter(param_prefix_ + "target_positions", std::vector<double>{0.0});
+      |              [01;31m[K^~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1154:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass MotorControlNode[m[K’
+ 1154 | class [01;36m[KMotorControlNode[m[K;
+      |       [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1742:14:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass MotorControlNode[m[K’
+ 1742 |         node_[01;31m[K->[m[Kdeclare_parameter(param_prefix_ + "speed", 10000.0);
+      |              [01;31m[K^~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1154:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass MotorControlNode[m[K’
+ 1154 | class [01;36m[KMotorControlNode[m[K;
+      |       [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1743:14:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass MotorControlNode[m[K’
+ 1743 |         node_[01;31m[K->[m[Kdeclare_parameter(param_prefix_ + "accel", 1000.0);
+      |              [01;31m[K^~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1154:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass MotorControlNode[m[K’
+ 1154 | class [01;36m[KMotorControlNode[m[K;
+      |       [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1744:14:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass MotorControlNode[m[K’
+ 1744 |         node_[01;31m[K->[m[Kdeclare_parameter(param_prefix_ + "min_angle", -20.0);
+      |              [01;31m[K^~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1154:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass MotorControlNode[m[K’
+ 1154 | class [01;36m[KMotorControlNode[m[K;
+      |       [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1745:14:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass MotorControlNode[m[K’
+ 1745 |         node_[01;31m[K->[m[Kdeclare_parameter(param_prefix_ + "max_angle", 90.0);
+      |              [01;31m[K^~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1154:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass MotorControlNode[m[K’
+ 1154 | class [01;36m[KMotorControlNode[m[K;
+      |       [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1746:14:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass MotorControlNode[m[K’
+ 1746 |         node_[01;31m[K->[m[Kdeclare_parameter(param_prefix_ + "step", 2);
+      |              [01;31m[K^~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1154:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass MotorControlNode[m[K’
+ 1154 | class [01;36m[KMotorControlNode[m[K;
+      |       [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1747:14:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass MotorControlNode[m[K’
+ 1747 |         node_[01;31m[K->[m[Kdeclare_parameter(param_prefix_ + "reach_count_max", 100);
+      |              [01;31m[K^~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1154:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass MotorControlNode[m[K’
+ 1154 | class [01;36m[KMotorControlNode[m[K;
+      |       [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1748:14:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass MotorControlNode[m[K’
+ 1748 |         node_[01;31m[K->[m[Kdeclare_parameter(param_prefix_ + "repeat", 1);
+      |              [01;31m[K^~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1154:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass MotorControlNode[m[K’
+ 1154 | class [01;36m[KMotorControlNode[m[K;
+      |       [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1751:14:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass MotorControlNode[m[K’
+ 1751 |         node_[01;31m[K->[m[Kget_parameter(param_prefix_ + "target_positions", temp_positions);
+      |              [01;31m[K^~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1154:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass MotorControlNode[m[K’
+ 1154 | class [01;36m[KMotorControlNode[m[K;
+      |       [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1752:14:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass MotorControlNode[m[K’
+ 1752 |         node_[01;31m[K->[m[Kget_parameter(param_prefix_ + "speed", speed_);
+      |              [01;31m[K^~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1154:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass MotorControlNode[m[K’
+ 1154 | class [01;36m[KMotorControlNode[m[K;
+      |       [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1753:14:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass MotorControlNode[m[K’
+ 1753 |         node_[01;31m[K->[m[Kget_parameter(param_prefix_ + "accel", accel_);
+      |              [01;31m[K^~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1154:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass MotorControlNode[m[K’
+ 1154 | class [01;36m[KMotorControlNode[m[K;
+      |       [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1754:14:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass MotorControlNode[m[K’
+ 1754 |         node_[01;31m[K->[m[Kget_parameter(param_prefix_ + "min_angle", min_angle_);
+      |              [01;31m[K^~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1154:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass MotorControlNode[m[K’
+ 1154 | class [01;36m[KMotorControlNode[m[K;
+      |       [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1755:14:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass MotorControlNode[m[K’
+ 1755 |         node_[01;31m[K->[m[Kget_parameter(param_prefix_ + "max_angle", max_angle_);
+      |              [01;31m[K^~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1154:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass MotorControlNode[m[K’
+ 1154 | class [01;36m[KMotorControlNode[m[K;
+      |       [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1756:14:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass MotorControlNode[m[K’
+ 1756 |         node_[01;31m[K->[m[Kget_parameter(param_prefix_ + "step", step_);
+      |              [01;31m[K^~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1154:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass MotorControlNode[m[K’
+ 1154 | class [01;36m[KMotorControlNode[m[K;
+      |       [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1757:14:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass MotorControlNode[m[K’
+ 1757 |         node_[01;31m[K->[m[Kget_parameter(param_prefix_ + "reach_count_max", reach_count_max_);
+      |              [01;31m[K^~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1154:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass MotorControlNode[m[K’
+ 1154 | class [01;36m[KMotorControlNode[m[K;
+      |       [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1758:14:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass MotorControlNode[m[K’
+ 1758 |         node_[01;31m[K->[m[Kget_parameter(param_prefix_ + "repeat", repeat_);
+      |              [01;31m[K^~[m[K
+[01m[K/home/ubuntu/Desktop/AK8064_ws_Jun/src/motor_driver/src/ControlMotor.cpp:1154:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass MotorControlNode[m[K’
+ 1154 | class [01;36m[KMotorControlNode[m[K;
+      |       [01;36m[K^~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/ControlMotor.dir/build.make:76: CMakeFiles/ControlMotor.dir/src/ControlMotor.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ControlMotor.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

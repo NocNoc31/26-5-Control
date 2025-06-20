@@ -6,6 +6,7 @@ find_package(rclcpp REQUIRED)
 find_package(can_interface REQUIRED)  # Thêm thư viện can_interface
 find_package(std_msgs REQUIRED) 
 find_package(rcl_interfaces REQUIRED)
+find_package(std_srvs REQUIRED)
 
 # Tạo node điều khiển motor
 
@@ -13,7 +14,7 @@ add_executable(ControlMotor src/ControlMotor.cpp)
 
 
 # Liên kết với thư viện can_interface
-ament_target_dependencies(ControlMotor rclcpp can_interface std_msgs rcl_interfaces)
+ament_target_dependencies(ControlMotor rclcpp can_interface std_msgs rcl_interfaces std_srvs)
 
 
 
